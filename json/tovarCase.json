@@ -1,0 +1,78 @@
+{
+    "TovarName": [
+        "a",
+        "b",
+        "c",
+        "d",
+        "e",
+        "f",
+        "a",
+        "b",
+        "c",
+        "d",
+        "e"
+    ],
+    "TovarPrice": [
+        "100 рублей",
+        "200 рублей",
+        "300 рублей",
+        "400 рублей",
+        "500 рублей",
+        "6000 рублей",
+        "1000 рублей",
+        "2000 рублей",
+        "3000 рублей",
+        "4000 рублей",
+        "5000 рублей",
+        "6000 рублей"
+    ],
+    "CardText": [
+        "lorem 1...",
+        "lorem 2...",
+        "lorem 3...",
+        "lorem 4...",
+        "lorem 5...",
+        "lorem 6...",
+        "lorem 7...",
+        "lorem 8...",
+        "lorem 9...",
+        "lorem 10...",
+        "lorem 11...",
+        "lorem 12..."
+    ],
+    "btnText": [
+        "buy",
+        "sold out"
+    ],
+    "page": [
+        "cases"
+    ],
+    "filterText": [
+        "a",
+        "b",
+        "c",
+        "d",
+        "e",
+        "a",
+        "b",
+        "c",
+        "d",
+        "e"
+    ],
+    "filterName": [
+        "a",
+        "b",
+        "c",
+        "d",
+        "e",
+        "f",
+        "a",
+        "b",
+        "c",
+        "d",
+        "e"
+    ],
+    "tovar": "templates/tovar.html",
+    "PhoneNum": "+7(913)-123-45-67",
+    "Email": "nobodye'sEmail@mail.com"
+}

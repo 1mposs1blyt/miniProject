@@ -1,0 +1,5 @@
+https://jsonpathfinder.com/ -- json помощник поиска путей
+coderoad, learnjavascript, stackowerflow <-- просто норм сайты с полезной инфой
+https://mozilla.github.io/nunjucks/getting-started.html -- нунчаки хороший шаблонизатор =D
+https://developer.mozilla.org/ru/docs/Web/ 
+https://github.com/1mposs1blyt/miniProject.git-- мой репозиторий на гите

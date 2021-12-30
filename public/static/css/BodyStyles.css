@@ -1,0 +1,83 @@
+.accordion {
+    padding-top: 10px;
+    width: 100%;
+    min-height: 70%;
+    height: 50%;
+    max-height: 1400px;
+    position: relative;
+    /* height: 1650px; */
+    /* max-height: 1400px; */
+}
+#CarouselToTovar{
+    border-radius: 7px;
+}
+.row {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+main {
+    padding-bottom: 10px;
+    /* margin-left: 15%; */
+    /* margin-left: 15%; */
+    width: 100%;
+    padding-left: 15%;
+    padding-right: 15%;
+}
+
+.filter::-webkit-scrollbar {
+    display: none;
+}
+footer{
+width: 100%;
+}
+.row>.filter {
+    z-index: 1;
+    width: 16%;
+    max-width: 19rem;
+    background-color: rgb(89, 145, 248);
+    display: flex;
+    min-height:130%;
+    max-height: 200%;
+    height: auto;
+    border-radius: 7px;
+    position: absolute;
+    top: 5.5rem;
+    display: block;
+    overflow: auto;
+}
+
+footer {
+    background: rgb(19, 0, 102);
+    color: rgb(211, 211, 211);
+    padding-top: 50px;
+    justify-content: space-between;
+    width: 110%;
+    padding-left: 15%;
+    padding-right: 15%;
+    padding-bottom: 5%;
+    bottom: 0px;
+}
+
+li {
+    list-style-type: none;
+}
+
+body {
+    background-color: rgb(170, 170, 170);
+}
+
+#btnText {
+    padding-bottom: 10px;
+    padding-right: 10px;
+}
+
+#applybtn {
+    /* z-index: 99; */
+    position: relative;
+    padding-top: 15px;
+    bottom: 10px;
+    right: 25px;
+    left: 15px;
+    overflow: hidden;
+}
