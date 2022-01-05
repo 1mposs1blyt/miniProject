@@ -1,5 +1,6 @@
 .accordion {
     padding-top: 10px;
+    /* padding-bottom: 10px; */
     width: 100%;
     min-height: 70%;
     height: 50%;
@@ -38,7 +39,7 @@ width: 100%;
     background-color: rgb(89, 145, 248);
     display: flex;
     min-height:130%;
-    max-height: 200%;
+    max-height: 260%;
     height: auto;
     border-radius: 7px;
     position: absolute;

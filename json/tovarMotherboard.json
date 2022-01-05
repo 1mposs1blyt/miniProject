@@ -28,16 +28,16 @@
         "sold out"
     ],
     "page": [
-        "motherboard"
+        "motherboards"
     ],
-    "filterText": [
+    "filterVar": [
         "a",
         "b",
         "c",
         "d",
         "e"
     ],
-    "filterName": [
+    "filterTitle": [
         "a",
         "b",
         "c",

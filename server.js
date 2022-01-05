@@ -40,28 +40,28 @@ app.get('/', function (request, response) {
     response.render(__dirname + '/nunjucks/index.njk');
 });
 app.get('/catalog', function (request, response) {
-    let json = require(__dirname + '/json/tovary.json');
+    // let json = require(__dirname + '/json/tovary.json');
 
-    response.render(__dirname + "/nunjucks/catalog.njk", json);
+    response.render(__dirname + "/nunjucks/catalog.njk");
 });
 app.get('/profile', function (request, response) {
-    let json = require(__dirname + '/json/tovary.json');
+    // let json = require(__dirname + '/json/tovary.json');
 
-    response.render(__dirname + "/nunjucks/profile.njk", json);
+    response.render(__dirname + "/nunjucks/profile.njk");
 });
 app.get('/favorites', function (request, response) {
-    let json = require(__dirname + '/json/tovary.json');
+    // let json = require(__dirname + '/json/tovary.json');
 
-    response.render(__dirname + "/nunjucks/favorites.njk", json);
+    response.render(__dirname + "/nunjucks/favorites.njk");
 });
 app.get('/cart', function (request, response) {
-    let json = require(__dirname + '/json/tovary.json');
+    // let json = require(__dirname + '/json/tovary.json');
 
-    response.render(__dirname + "/nunjucks/cart.njk", json);
+    response.render(__dirname + "/nunjucks/cart.njk");
 });
 app.get('/CPU', function (request, response) {
     let json = require(__dirname + '/json/tovarCPU.json');
-    let json2 = JSON.stringify(json)
+    // let json2 = JSON.stringify(json)
     response.render(__dirname + "/nunjucks/TovarsPage.njk", json)
     // let PgN = request.query.PgN;
     // if (PgN == "1" || PgN == "2" || PgN == "3" || PgN == "4" || PgN == "5") {

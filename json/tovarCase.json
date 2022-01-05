@@ -47,7 +47,7 @@
     "page": [
         "cases"
     ],
-    "filterText": [
+    "filterVar": [
         "a",
         "b",
         "c",
@@ -59,7 +59,7 @@
         "d",
         "e"
     ],
-    "filterName": [
+    "filterTitle": [
         "a",
         "b",
         "c",

@@ -1,148 +1,179 @@
 <div class="container filter">
     <div class="col flitrColumn">
-        <form action="?" method="get">
+        <form action="/{{page}}/{{PgN}}" method="get">
             <div class="accordion" id="accordionPanelsStayOpen">
                 <div class="accordion-item">
-                    <h2 class="accordion-header" id="panelsStayOpen-headingOne">
-                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
-                            {{filterName[1]}}
+                    <h2 class="accordion-header" id="panelsStayOpen-heading">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true"
+                            aria-controls="panelsStayOpen-collapseOne">
+                            {{filterTitle[1]}}
                         </button>
                     </h2>
-                    <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show" aria-labelledby="panelsStayOpen-headingOne">
+                    <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show"
+                        aria-labelledby="panelsStayOpen-headingOne">
                         <div class="accordion-body">
-                            <ul>
-                                <li><input type="checkbox" name="{{filterName}}" value="{{filterValue}}">{{filterText[1]}}</li>
-                                <li><input type="checkbox" name="{{filterName}}" value="{{filterValue}}">{{filterText[2]}}</li>
-                                <li><input type="checkbox" name="{{filterName}}" value="{{filterValue}}">{{filterText[3]}}</li>
-                                <li><input type="checkbox" name="{{filterName}}" value="{{filterValue}}">{{filterText[4]}}</li>
-                                <li><input type="checkbox" name="{{filterName}}" value="{{filterValue}}">{{filterText[5]}}</li>
-                                <li><input type="checkbox" name="{{filterName}}" value="{{filterValue}}">{{filterText[6]}}</li>
-                                <li><input type="checkbox" name="{{filterName}}" value="{{filterValue}}">{{filterText[7]}}</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="accordion-item">
-                    <h2 class="accordion-header" id="panelsStayOpen-headingTwo">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
-                            {{filterName[3]}}
-                        </button>
-                    </h2>
-                    <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingTwo">
-                        <div class="accordion-body">
-                            <ul>
-                                <li><input type="checkbox" name="{{filterName}}" value="{{filterValue}}">{{filterText[1]}}</li>
-                                <li><input type="checkbox" name="{{filterName}}" value="{{filterValue}}">{{filterText[2]}}</li>
-                                <li><input type="checkbox" name="{{filterName}}" value="{{filterValue}}">{{filterText[3]}}</li>
-                                <li><input type="checkbox" name="{{filterName}}" value="{{filterValue}}">{{filterText[4]}}</li>
-                                <li><input type="checkbox" name="{{filterName}}" value="{{filterValue}}">{{filterText[5]}}</li>
-                                <li><input type="checkbox" name="{{filterName}}" value="{{filterValue}}">{{filterText[6]}}</li>
-                                <li><input type="checkbox" name="{{filterName}}" value="{{filterValue}}">{{filterText[7]}}</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-                <div class="accordion-item">
-                    <h2 class="accordion-header" id="panelsStayOpen-headingThree">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
-                            {{filterName[2]}}
-                        </button>
-                    </h2>
-                    <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingThree">
-                        <div class="accordion-body">
-                            <ul>
-                                <li><input type="checkbox" name="{{filterName}}" value="{{filterValue}}">{{filterText[1]}}</li>
-                                <li><input type="checkbox" name="{{filterName}}" value="{{filterValue}}">{{filterText[2]}}</li>
-                                <li><input type="checkbox" name="{{filterName}}" value="{{filterValue}}">{{filterText[3]}}</li>
-                                <li><input type="checkbox" name="{{filterName}}" value="{{filterValue}}">{{filterText[4]}}</li>
-                                <li><input type="checkbox" name="{{filterName}}" value="{{filterValue}}">{{filterText[5]}}</li>
-                                <li><input type="checkbox" name="{{filterName}}" value="{{filterValue}}">{{filterText[6]}}</li>
-                                <li><input type="checkbox" name="{{filterName}}" value="{{filterValue}}">{{filterText[7]}}</li>
-                            </ul>
+                            <div class="input-group mb-3">
+                                <div class="input-group-text">
+                                    <input class="form-check-input mt-0" type="checkbox" value="{{filterVar[1]}}"
+                                        name="{{filterTitle[1]}}" aria-label="Checkbox for following text input">
+                                </div>
+                                <li class="form-control" aria-label="Text input with checkbox">{{filterVar[1]}}</li>
+                            </div>
+                            <div class="input-group mb-3">
+                                <div class="input-group-text">
+                                    <input class="form-check-input mt-0" type="checkbox" value="{{filterVar[1]}}"
+                                        name="{{filterTitle[1]}}" aria-label="Checkbox for following text input">
+                                </div>
+                                <li class="form-control" aria-label="Text input with checkbox">{{filterVar[1]}}</li>
+                            </div>
+                            <div class="input-group mb-3">
+                                <div class="input-group-text">
+                                    <input class="form-check-input mt-0" type="checkbox" value="{{filterVar[1]}}"
+                                        name="{{filterTitle[1]}}" aria-label="Checkbox for following text input">
+                                </div>
+                                <li class="form-control" aria-label="Text input with checkbox">{{filterVar[1]}}</li>
+                            </div>
+                            <div class="input-group mb-3">
+                                <div class="input-group-text">
+                                    <input class="form-check-input mt-0" type="checkbox" value="{{filterVar[1]}}"
+                                        name="{{filterTitle[1]}}" aria-label="Checkbox for following text input">
+                                </div>
+                                <li class="form-control" aria-label="Text input with checkbox">{{filterVar[1]}}</li>
+                            </div>
+                            <div class="input-group mb-3">
+                                <div class="input-group-text">
+                                    <input class="form-check-input mt-0" type="checkbox" value="{{filterVar[1]}}"
+                                        name="{{filterTitle[1]}}" aria-label="Checkbox for following text input">
+                                </div>
+                                <li class="form-control" aria-label="Text input with checkbox">{{filterVar[1]}}</li>
+                            </div>
+                            <div class="input-group mb-3">
+                                <div class="input-group-text">
+                                    <input class="form-check-input mt-0" type="checkbox" value="{{filterVar[1]}}"
+                                        name="{{filterTitle[1]}}" aria-label="Checkbox for following text input">
+                                </div>
+                                <li class="form-control" aria-label="Text input with checkbox">{{filterVar[1]}}</li>
+                            </div>
                         </div>
                     </div>
                 </div>
                 <div class="accordion-item">
-                    <h2 class="accordion-header" id="panelsStayOpen-headingFour">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseFour" aria-expanded="false" aria-controls="panelsStayOpen-collapseFour">
-                            {{filterName[4]}}
+                    <h2 class="accordion-header" id="panelsStayOpen-heading2">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#panelsStayOpen-collapse2" aria-expanded="false"
+                            aria-controls="panelsStayOpen-collapse2">
+                            {{filterTitle[2]}}
                         </button>
                     </h2>
-                    <div id="panelsStayOpen-collapseFour" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingFour">
+                    <div id="panelsStayOpen-collapse2" class="accordion-collapse collapse"
+                        aria-labelledby="panelsStayOpen-heading2">
                         <div class="accordion-body">
-                            <ul>
-                                <li><input type="checkbox" name="{{filterName}}" value="{{filterValue}}">{{filterText[1]}}</li>
-                                <li><input type="checkbox" name="{{filterName}}" value="{{filterValue}}">{{filterText[2]}}</li>
-                                <li><input type="checkbox" name="{{filterName}}" value="{{filterValue}}">{{filterText[3]}}</li>
-                                <li><input type="checkbox" name="{{filterName}}" value="{{filterValue}}">{{filterText[4]}}</li>
-                                <li><input type="checkbox" name="{{filterName}}" value="{{filterValue}}">{{filterText[5]}}</li>
-                                <li><input type="checkbox" name="{{filterName}}" value="{{filterValue}}">{{filterText[6]}}</li>
-                                <li><input type="checkbox" name="{{filterName}}" value="{{filterValue}}">{{filterText[7]}}</li>
-                            </ul>
+                            <div class="input-group mb-3">
+                                <div class="input-group-text">
+                                    <input class="form-check-input mt-0" type="checkbox" value="{{filterVar[1]}}"
+                                        name="{{filterTitle[1]}}" aria-label="Checkbox for following text input">
+                                </div>
+                                <li class="form-control" aria-label="Text input with checkbox">{{filterVar[1]}}</li>
+                            </div>
+                            <div class="input-group mb-3">
+                                <div class="input-group-text">
+                                    <input class="form-check-input mt-0" type="checkbox" value="{{filterVar[1]}}"
+                                        name="{{filterTitle[1]}}" aria-label="Checkbox for following text input">
+                                </div>
+                                <li class="form-control" aria-label="Text input with checkbox">{{filterVar[1]}}</li>
+                            </div>
+                            <div class="input-group mb-3">
+                                <div class="input-group-text">
+                                    <input class="form-check-input mt-0" type="checkbox" value="{{filterVar[1]}}"
+                                        name="{{filterTitle[1]}}" aria-label="Checkbox for following text input">
+                                </div>
+                                <li class="form-control" aria-label="Text input with checkbox">{{filterVar[1]}}</li>
+                            </div>
+                            <div class="input-group mb-3">
+                                <div class="input-group-text">
+                                    <input class="form-check-input mt-0" type="checkbox" value="{{filterVar[1]}}"
+                                        name="{{filterTitle[1]}}" aria-label="Checkbox for following text input">
+                                </div>
+                                <li class="form-control" aria-label="Text input with checkbox">{{filterVar[1]}}</li>
+                            </div>
+                            <div class="input-group mb-3">
+                                <div class="input-group-text">
+                                    <input class="form-check-input mt-0" type="checkbox" value="{{filterVar[1]}}"
+                                        name="{{filterTitle[1]}}" aria-label="Checkbox for following text input">
+                                </div>
+                                <li class="form-control" aria-label="Text input with checkbox">{{filterVar[1]}}</li>
+                            </div>
+                            <div class="input-group mb-3">
+                                <div class="input-group-text">
+                                    <input class="form-check-input mt-0" type="checkbox" value="{{filterVar[1]}}"
+                                        name="{{filterTitle[1]}}" aria-label="Checkbox for following text input">
+                                </div>
+                                <li class="form-control" aria-label="Text input with checkbox">{{filterVar[1]}}</li>
+                            </div>
                         </div>
                     </div>
                 </div>
                 <div class="accordion-item">
-                    <h2 class="accordion-header" id="panelsStayOpen-headingfive">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapsefive" aria-expanded="false" aria-controls="panelsStayOpen-collapsefive">
-                            {{filterName[5]}}
+                    <h2 class="accordion-header" id="panelsStayOpen-heading3">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#panelsStayOpen-collapse3" aria-expanded="false"
+                            aria-controls="panelsStayOpen-collapse3">
+                            {{filterTitle[3]}}
                         </button>
                     </h2>
-                    <div id="panelsStayOpen-collapsefive" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingfive">
+                    <div id="panelsStayOpen-collapse3" class="accordion-collapse collapse"
+                        aria-labelledby="panelsStayOpen-heading3">
                         <div class="accordion-body">
-                            <ul>
-                                <li><input type="checkbox" name="{{filterName}}" value="{{filterValue}}">{{filterText[1]}}</li>
-                                <li><input type="checkbox" name="{{filterName}}" value="{{filterValue}}">{{filterText[2]}}</li>
-                                <li><input type="checkbox" name="{{filterName}}" value="{{filterValue}}">{{filterText[3]}}</li>
-                                <li><input type="checkbox" name="{{filterName}}" value="{{filterValue}}">{{filterText[4]}}</li>
-                                <li><input type="checkbox" name="{{filterName}}" value="{{filterValue}}">{{filterText[5]}}</li>
-                                <li><input type="checkbox" name="{{filterName}}" value="{{filterValue}}">{{filterText[6]}}</li>
-                                <li><input type="checkbox" name="{{filterName}}" value="{{filterValue}}">{{filterText[7]}}</li>
-                            </ul>
+                            <div class="input-group mb-3">
+                                <div class="input-group-text">
+                                    <input class="form-check-input mt-0" type="checkbox" value="{{filterVar[1]}}"
+                                        name="{{filterTitle[1]}}" aria-label="Checkbox for following text input">
+                                </div>
+                                <li class="form-control" aria-label="Text input with checkbox">{{filterVar[1]}}</li>
+                            </div>
+                            <div class="input-group mb-3">
+                                <div class="input-group-text">
+                                    <input class="form-check-input mt-0" type="checkbox" value="{{filterVar[1]}}"
+                                        name="{{filterTitle[1]}}" aria-label="Checkbox for following text input">
+                                </div>
+                                <li class="form-control" aria-label="Text input with checkbox">{{filterVar[1]}}</li>
+                            </div>
+                            <div class="input-group mb-3">
+                                <div class="input-group-text">
+                                    <input class="form-check-input mt-0" type="checkbox" value="{{filterVar[1]}}"
+                                        name="{{filterTitle[1]}}" aria-label="Checkbox for following text input">
+                                </div>
+                                <li class="form-control" aria-label="Text input with checkbox">{{filterVar[1]}}</li>
+                            </div>
+                            <div class="input-group mb-3">
+                                <div class="input-group-text">
+                                    <input class="form-check-input mt-0" type="checkbox" value="{{filterVar[1]}}"
+                                        name="{{filterTitle[1]}}" aria-label="Checkbox for following text input">
+                                </div>
+                                <li class="form-control" aria-label="Text input with checkbox">{{filterVar[1]}}</li>
+                            </div>
+                            <div class="input-group mb-3">
+                                <div class="input-group-text">
+                                    <input class="form-check-input mt-0" type="checkbox" value="{{filterVar[1]}}"
+                                        name="{{filterTitle[1]}}" aria-label="Checkbox for following text input">
+                                </div>
+                                <li class="form-control" aria-label="Text input with checkbox">{{filterVar[1]}}</li>
+                            </div>
+                            <div class="input-group mb-3">
+                                <div class="input-group-text">
+                                    <input class="form-check-input mt-0" type="checkbox" value="{{filterVar[1]}}"
+                                        name="{{filterTitle[1]}}" aria-label="Checkbox for following text input">
+                                </div>
+                                <li class="form-control" aria-label="Text input with checkbox">{{filterVar[1]}}</li>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="accordion-item">
-                    <h2 class="accordion-header" id="panelsStayOpen-headingsix">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapsesix" aria-expanded="false" aria-controls="panelsStayOpen-collapsesix">
-                            {{filterName[6]}}
-                        </button>
-                    </h2>
-                    <div id="panelsStayOpen-collapsesix" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingsix">
-                        <div class="accordion-body">
-                            <ul>
-                                <li><input type="checkbox" name="{{filterName}}" value="{{filterValue}}">{{filterText[1]}}</li>
-                                <li><input type="checkbox" name="{{filterName}}" value="{{filterValue}}">{{filterText[2]}}</li>
-                                <li><input type="checkbox" name="{{filterName}}" value="{{filterValue}}">{{filterText[3]}}</li>
-                                <li><input type="checkbox" name="{{filterName}}" value="{{filterValue}}">{{filterText[4]}}</li>
-                                <li><input type="checkbox" name="{{filterName}}" value="{{filterValue}}">{{filterText[5]}}</li>
-                                <li><input type="checkbox" name="{{filterName}}" value="{{filterValue}}">{{filterText[6]}}</li>
-                                <li><input type="checkbox" name="{{filterName}}" value="{{filterValue}}">{{filterText[7]}}</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-                <div class="accordion-item">
-                    <h2 class="accordion-header" id="panelsStayOpen-heading7">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapse7" aria-expanded="false" aria-controls="panelsStayOpen-collapse7">
-                            {{filterName[7]}}
-                        </button>
-                    </h2>
-                    <div id="panelsStayOpen-collapse7" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-heading7">
-                        <div class="accordion-body">
-                            <ul>
-                                <li><input type="checkbox" name="{{filterName}}" value="{{filterValue}}">{{filterText[1]}}</li>
-                                <li><input type="checkbox" name="{{filterName}}" value="{{filterValue}}">{{filterText[2]}}</li>
-                                <li><input type="checkbox" name="{{filterName}}" value="{{filterValue}}">{{filterText[3]}}</li>
-                                <li><input type="checkbox" name="{{filterName}}" value="{{filterValue}}">{{filterText[4]}}</li>
-                                <li><input type="checkbox" name="{{filterName}}" value="{{filterValue}}">{{filterText[5]}}</li>
-                                <li><input type="checkbox" name="{{filterName}}" value="{{filterValue}}">{{filterText[6]}}</li>
-                                <li><input type="checkbox" name="{{filterName}}" value="{{filterValue}}">{{filterText[7]}}</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div><button type="submit" class="btn btn-primary" value="применить">применить</button><button type="reset" class="btn btn-primary" value="сбросить">сбросить</button>
+                <button type="submit" class="btn btn-primary" value="применить">применить</button>
+                <!-- <button type="button" class="btn btn-primary" value="сбросить">сбросить</button> -->
+                <a href="/{{page}}/"><input type="button" class="btn btn-primary" name="reset" id="reset"
+                        value="reset"></a>
             </div>
         </form>
     </div>
