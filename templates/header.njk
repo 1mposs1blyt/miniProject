@@ -13,11 +13,10 @@
                     data-bs-toggle="dropdown" aria-expanded="false">
                     Каталог
                 </a>
-
                 <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                    <li><a class="dropdown-item" href="/CPU">Процессоры</a></li>
-                    <li><a class="dropdown-item" href="/{{MainPage}}/">Материнские платы</a></li>
-                    <li><a class="dropdown-item" href="/cases">Корпуса</a></li>
+            {% for TovarTypeProps, item in TovarTypeList%}
+                    <li><a class="dropdown-item" href="/catalog/{{item.catalogId}}/{{item.MainPage}}">{{item.property}}</a></li>
+            {% endfor%}
                 </ul>
             </div>
         </div>

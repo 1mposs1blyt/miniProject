@@ -1,4 +1,55 @@
 {
+    "TovarTypeList": {
+        "TovarType1": {
+            "property": "процессоры",
+            "MainPage": "processors",
+            "catalogId": "21"
+        },
+        "TovarType2": {
+            "property": "матееринские платы",
+            "MainPage": "motherboards",
+            "catalogId": "12"
+        },
+        "TovarType3": {
+            "property": "корпуса",
+            "MainPage": "cases",
+            "catalogId": "13"
+        },
+        "TovarType4": {
+            "property": "холодильники",
+            "MainPage": "freezers",
+            "catalogId": "51"
+        },
+        "TovarType5": {
+            "property": "видеокарты",
+            "MainPage": "videocards"
+        },
+        "TovarType6": {
+            "property": "блоки питания",
+            "MainPage": "powerblocks",
+            "catalogId": "17"
+        },
+        "TovarType7": {
+            "property": "процессоры",
+            "MainPage": "processors",
+            "catalogId": "919"
+        },
+        "TovarType8": {
+            "property": "иговые консоли",
+            "MainPage": "consoles",
+            "catalogId": "951"
+        },
+        "TovarType9": {
+            "property": "колонки",
+            "MainPage": "audio",
+            "catalogId": "015"
+        },
+        "TovarType10": {
+            "property": "оперативная память",
+            "MainPage": "ram",
+            "catalogId": "164"
+        }
+    },
     "items": {
         "tovar0": {
             "TovarName": "i3-10100f",
@@ -7,7 +58,7 @@
             "btnText": "Купить",
             "page": "processor",
             "currency": "рублей",
-            "productId":"1235fas"
+            "productId": "1235fas"
         },
         "tovar1": {
             "TovarName": "i3-10105f",
@@ -15,7 +66,7 @@
             "CardText": "lorem 2...",
             "btnText": "купить",
             "page": "processor",
-            "productId":"1235fas"
+            "productId": "1235fas"
         },
         "tovar2": {
             "TovarName": "i5-10400f",
@@ -23,7 +74,7 @@
             "CardText": "lorem 1...",
             "btnText": "купить",
             "page": "processor",
-            "productId":"1235fas"
+            "productId": "1235fas"
         },
         "tovar3": {
             "TovarName": "i5-10600kf",
@@ -31,7 +82,7 @@
             "CardText": "lorem 1...",
             "btnText": "купить",
             "page": "processor",
-            "productId":"1235fas"
+            "productId": "1235fas"
         },
         "tovar4": {
             "TovarName": "i7-10700",
@@ -40,7 +91,7 @@
             "btnText": "купить",
             "page": "processor",
             "currency": "рублей",
-            "productId":"1235fas"
+            "productId": "1235fas"
         },
         "tovar5": {
             "TovarName": "i7-10700k",
@@ -49,7 +100,7 @@
             "btnText": "купить",
             "page": "processor",
             "currency": "рублей",
-            "productId":"1235fas"
+            "productId": "1235fas"
         },
         "tovar6": {
             "TovarName": "i9-10900k",
@@ -58,7 +109,7 @@
             "btnText": "купить",
             "page": "processor",
             "currency": "рублей",
-            "productId":"1235fas"
+            "productId": "1235fas"
         },
         "tovar7": {
             "TovarName": "i9-11900k",
@@ -67,7 +118,7 @@
             "btnText": "buy",
             "page": "processor",
             "currency": "рублей",
-            "productId":"1235fas"
+            "productId": "1235fas"
         }
     },
     "filterOptions": {
