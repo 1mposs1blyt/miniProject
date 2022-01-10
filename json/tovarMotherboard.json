@@ -1,51 +1,93 @@
 {
-    "TovarName": [
-        "a",
-        "b",
-        "c",
-        "d",
-        "e",
-        "f"
-    ],
-    "TovarPrice": [
-        "100 рублей",
-        "200 рублей",
-        "300 рублей",
-        "400 рублей",
-        "500 рублей",
-        "600 рублей"
-    ],
-    "CardText": [
-        "lorem 1...",
-        "lorem 2...",
-        "lorem 3...",
-        "lorem 4...",
-        "lorem 5...",
-        "lorem 6..."
-    ],
-    "btnText": [
-        "buy",
-        "sold out"
-    ],
-    "page": [
-        "motherboards"
-    ],
+    "items": {
+        "tovar0": {
+            "TovarName": "i3-10100f",
+            "TovarPrice": "6500",
+            "CardText": "lorem 1...",
+            "btnText": "Купить",
+            "page": "motherboards",
+            "currency": "рублей"
+        },
+        "tovar1": {
+            "TovarName": "i3-10105f",
+            "TovarPrice": "7500",
+            "CardText": "lorem 2...",
+            "btnText": "купить",
+            "page": "motherboards"
+        },
+        "tovar2": {
+            "TovarName": "i5-10400f",
+            "TovarPrice": "12500",
+            "CardText": "lorem 1...",
+            "btnText": "купить",
+            "page": "motherboards"
+        },
+        "tovar3": {
+            "TovarName": "i5-10600kf",
+            "TovarPrice": "15000",
+            "CardText": "lorem 1...",
+            "btnText": "купить",
+            "page": "motherboards"
+        },
+        "tovar4": {
+            "TovarName": "i7-10700",
+            "TovarPrice": "25000",
+            "CardText": "lorem 1...",
+            "btnText": "купить",
+            "page": "motherboards",
+            "currency": "рублей"
+        },
+        "tovar5": {
+            "TovarName": "i7-10700k",
+            "TovarPrice": "26800",
+            "CardText": "lorem 1...",
+            "btnText": "купить",
+            "page": "motherboards",
+            "currency": "рублей"
+        },
+        "tovar6": {
+            "TovarName": "i9-10900k",
+            "TovarPrice": "450000",
+            "CardText": "lorem 1...",
+            "btnText": "купить",
+            "page": "motherboards",
+            "currency": "рублей"
+        },
+        "tovar7": {
+            "TovarName": "i9-11900k",
+            "TovarPrice": "450000",
+            "CardText": "lorem 1...",
+            "btnText": "buy",
+            "page": "motherboards",
+            "currency": "рублей"
+        }
+    },
     "filterVar": [
-        "a",
-        "b",
-        "c",
-        "d",
-        "e"
+        "asus",
+        "biostar",
+        "acer",
+        "msi",
+        "asrock",
+        "nintendo",
+        "samsung",
+        "panasonic",
+        "LG",
+        "Xiomi"
     ],
     "filterTitle": [
-        "a",
-        "b",
-        "c",
-        "d",
-        "e",
-        "f"
+        "another",
+        "brand",
+        "year",
+        "something",
+        "some",
+        "aboba",
+        "something",
+        "aboba2",
+        "igogo",
+        "eldorado"
     ],
-    "tovar": "templates/tovar.html",
+    "MainPage": "motherboards",
     "PhoneNum": "+7(913)-123-45-67",
-    "Email": "nobodye'sEmail@mail.com"
+    "Email": "nobodye'sEmail@mail.com",
+    "tovar": "templates/tovar.html"
 }

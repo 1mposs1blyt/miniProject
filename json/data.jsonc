@@ -1,0 +1,26 @@
+
+// <div class="container">
+//                     <div class="row  cols-xs-8">
+//                         {% include "templates/filter.html"%}
+//                         {% for tovar, item in items %}
+//                             {# {% if loop.index <= 7 %} #}
+//                                 <div class="row">
+//                                     <div class="col-3 col-xs-4"></div>
+//                                     {% include "templates/tovar.html" %}
+//                                     {% include "templates/tovar.html" %}
+//                                     {% include "templates/tovar.html" %}
+//                                 </div>
+//                             {# {% endif %} #}
+//                         {% else %}
+//                             <h1>eror</h1>
+//                         {% endfor %}
+//                     </div>
+//                 </div>
+//             </div>
+//             {% include "templates/downNAvPG.html"%}
+
+
+
+
+
+

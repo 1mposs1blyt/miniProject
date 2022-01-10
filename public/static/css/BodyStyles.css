@@ -9,18 +9,20 @@
     /* height: 1650px; */
     /* max-height: 1400px; */
 }
-#CarouselToTovar{
+
+#CarouselToTovar {
     border-radius: 7px;
 }
+
 .row {
     padding-top: 10px;
     padding-bottom: 10px;
 }
 
-main {
+body {
     padding-bottom: 10px;
-    /* margin-left: 15%; */
-    /* margin-left: 15%; */
+    margin-left: 15%;
+    margin-left: 15%;
     width: 100%;
     padding-left: 15%;
     padding-right: 15%;
@@ -29,16 +31,22 @@ main {
 .filter::-webkit-scrollbar {
     display: none;
 }
-footer{
-width: 100%;
+
+footer {
+margin-left: 0%;
+margin-right: 0%;
+padding-right: 0%;
+padding-left: 0%;
+    width: 100%;
 }
+
 .row>.filter {
     z-index: 1;
     width: 16%;
     max-width: 19rem;
     background-color: rgb(89, 145, 248);
     display: flex;
-    min-height:130%;
+    min-height: 130%;
     max-height: 260%;
     height: auto;
     border-radius: 7px;

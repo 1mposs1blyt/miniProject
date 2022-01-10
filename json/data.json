@@ -62,42 +62,29 @@
             "currency": "рублей"
         }
     },
-    "filterOptions": {
-        "filterProp0": "gigabyte",
-        "filterProp1": "asus",
-        "filterProp2": "msi",
-        "filterProp3": "BIOSTAR",
-        "filterProp4": "asrock",
-        "filterProp5": "msi",
-        "filterProp6": "gigabyte",
-        "filterProp7": "asus",
-        "filterProp8": "msi",
-        "filterProp9": "BIOSTAR",
-        "filterProp10": "asrock"
-    },
-    "filterTitles": {
-        "filterTitle0": "option number 1",
-        "filterTitle1": "option number 2",
-        "filterTitle2": "option number 3",
-        "filterTitle3": "option number 4",
-        "filterTitle4": "option number 5",
-        "filterTitle5": "option number 6",
-        "filterTitle6": "option number 7",
-        "filterTitle7": "option number 8",
-        "filterTitle8": "option number 9",
-        "filterTitle9": "option number 10",
-        "filterTitle10": "option number 0"
-    },
-    "PageNum": {
-        "1": "1",
-        "2": "2",
-        "3": "3",
-        "4": "4",
-        "5": "5",
-        "6": "6"
-    },
-    "PhoneNum": "+7(913)-123-45-67",
-    "Email": "nobodye'sEmail@mail.com",
-    "tovar": "templates/tovar.html",
-    "MainPage": "CPU"
+    "filterVar": [
+        "asus",
+        "biostar",
+        "acer",
+        "msi",
+        "asrock",
+        "nintendo",
+        "samsung",
+        "panasonic",
+        "LG",
+        "Xiomi"
+    ],
+    "filterTitle": [
+        "another",
+        "brand",
+        "year",
+        "something",
+        "some",
+        "aboba",
+        "something",
+        "aboba2",
+        "igogo",
+        "eldorado"
+    ],
+    "tovar": "templates/tovar.html"
 }

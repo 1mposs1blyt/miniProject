@@ -1,40 +1,86 @@
 {% block mainTempl%}
     <!DOCTYPE html>
     <html lang="en">
+
         <head>
             {% include "templates/head.html"%}
         </head>
+
         <body>
             {% include "templates/header.html" %}
             <main>
                 <div class="container">
                     <div class="row  cols-xs-8">
-                        {% include "templates/filter.html"%}
-                        {% for tovar in tovar %}
-                            {% if loop.index <= 7 %}
+                        {# {% include "templates/filter.html"%} #}
+                        <div class="container filter">
+                            <div class="col flitrColumn">
+                                <form action="/{{page}}/{{PgN}}" method="get">
+                                    <div class="accordion" id="accordionPanelsStayOpen">
+                                        <div class="accordion-item">
+                                            <h2 class="accordion-header" id="panelsStayOpen-heading">
+                                                <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                            data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true"
+                                            aria-controls="panelsStayOpen-collapseOne">
+                                                    {{filterTitle}}
+                                                </button>
+                                            </h2>
+                                            <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show" aria-labelledby="panelsStayOpen-headingOne">
+                                                <div class="accordion-body">
+                                                    {% for filterProp, item in filterOptions %}
+                                                        <div class="input-group mb-3">
+                                                            <div class="input-group-text">
+                                                                <input class="form-check-input mt-0" type="checkbox"
+                                                        value="{{filterVar}}" name="{{filterTitle}}"
+                                                        aria-label="Checkbox for following text input">
+                                                            </div>
+                                                            <li class="form-control" aria-label="Text input with checkbox">
+                                                                {{filterVar}}</li>
+                                                        </div>
+                                                    {%endfor%}
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <button type="submit" class="btn btn-primary" value="применить">применить</button>
+                                            <!-- <button type="button" class="btn btn-primary" value="сбросить">сбросить</button> -->
+                                            <a href="/{{page}}/"><input type="button" class="btn btn-primary" name="reset"
+                                        id="reset" value="reset"></a>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                            {% for tovar, item in items %}
+                                {# {% if loop.index <= 7 %} #}
                                 <div class="row">
                                     <div class="col-3 col-xs-4"></div>
                                     {% include "templates/tovar.html" %}
                                     {% include "templates/tovar.html" %}
                                     {% include "templates/tovar.html" %}
                                 </div>
-                            {% endif %}
-                        {% else %}
-                            <h1>eror</h1>
-                        {% endfor %}
+                                {# {% endif %} #}
+                            {% else %}
+                                <h1>eror</h1>
+                            {% endfor %}
+                        </div>
+
                     </div>
-                </div>
-            </div>
-            {% include "templates/downNAvPG.html"%}
-        </main>
+                    <nav aria-label="Page navigation">
+                        <ul class="pagination justify-content-center">
+                            <li class="page-item">
+                                <a class="page-link" href="/{{page}}/?PgN={{PgN}}" tabindex="-1">Previous</a>
+                            </li>
+                            {% for PgN, item in PageNum %}
+                                <li class="page-item">
+                                    <a class="page-link" href="/{{page}}/?PgN={{PgN}}">{{PgN}}</a>
+                                </li>
+                            {% endfor %}
+                            <li class="page-item">
+                                <a class="page-link" href="/{{page}}/?PgN={{PgN}}">Next</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </main>
+                {% include "templates/footer.html"%}
+            </body>
 
-        {% include "templates/footer.html"%}
-    </body>
-</html>
-{%endblock%}
-
-{# <html>
-    {% asyncEach tovar in tovars %}
-    {% include "templates/tovar.html"%}
-    {% endeach %}
-</html> #}
+        </html>
+        {%endblock%}

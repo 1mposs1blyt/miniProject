@@ -3,3 +3,28 @@ coderoad, learnjavascript, stackowerflow <-- просто норм сайты с
 https://mozilla.github.io/nunjucks/getting-started.html -- нунчаки хороший шаблонизатор =D
 https://developer.mozilla.org/ru/docs/Web/ 
 https://github.com/1mposs1blyt/miniProject.git-- мой репозиторий на гите
+
+
+
+
+!!Пример перебора с json нунчаки!!
+<html>
+    <ul>
+        {% for someId, item in items %}
+            <li>{{ someId }}: {{ item.property2 }}</li>
+        {% endfor %}
+    </ul>
+</html>
+<jsonFile>
+{
+"items": {
+    "someId1":{ "property1":"hi1","property2":"hello1"},
+    "someId2":{ "property1":"hi2","property2":"hello2"},
+    "someIdN":{ "property1":"hi3","property2":"hello3"},
+    "someId99":{ "property1":"hi1","property2":"hello1"},
+    "someId999":{ "property1":"hi2","property2":"hello2"},
+    "someIdg":{ "property1":"hi3","property2":"hello3"}
+    }
+}
+</jsonFile>
+!!Пример перебора с json нунчаки!!

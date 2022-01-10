@@ -79,7 +79,7 @@ app.get('/motherboards', function (request, response) {
 });
 app.get('/motherboards/motherboard/', function (request, response) {
     let json = require(__dirname + '/json/tovarMotherboard.json');
-    response.render(__dirname + "/nunjucks/TovarsPage.njk", json);
+    response.render(__dirname + "/nunjucks/TovarPage.njk", json);
 });
 
 

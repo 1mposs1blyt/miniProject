@@ -4,13 +4,13 @@
             <div class="carousel slide carousel-fade" data-bs-ride="carousel">
                 <div class="carousel-inner">
                     <div class="carousel-item active">
-                        <img src="https://via.placeholder.com/750x550/a" class="d-block w-100" alt="...">
+                        <img src="https://via.placeholder.com/750x550/ad" class="d-block w-100" alt="...">
                     </div>
                     <div class="carousel-item">
-                        <img src="https://via.placeholder.com/750x550/b" class="d-block w-100" alt="...">
+                        <img src="https://via.placeholder.com/750x550/bf" class="d-block w-100" alt="...">
                     </div>
                     <div class="carousel-item">
-                        <img src="https://via.placeholder.com/750x550/c" class="d-block w-100" alt="...">
+                        <img src="https://via.placeholder.com/750x550/cc" class="d-block w-100" alt="...">
                     </div>
                 </div>
                 <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
@@ -24,12 +24,12 @@
             </div>
         </div>
         <div class="col-6 col-sm-6 col-md-6 col-lg-6 col-xs-3">
-            <h5>{{CardTitle}}</h5>
+            <h5>{{item.TovarName}}</h5>
             <div class="card">
                 <div class="card-body">
-                    <h5 class="card-title">{{CardPrice}}</h5>
-                    <p class="card-text">{{CardText}}</p>
-                    <a href="/" class="btn btn-primary">{{btnText}}</a>
+                    <h5 class="card-title">{{item.TovarPrice}} {{item.currency}}</h5>
+                    <p class="card-text">{{item.CardText}}</p>
+                    <a class="btn btn-primary">{{item.CardText}}</a>
                 </div>
             </div>
         </div>
