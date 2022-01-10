@@ -76,7 +76,7 @@ app.get('/catalog/*/', function (request, response) {
 app.get('/product/*/*', function (request, response) {
     response.render(__dirname + "/nunjucks/TovarPage.njk");
 });
-// ниже как НАДО, выше как есть =)
+// ниже как НАДО, выше как есть =) =D
 // app.get('/product/*/{{TovarName}}', function (request, response) {
 //     response.render(__dirname + "/nunjucks/TovarPage.njk");
 // });
