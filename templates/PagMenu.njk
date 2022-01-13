@@ -1,0 +1,15 @@
+               <nav aria-label="Page navigation">
+                    <ul class="pagination justify-content-center">
+                        <li class="page-item">
+                            <a class="page-link" href="/{{page}}/?PgN={{PgN}}" tabindex="-1">Previous</a>
+                        </li>
+                        {% for PgN, item in PageNum %}
+                            <li class="page-item">
+                                <a class="page-link" href="/{{page}}/?PgN={{PgN}}">{{PgN}}</a>
+                            </li>
+                        {% endfor %}
+                        <li class="page-item">
+                            <a class="page-link" href="/catalog/{{item.catalogId}}/{{item.MainPage}}">Next</a>
+                        </li>
+                    </ul>
+                </nav>

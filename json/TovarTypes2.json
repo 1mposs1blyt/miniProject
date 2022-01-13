@@ -1,0 +1,111 @@
+{
+    "items": {
+        "TovarTypeRam": {
+            "filterTitle": {
+                "1": "test1",
+                "2": "test2",
+                "MainPage": "ram",
+                "page": "ram"
+            },
+            "filterOptions": {},
+            "catalogId": "164",
+            "tovar0": {
+                "TovarName": "kingston-fury-16gb-kit",
+                "TovarPrice": "6899",
+                "CardText": "lorem 1...",
+                "btnText": "Купить",
+                "currency": "рублей",
+                "productId": "q23chxgqh2aq",
+                "property": "оперативная память",
+                "AccordionId": {
+                    "1": "1"
+                }
+            }
+        },
+        "TovarTypeCPU": {
+            "tovar0": {
+                "TovarName": "kingston-fury-16gb-kit",
+                "TovarPrice": "6899",
+                "CardText": "lorem 1...",
+                "btnText": "Купить",
+                "page": "ram",
+                "currency": "рублей",
+                "productId": "1235fas",
+                "property": "оперативная память",
+                "MainPage": "ram",
+                "catalogId": "164",
+                "AccordionId": {
+                    "1": "1"
+                },
+                "filterTitle": {
+                    "1": "test1",
+                    "2": "test2"
+                }
+            },
+            "tovar1": {
+
+                "TovarName": "kingstodadadn-fury-16gb-kit",
+                "TovarPrice": "6899",
+                "CardText": "lorem 1...",
+                "btnText": "Купить",
+                "page": "ram",
+                "currency": "рублей",
+                "productId": "1235fas",
+                "property": "оперативная память",
+                "MainPage": "ram",
+                "catalogId": "164",
+                "AccordionId": {
+                    "1": "1"
+                },
+                "filterTitle": {
+                    "1": "test1",
+                    "2": "test2"
+                }
+            }
+        },
+        "TovarTypeMotherboards": {
+            "tovar0": {
+                "TovarName": "kingston-fury-16gb-kit",
+                "TovarPrice": "6899",
+                "CardText": "lorem 1...",
+                "btnText": "Купить",
+                "page": "ram",
+                "currency": "рублей",
+                "productId": "1235fas",
+                "property": "оперативная память",
+                "MainPage": "ram",
+                "catalogId": "164",
+                "AccordionId": {
+                    "1": "1"
+                },
+                "filterTitle": {
+                    "1": "test1",
+                    "2": "test2"
+                }
+            },
+            "tovar1": {
+                "TovarName": "kingstodadadn-fury-16gb-kit",
+                "TovarPrice": "6899",
+                "CardText": "lorem 1...",
+                "btnText": "Купить",
+                "page": "ram",
+                "currency": "рублей",
+                "productId": "1235fas",
+                "property": "оперативная память",
+                "MainPage": "ram",
+                "catalogId": "164",
+                "AccordionId": {
+                    "1": "1"
+                },
+                "filterTitle": {
+                    "1": "test1",
+                    "2": "test2"
+                }
+            }
+        }
+    },
+    "PhoneNum": "+7(913)-123-45-67",
+    "Email": "nobodye'sEmail@mail.com",
+    "tovar": "templates/tovar.html",
+    "UserId": "ffafucwa123dg"
+}

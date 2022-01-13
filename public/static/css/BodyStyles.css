@@ -1,14 +1,14 @@
-.accordion {
+/* .accordion {
     padding-top: 10px;
-    /* padding-bottom: 10px; */
+    /* padding-bottom: 10px; 
     width: 100%;
     min-height: 70%;
     height: 50%;
     max-height: 1400px;
     position: relative;
-    /* height: 1650px; */
-    /* max-height: 1400px; */
-}
+     height: 1650px; 
+     max-height: 1400px; 
+} */
 
 #CarouselToTovar {
     border-radius: 7px;
@@ -21,16 +21,16 @@
 
 body {
     padding-bottom: 10px;
-    margin-left: 15%;
-    margin-left: 15%;
+    margin-left: 25%;
+    margin-left: 25%;
     width: 100%;
-    padding-left: 15%;
-    padding-right: 15%;
+    padding-left: 25%;
+    padding-right: 25%;
 }
 
-.filter::-webkit-scrollbar {
+/* .filter::-webkit-scrollbar {
     display: none;
-}
+} */
 
 footer {
 margin-left: 0%;
@@ -40,7 +40,7 @@ padding-left: 0%;
     width: 100%;
 }
 
-.row>.filter {
+/* .row>.filter {
     z-index: 1;
     width: 16%;
     max-width: 19rem;
@@ -54,7 +54,7 @@ padding-left: 0%;
     top: 5.5rem;
     display: block;
     overflow: auto;
-}
+} */
 
 footer {
     background: rgb(19, 0, 102);

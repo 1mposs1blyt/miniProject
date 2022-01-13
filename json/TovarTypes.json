@@ -119,9 +119,91 @@
             "page": "processor",
             "currency": "рублей",
             "productId": "1235fas"
+        },
+        "tovar01": {
+            "TovarName": "i3-10100f",
+            "TovarPrice": "6500",
+            "CardText": "lorem 1...",
+            "btnText": "Купить",
+            "page": "processor",
+            "currency": "рублей",
+            "productId": "1235fas"
+        },
+        "tovar11": {
+            "TovarName": "i3-10105f",
+            "TovarPrice": "7500",
+            "CardText": "lorem 2...",
+            "btnText": "купить",
+            "page": "processor",
+            "productId": "1235fas"
+        },
+        "tovar21": {
+            "TovarName": "i5-10400f",
+            "TovarPrice": "12500",
+            "CardText": "lorem 1...",
+            "btnText": "купить",
+            "page": "processor",
+            "productId": "1235fas"
+        },
+        "tovar31": {
+            "TovarName": "i5-10600kf",
+            "TovarPrice": "15000",
+            "CardText": "lorem 1...",
+            "btnText": "купить",
+            "page": "processor",
+            "productId": "1235fas"
+        },
+        "tovar41": {
+            "TovarName": "i7-10700",
+            "TovarPrice": "25000",
+            "CardText": "lorem 1...",
+            "btnText": "купить",
+            "page": "processor",
+            "currency": "рублей",
+            "productId": "1235fas"
+        },
+        "tovar51": {
+            "TovarName": "i7-10700k",
+            "TovarPrice": "26800",
+            "CardText": "lorem 1...",
+            "btnText": "купить",
+            "page": "processor",
+            "currency": "рублей",
+            "productId": "1235fas"
+        },
+        "tovar61": {
+            "TovarName": "i9-10900k",
+            "TovarPrice": "450000",
+            "CardText": "lorem 1...",
+            "btnText": "купить",
+            "page": "processor",
+            "currency": "рублей",
+            "productId": "1235fas"
+        },
+        "tovar71": {
+            "TovarName": "i9-11900k",
+            "TovarPrice": "450000",
+            "CardText": "lorem 1...",
+            "btnText": "buy",
+            "page": "processor",
+            "currency": "рублей",
+            "productId": "1235fas"
         }
     },
-    "filterOptions": {
+    "filterPropertyTitles": {
+        "filterTitle0": "option number 1",
+        "filterTitle1": "option number 2",
+        "filterTitle2": "option number 3",
+        "filterTitle3": "option number 4",
+        "filterTitle4": "option number 5",
+        "filterTitle5": "option number 6",
+        "filterTitle6": "option number 7",
+        "filterTitle7": "option number 8",
+        "filterTitle8": "option number 9",
+        "filterTitle9": "option number 10",
+        "filterTitle10": "option number 0"
+    },
+    "filterPropertyProp": {
         "filterProp0": "gigabyte",
         "filterProp1": "asus",
         "filterProp2": "msi",
@@ -134,18 +216,18 @@
         "filterProp9": "BIOSTAR",
         "filterProp10": "asrock"
     },
-    "filterTitles": {
-        "filterTitle0": "option number 1",
-        "filterTitle1": "option number 2",
-        "filterTitle2": "option number 3",
-        "filterTitle3": "option number 4",
-        "filterTitle4": "option number 5",
-        "filterTitle5": "option number 6",
-        "filterTitle6": "option number 7",
-        "filterTitle7": "option number 8",
-        "filterTitle8": "option number 9",
-        "filterTitle9": "option number 10",
-        "filterTitle10": "option number 0"
+    "filterPropertyIds": {
+        "filterId0": "0",
+        "filterId1": "1",
+        "filterId2": "2",
+        "filterId3": "3",
+        "filterId4": "4",
+        "filterId5": "5",
+        "filterId6": "6",
+        "filterId7": "7",
+        "filterId8": "8",
+        "filterId9": "9",
+        "filterId10": "10"
     },
     "PageNum": {
         "1": "1",

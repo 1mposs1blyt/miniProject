@@ -6,7 +6,8 @@
             "CardText": "lorem 1...",
             "btnText": "Купить",
             "page": "motherboards",
-            "currency": "рублей"
+            "currency": "рублей",
+            "SearchProperty":"comin soon>>>"
         },
         "tovar1": {
             "TovarName": "i3-10105f",

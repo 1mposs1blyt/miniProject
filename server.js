@@ -35,14 +35,20 @@ app.get('/', function (request, response) {
 // app.get('/catalog', function (request, response) {
 //     response.render(__dirname + "/nunjucks/catalog.njk");
 // });
-app.get('/profile', function (request, response) {
-    response.render(__dirname + "/nunjucks/profile.njk");
+app.get('/*/profile', function (request, response) {
+    let json = require(__dirname + '/json/TovarTypes.json');
+
+    response.render(__dirname + "/nunjucks/profile.njk", json);
 });
-app.get('/favorites', function (request, response) {
-    response.render(__dirname + "/nunjucks/favorites.njk");
+app.get('/*/favorites', function (request, response) {
+    let json = require(__dirname + '/json/TovarTypes.json');
+
+    response.render(__dirname + "/nunjucks/favorites.njk", json);
 });
-app.get('/cart', function (request, response) {
-    response.render(__dirname + "/nunjucks/cart.njk");
+app.get('/*/cart', function (request, response) {
+    let json = require(__dirname + '/json/TovarTypes.json');
+
+    response.render(__dirname + "/nunjucks/cart.njk", json);
 });
 // app.get('/processors', function (request, response) {
 //     let json = require(__dirname + '/json/tovarCPU.json');
@@ -73,8 +79,21 @@ app.get('/catalog/*/', function (request, response) {
     let json = require(__dirname + '/json/TovarTypes.json');
     response.render(__dirname + "/nunjucks/TovarsPage.njk", json);
 });
+app.get('/catalog/*/processors', function (request, response) {
+    let json = require(__dirname + '/json/tovarCPU.json');
+    response.render(__dirname + "/nunjucks/TovarsPage.njk", json);
+});
 app.get('/product/*/*', function (request, response) {
-    response.render(__dirname + "/nunjucks/TovarPage.njk");
+    let json = require(__dirname + '/json/TovarTypes.json');
+    response.render(__dirname + "/nunjucks/TovarPage.njk", json);
+});
+app.get('/product/*/ram', function (request, response) {
+    let json = require(__dirname + '/json/TovarRam.json');
+    response.render(__dirname + "/nunjucks/TovarPage.njk", json);
+});
+app.get('/product/*/processors', function (request, response) {
+    let json = require(__dirname + '/json/tovarCPU.json');
+    response.render(__dirname + "/nunjucks/TovarPage.njk", json);
 });
 // ниже как НАДО, выше как есть =) =D
 // app.get('/product/*/{{TovarName}}', function (request, response) {
