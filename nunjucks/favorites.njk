@@ -1,12 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>{% include "templates/head.html"%}
-    
+    <head>
+        {% include "templates/head.html"%}
     </head>
-<body>
-    {% include "templates/header.njk" %}
-    <h1>Избранное</h1>
-    <a href="/">back</a>
-{% include "templates/footer.html"%}
-</body>
+    <body>
+        {% include "templates/header.njk" %}
+        <main>
+            <h1>Избранное</h1>
+            <div class="row">
+                <div class="col-12">
+                    {% for CartItem, item in CartItems %}
+                        {% include "templates/CartCard.html"%}
+                    {% endfor %}
+                </div>
+            </div>
+        </main>
+        {% include "templates/footer.html"%}
+    </body>
 </html>

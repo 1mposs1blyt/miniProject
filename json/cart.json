@@ -1,0 +1,44 @@
+{
+    "CartItems": {
+        "CartItem1": {
+            "TovarName": "i9-11099900k",
+            "TovarPrice": "450000",
+            "CardText": "lorem 1...",
+            "btnText": "buy",
+            "page": "processor",
+            "currency": "рублей",
+            "productId": "1235fas"
+        },
+        "CartItem12": {
+            "TovarName": "i9-1111900k",
+            "TovarPrice": "450000",
+            "CardText": "lorem 1...",
+            "btnText": "buy",
+            "page": "processor",
+            "currency": "рублей",
+            "productId": "1235fas"
+        },
+        "CartItem13": {
+            "TovarName": "i999-121900k",
+            "TovarPrice": "450000",
+            "CardText": "lorem 1...",
+            "btnText": "buy",
+            "page": "processor",
+            "currency": "рублей",
+            "productId": "1235fas"
+        },
+        "CartItem14": {
+            "TovarName": "i9-99911900k",
+            "TovarPrice": "49950000",
+            "CardText": "lorem 1...",
+            "btnText": "buy",
+            "page": "processor",
+            "currency": "рублей",
+            "productId": "1235fas"
+        }
+    },
+    "UserId": "dt123g5d57qdsf",
+    "PhoneNum": "+7(913)-123-45-67",
+    "Email": "nobodye'sEmail@mail.com",
+    "tovar": "templates/tovar.html"
+}

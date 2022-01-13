@@ -36,18 +36,15 @@ app.get('/', function (request, response) {
 //     response.render(__dirname + "/nunjucks/catalog.njk");
 // });
 app.get('/*/profile', function (request, response) {
-    let json = require(__dirname + '/json/TovarTypes.json');
-
+    let json = require(__dirname + '/json/cart.json');
     response.render(__dirname + "/nunjucks/profile.njk", json);
 });
 app.get('/*/favorites', function (request, response) {
-    let json = require(__dirname + '/json/TovarTypes.json');
-
+    let json = require(__dirname + '/json/cart.json');
     response.render(__dirname + "/nunjucks/favorites.njk", json);
 });
 app.get('/*/cart', function (request, response) {
-    let json = require(__dirname + '/json/TovarTypes.json');
-
+    let json = require(__dirname + '/json/cart.json');
     response.render(__dirname + "/nunjucks/cart.njk", json);
 });
 // app.get('/processors', function (request, response) {

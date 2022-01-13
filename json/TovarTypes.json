@@ -239,5 +239,6 @@
     },
     "PhoneNum": "+7(913)-123-45-67",
     "Email": "nobodye'sEmail@mail.com",
-    "tovar": "templates/tovar.html"
+    "tovar": "templates/tovar.html",
+    "UserId":"dt123g5d57qdsf"
 }

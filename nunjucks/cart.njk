@@ -1,12 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-    {% include "templates/head.html"%}
+        {% include "templates/head.html"%}
     </head>
-<body>
-    {% include "templates/header.njk" %}
-    <h1>Корзина</h1>
-    <a href="/">back</a>
-    {% include "templates/footer.html"%}
-</body>
+    <body>
+        {% include "templates/header.njk" %}
+        <main>
+            <h1>Корзина</h1>
+            <div class="row">
+                <div class="col-8">
+                    {% for CartItem, item in CartItems %}
+                        {% include "templates/CartCard.html"%}
+                    {% endfor %}
+                </div>
+                <div class="col-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <form>
+                                <div class="mb-3">
+                                    <label class="form-label">Promo-code</label>
+                                    <input type="text" class="form-control" placeholder="Не пытайтесь искать не найдете"
+                                    name="promo">
+                                </div>
+                                <button type="submit" class="btn btn-primary">Клик!</button>
+                            </form>
+                            <hr>
+                            <form>
+                                <div class="mb-3">
+                                    <label class="form-label">Email address</label>
+                                    <input type="email" class="form-control" aria-describedby="emailHelp" name="email"
+                                    required>
+                                    <div class="form-text"></div>
+                                </div>
+                                <div class="mb-3 form-check">
+                                    <input type="checkbox" class="form-check-input" name="NotBot" required>
+                                    <label class="form-check-label">Я не робот</label>
+                                </div>
+                                <button onclick="testFunction()" type="submit" class="btn btn-primary">Оформить заказ</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+        {% include "templates/footer.html"%}
+    </body>
 </html>
