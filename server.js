@@ -6,13 +6,13 @@ const { get, STATUS_CODES } = require('http');
 const app = express();
 const port = 3000;
 const hostname = '127.0.0.1';
-// const fs = require('fs'); // подключаем модуль для работы с файловой структурой
+const fs = require('fs'); // подключаем модуль для работы с файловой структурой
+var jquery = require('jquery');
 // const dataFromFile = fs.readFileSync(__dirname + '/json/tovary.json', 'utf-8'); // читаем файл
 // const dataToJson = JSON.parse(dataFromFile); // парсим в объект
-
+const cookieParser = require('cookie-parser');
 
 app.use(express.static(__dirname + '/public'));
-
 // app.use(express.static('/public'));
 
 
@@ -28,14 +28,46 @@ nunjucks.configure(TmplPath, {
 
 // app.get('',function(req, res){ something here }) <--- Гет запрос 
 app.get('/', function (request, response) {
-    let json = require(__dirname + '/json/TovarTypes.json');
+    // var email = request.query.email;
+    // var password = request.query.password;
+    // var cookie = email;
+    // var cookie2 = password;
+    // cookie = encodeURIComponent("email") + '=' + encodeURIComponent(email);
+    // // cookie = encodeURIComponent("password") + '=' + encodeURIComponent(password);
+    // // if(cookie = "dddddd"){
+    // //     console.log("logged")
+    // // }
+    // console.log(cookie)
 
+
+    // Переделать код ниже под себя, для добавления в корзину/избр  и  данные пользователя(email,password)
+    // var request = new XMLHttpRequest();
+    // request.open('GET', requestURL);
+    // request.responseType = 'json';
+    // request.send();
+    // request.onload = function () {
+    //     var superHeroes = request.response;
+    //     populateHeader(superHeroes);
+    //     showHeroes(superHeroes);
+    // }
+    // function populateHeader(jsonObj) {
+    //     var myH1 = document.createElement('h1');
+    //     myH1.textContent = jsonObj['squadName'];
+    //     header.appendChild(myH1);
+
+    //     var myPara = document.createElement('p');
+    //     myPara.textContent = 'Hometown: ' + jsonObj['homeTown'] + ' // Formed: ' + jsonObj['formed'];
+    //     header.appendChild(myPara);
+    // }
+    let json = require(__dirname + '/json/TovarTypes.json');
     response.render(__dirname + '/nunjucks/index.njk', json);
 });
 // app.get('/catalog', function (request, response) {
 //     response.render(__dirname + "/nunjucks/catalog.njk");
 // });
 app.get('/*/profile', function (request, response) {
+    console.log(request.cookies); // объект с куками
+
     let json = require(__dirname + '/json/cart.json');
     response.render(__dirname + "/nunjucks/profile.njk", json);
 });

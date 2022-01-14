@@ -1,56 +1,56 @@
 {
-    "TovarTypeList": {
-        "TovarType1": {
+    "TovarTypeList": [
+        {
             "property": "процессоры",
             "MainPage": "processors",
             "catalogId": "21"
         },
-        "TovarType2": {
+        {
             "property": "матееринские платы",
             "MainPage": "motherboards",
             "catalogId": "12"
         },
-        "TovarType3": {
+        {
             "property": "корпуса",
             "MainPage": "cases",
             "catalogId": "13"
         },
-        "TovarType4": {
+        {
             "property": "холодильники",
             "MainPage": "freezers",
             "catalogId": "51"
         },
-        "TovarType5": {
+        {
             "property": "видеокарты",
             "MainPage": "videocards"
         },
-        "TovarType6": {
+        {
             "property": "блоки питания",
             "MainPage": "powerblocks",
             "catalogId": "17"
         },
-        "TovarType7": {
+        {
             "property": "процессоры",
             "MainPage": "processors",
             "catalogId": "919"
         },
-        "TovarType8": {
+        {
             "property": "иговые консоли",
             "MainPage": "consoles",
             "catalogId": "951"
         },
-        "TovarType9": {
+        {
             "property": "колонки",
             "MainPage": "audio",
             "catalogId": "015"
         },
-        "TovarType10": {
+        {
             "property": "оперативная память",
             "MainPage": "ram",
             "catalogId": "164"
         }
-    },
-    "items": {
+    ],
+    "TovarList": {
         "tovar0": {
             "TovarName": "i3-10100f",
             "TovarPrice": "6500",
@@ -240,5 +240,5 @@
     "PhoneNum": "+7(913)-123-45-67",
     "Email": "nobodye'sEmail@mail.com",
     "tovar": "templates/tovar.html",
-    "UserId":"dt123g5d57qdsf"
+    "UserId": "dt123g5d57qdsf"
 }

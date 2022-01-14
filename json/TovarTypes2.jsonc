@@ -1,0 +1,184 @@
+// Рабочий JSON из TovarTypes.json , временно хрнаиться тут ОТМЕНА, как мсделать вывод данных из массива ниже
+
+
+
+
+
+
+{
+    "TovarTypeList": [
+        {
+            "property": "процессоры",
+            "MainPage": "processors",
+            "catalogId": "21"
+        },
+        {
+            "property": "матееринские платы",
+            "MainPage": "motherboards",
+            "catalogId": "12"
+        },
+        {
+            "property": "корпуса",
+            "MainPage": "cases",
+            "catalogId": "13"
+        },
+        {
+            "property": "холодильники",
+            "MainPage": "freezers",
+            "catalogId": "51"
+        },
+        {
+            "property": "видеокарты",
+            "MainPage": "videocards"
+        },
+        {
+            "property": "блоки питания",
+            "MainPage": "powerblocks",
+            "catalogId": "17"
+        },
+        {
+            "property": "процессоры",
+            "MainPage": "processors",
+            "catalogId": "919"
+        },
+        {
+            "property": "иговые консоли",
+            "MainPage": "consoles",
+            "catalogId": "951"
+        },
+        {
+            "property": "колонки",
+            "MainPage": "audio",
+            "catalogId": "015"
+        },
+        {
+            "property": "оперативная память",
+            "MainPage": "ram",
+            "catalogId": "164"
+        }
+    ],
+    "TovarTypeList2": 
+        {
+            "TTCPU": [
+                {
+                    "TovarName": "i3-10100f",
+                    "TovarPrice": "6500",
+                    "CardText": "lorem 1...",
+                    "btnText": "Купить",
+                    "page": "processor",
+                    "currency": "рублей",
+                    "productId": "1235fas"
+                },
+                {
+                    "TovarName": "i3-10105f",
+                    "TovarPrice": "7500",
+                    "CardText": "lorem 2...",
+                    "btnText": "купить",
+                    "page": "processor",
+                    "productId": "1235fas"
+                },
+                {
+                    "TovarName": "i5-10400f",
+                    "TovarPrice": "12500",
+                    "CardText": "lorem 1...",
+                    "btnText": "купить",
+                    "page": "processor",
+                    "productId": "1235fas"
+                },
+                {
+                    "TovarName": "i7-10700k",
+                    "TovarPrice": "26800",
+                    "CardText": "lorem 1...",
+                    "btnText": "купить",
+                    "page": "processor",
+                    "currency": "рублей",
+                    "productId": "1235fas"
+                }
+            ],
+            "TTRAM": [
+                {
+                    "TovarName": "hyperxFury 16gb 2x8",
+                    "TovarPrice": "6500",
+                    "CardText": "lorem 1...",
+                    "btnText": "Купить",
+                    "page": "processor",
+                    "currency": "рублей",
+                    "productId": "1235fas"
+                },
+                {
+                    "TovarName": "Crucial 8gb",
+                    "TovarPrice": "7500",
+                    "CardText": "lorem 2...",
+                    "btnText": "купить",
+                    "page": "processor",
+                    "productId": "1235fas"
+                },
+                {
+                    "TovarName": "GoodRam 32gb 8x4",
+                    "TovarPrice": "12500",
+                    "CardText": "lorem 1...",
+                    "btnText": "купить",
+                    "page": "processor",
+                    "productId": "1235fas"
+                },
+                {
+                    "TovarName": "ddr3 8gb 2x4",
+                    "TovarPrice": "26800",
+                    "CardText": "lorem 1...",
+                    "btnText": "купить",
+                    "page": "processor",
+                    "currency": "рублей",
+                    "productId": "1235fas"
+                }
+            ],
+            "TTMotherboards": [
+                {
+                    "TovarName": "gigabyte b560",
+                    "TovarPrice": "6500",
+                    "CardText": "lorem 1...",
+                    "btnText": "Купить",
+                    "page": "processor",
+                    "currency": "рублей",
+                    "productId": "1235fas"
+                },
+                {
+                    "TovarName": "i3-10105f",
+                    "TovarPrice": "7500",
+                    "CardText": "lorem 2...",
+                    "btnText": "купить",
+                    "page": "processor",
+                    "productId": "1235fas"
+                },
+                {
+                    "TovarName": "msi b660",
+                    "TovarPrice": "12500",
+                    "CardText": "lorem 1...",
+                    "btnText": "купить",
+                    "page": "processor",
+                    "productId": "1235fas"
+                },
+                {
+                    "TovarName": "asus z490",
+                    "TovarPrice": "26800",
+                    "CardText": "lorem 1...",
+                    "btnText": "купить",
+                    "page": "processor",
+                    "currency": "рублей",
+                    "productId": "1235fas"
+                }
+            ]
+        }
+    ,
+    "PageNum": {
+        "1": "1",
+        "2": "2",
+        "3": "3",
+        "4": "4",
+        "5": "5",
+        "6": "6"
+    },
+    "PhoneNum": "+7(913)-123-45-67",
+    "Email": "nobodye'sEmail@mail.com",
+    "tovar": "templates/tovar.html",
+    "UserId": "dt123g5d57qdsf"
+}

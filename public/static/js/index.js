@@ -1,9 +1,32 @@
-function TestFunction() {
-  alert("Hi i will delete this or put in favorites");
-}
-
-// function testFunction(){
-//     console.log("hi")
+// let obj = {
+//   CartItems: {}
+// };
+// obj.cart.push({
+//   CartItem: {
+//     "TovarName": "i9-11099900k",
+//     "TovarPrice": "450000",
+//     "CardText": "lorem 1...",
+//     "btnText": "buy",
+//     "page": "processor",
+//     "currency": "рублей",
+//     "productId": "1235fas"
+//   }
+// })
+// let json = JSON.stringify(obj);
+// var fs = require('fs');
+// function TestFunction() {
+//   // alert("Hi i will delete this or put in favorites");
+//   fs.writeFile('json/TestCart.json', json, 'utf8', callback);
+//   fs.readFile('json/TestCart.json', 'utf8', function readFileCallback(err, data) {
+//     if (err) {
+//       console.log(err);
+//     } else {
+//       obj = JSON.parse(data); //now it an object
+//       obj.table.push({ id: 2, square: 3 }); //add some data
+//       json = JSON.stringify(obj); //convert it back to json
+//       fs.writeFile('json/TestCart.json', json, 'utf8', callback); // write it back 
+//     }
+//   });
 // }
 // let data = {
 //     "tovar": "templates/tovar.html"
@@ -19,22 +42,35 @@ function TestFunction() {
 //     });
 //   });
 
+
+function addFunc() {
+  // document.cookie = "email=aaa@ggg.ccc"
+  // document.cookie = "password=qewrty"
+  // alert(document.cookie);
+  let json = "/json/TestCart.json"
+  JSON.parse(json)
+  console.log(json)
+}
+function delFunc() {
+
+}
+
+
 // let json = '[0,1,2,3,4]';
 // let json2 = '{"name":"alexandr","surname":chey-to,"age":13}'
 
-// let res1 = JSON.parse(json);
-// console,console.log(res1);
 
-// let list = ['one','two','three'];
-// let json3 = JSON.stringify(list);
-// console.log(typeof(json3));
+  // let list = ['one','two','three'];
+  // let json3 = JSON.stringify(list);
+  // console.log(typeof(json3));
 
-// let zapros = ['login', {'login':'Chelovecha','password':'12345123'}];
-// post = JSON.stringify(zapros);
+  // let zapros = ['login', {'login':'Chelovecha','password':'12345123'}];
+  // post = JSON.stringify(zapros);
 
-// getComputedStyle.JSON.parse(post);
-// func = get[0];
-// login(get[1])
+  // getComputedStyle.JSON.parse(post);
+  // func = get[0];
+  // login(get[1])
+
 
 //COOKIE
 

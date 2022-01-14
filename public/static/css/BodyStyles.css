@@ -6,12 +6,18 @@ main {
     max-width: 2560px;
     width: 100%;
 }
-#MainTovarCard{
-    padding-bottom:20px ;    
+
+#MainTovarCard {
+    padding-bottom: 20px;
 }
+
 #CartCard {
     border-radius: 5px;
 
+}
+
+#offcanvasScrolling {
+    max-width: 24%;
 }
 
 #cardImage {
