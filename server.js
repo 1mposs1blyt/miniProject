@@ -7,9 +7,10 @@ const app = express();
 const port = 3000;
 const hostname = '127.0.0.1';
 const fs = require('fs'); // подключаем модуль для работы с файловой структурой
+const { fstat } = require("fs");
+
 var jquery = require('jquery');
-// const dataFromFile = fs.readFileSync(__dirname + '/json/tovary.json', 'utf-8'); // читаем файл
-// const dataToJson = JSON.parse(dataFromFile); // парсим в объект
+
 const cookieParser = require('cookie-parser');
 
 app.use(express.static(__dirname + '/public'));
@@ -25,6 +26,7 @@ nunjucks.configure(TmplPath, {
     express: app
 });
 // Роуты для сайта
+const indexJs = require(__dirname+'/server.js');
 
 // app.get('',function(req, res){ something here }) <--- Гет запрос 
 app.get('/', function (request, response) {
@@ -131,6 +133,7 @@ app.get('/product/*/processors', function (request, response) {
 // /product/1235fas/i3-10100f
 // /catalog/catalogNumber/processors
 // Роуты конец
+
 app.listen(port, function () {
     console.log(`Server stated on: http://${hostname}:${port}`)
 });

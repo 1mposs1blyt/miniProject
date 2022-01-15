@@ -16,33 +16,32 @@
                 <div class="col-4">
                     <div class="card">
                         <div class="card-body">
-                            <form>
+                            <form name="CartOrder">
                                 <div class="mb-3">
                                     <label class="form-label">Promo-code</label>
                                     <input id="CartPromo" type="text" class="form-control" placeholder="Не пытайтесь искать не найдете"
                                     name="promo">
                                 </div>
                                 <button id="CartPromoBTN" type="submit" class="btn btn-primary">Клик!</button>
-                            </form>
                             <hr>
-                            <form name="CartOrder">
-                                <div class="mb-3">
-                                    <label class="form-label">Email address</label>
-                                    <input id="EmailCart" type="email" class="form-control" aria-describedby="emailHelp" name="email"
+
+                            <div class="mb-3">
+                                <label class="form-label">Email address</label>
+                                <input id="EmailCart" type="email" class="form-control" aria-describedby="emailHelp" name="email"
                                     required value="aaa@mail.com">
-                                    <div class="form-text"></div>
-                                </div>
-                                {# <div class="mb-3 form-check">
+                                <div class="form-text"></div>
+                            </div>
+                            {# <div class="mb-3 form-check">
                                     <input type="checkbox" class="form-check-input" name="NotBot" required>
                                     <label class="form-check-label">Я не робот</label>
                                 </div> #}
-                                <button id="CartFormSub" type="submit" class="btn btn-primary">Оформить заказ</button>
-                            </form>
-                        </div>
+                            <button id="CartFormSub" type="submit" class="btn btn-primary">Оформить заказ</button>
+                        </form>
                     </div>
                 </div>
             </div>
-        </main>
-        {% include "templates/footer.html"%}
-    </body>
+        </div>
+    </main>
+    {% include "templates/footer.html"%}
+</body>
 </html>

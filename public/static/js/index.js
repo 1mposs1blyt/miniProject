@@ -43,36 +43,57 @@
 //   });
 
 
+
+
 function addFunc() {
-  // document.cookie = "email=aaa@ggg.ccc"
-  // document.cookie = "password=qewrty"
-  // alert(document.cookie);
-  let json = "/json/TestCart.json"
-  // JSON.parse(json)
-  console.log(json)
+  document.cookie = "email=aaa@ggg.ccc"
+  document.cookie = "password=qewrty"
+  alert(document.cookie);
+
 }
 function delFunc() {
-
 }
 
 CartFormSub.onclick = function () {
+
   // var val = document.getElementById('elem1').value;
   // document.getElementById('str').innerHTML = "Вы ввели: " + val;
   // let email = document.getElementById("#EmailCart");
   // let email1 = document.value(email)
   // alert(document.getElementById("EmailCart").value);
   let email = document.getElementById("EmailCart").value
-  if (email == email) {//как то сравнить с данными из json если true то что то сдлеать
-    alert(email)
-
-  }
-};
-CartPromoBTN.onclick = function () {
   let promo = document.getElementById("CartPromo").value
-  if (promo == "2022") {//как то сравнить с данными из json если true то что то сдлеать
-    alert("скидка 0% =)")
+
+  document.cookie = email, promo;
+  if (email == email) {//как то сравнить с данными из json если true то что то сдлеать
+    alert(document.cookie)
   }
+
 }
+CartPromoBTN.onclick = function () {
+
+  // let promo = document.getElementById("CartPromo").value
+  // if (promo == "2022") {//как то сравнить с данными из json если true то что то сдлеать
+  //   alert("скидка 0% =)")
+  // }
+
+  // // console.log('got result from server!')
+  // fs.writeFileSync('/json/data.json', JSON.stringify(data));
+
+  // // берём старые данные
+  // const dbData = JSON.parse(fs.readFileSync('/json/data.json', (err, data) => (data)))
+
+  // // сливает данные
+  // fs.writeFileSync('/json/data.json', JSON.stringify([...dbData, ...data]));
+
+  // // читаем файл
+  // const text = fs.readFileSync('/json/data.json', 'utf8');
+  // console.log(JSON.parse(text));
+
+}
+
+
+// создаём файл
 
 // let json = '[0,1,2,3,4]';
 // let json2 = '{"name":"alexandr","surname":chey-to,"age":13}'
