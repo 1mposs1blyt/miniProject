@@ -19,24 +19,24 @@
                             <form>
                                 <div class="mb-3">
                                     <label class="form-label">Promo-code</label>
-                                    <input type="text" class="form-control" placeholder="Не пытайтесь искать не найдете"
+                                    <input id="CartPromo" type="text" class="form-control" placeholder="Не пытайтесь искать не найдете"
                                     name="promo">
                                 </div>
-                                <button type="submit" class="btn btn-primary">Клик!</button>
+                                <button id="CartPromoBTN" type="submit" class="btn btn-primary">Клик!</button>
                             </form>
                             <hr>
-                            <form>
+                            <form name="CartOrder">
                                 <div class="mb-3">
                                     <label class="form-label">Email address</label>
-                                    <input type="email" class="form-control" aria-describedby="emailHelp" name="email"
-                                    required>
+                                    <input id="EmailCart" type="email" class="form-control" aria-describedby="emailHelp" name="email"
+                                    required value="aaa@mail.com">
                                     <div class="form-text"></div>
                                 </div>
-                                <div class="mb-3 form-check">
+                                {# <div class="mb-3 form-check">
                                     <input type="checkbox" class="form-check-input" name="NotBot" required>
                                     <label class="form-check-label">Я не робот</label>
-                                </div>
-                                <button onclick="testFunction()" type="submit" class="btn btn-primary">Оформить заказ</button>
+                                </div> #}
+                                <button id="CartFormSub" type="submit" class="btn btn-primary">Оформить заказ</button>
                             </form>
                         </div>
                     </div>

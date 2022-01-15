@@ -1,1 +1,8 @@
-{}
+{
+ "users":{
+    "user1":{"email":"","password":""},     
+    "user2":{"email":"","password":""},  
+    "user3":{"email":"","password":""},
+    "user4":{"email":"","password":""}
+}   
+}
