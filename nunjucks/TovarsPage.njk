@@ -1,18 +1,14 @@
-{% block mainTempl%}
     <!DOCTYPE html>
     <html lang="en">
-
         <head>
             {% include "templates/head.html"%}
         </head>
-
         <body>
             {% include "templates/header.njk" %}
             <main>
                 <div class="container">
                     <div class="row  cols-xs-8">
-                        {% include "templates/filter.html"%}
-
+                        {% include "templates/filter.njk"%}
                         {# {% if loop.index <= 7 %} #}
                         <div class="row">
                             {# <div class="col-3 col-xs-4"></div> #}
@@ -26,12 +22,8 @@
 
                     </div>
                     {% include "templates/PagMenu.njk"%}
-
                 </div>
-
             </main>
             {% include "templates/footer.html"%}
         </body>
-
     </html>
-    {%endblock%}

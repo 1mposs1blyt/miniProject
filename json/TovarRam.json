@@ -50,9 +50,9 @@
             "catalogId": "164"
         }
     },
-    "items": {
+    "TovarList": {
         "tovar0": {
-            "TovarName": "i3-10100f",
+            "TovarName": "dr4 8gb",
             "TovarPrice": "6500",
             "CardText": "lorem 1...",
             "btnText": "Купить",
@@ -61,7 +61,7 @@
             "productId": "1235fas"
         },
         "tovar1": {
-            "TovarName": "i3-10105f",
+            "TovarName": "dr4 18gb",
             "TovarPrice": "7500",
             "CardText": "lorem 2...",
             "btnText": "купить",
@@ -69,7 +69,7 @@
             "productId": "1235fas"
         },
         "tovar2": {
-            "TovarName": "i5-10400f",
+            "TovarName": "dr4 128gb",
             "TovarPrice": "12500",
             "CardText": "lorem 1...",
             "btnText": "купить",
@@ -77,7 +77,7 @@
             "productId": "1235fas"
         },
         "tovar3": {
-            "TovarName": "i5-10600kf",
+            "TovarName": "ddr3 4gb",
             "TovarPrice": "15000",
             "CardText": "lorem 1...",
             "btnText": "купить",
@@ -85,7 +85,7 @@
             "productId": "1235fas"
         },
         "tovar4": {
-            "TovarName": "i7-10700",
+            "TovarName": "ddr3 4gb",
             "TovarPrice": "25000",
             "CardText": "lorem 1...",
             "btnText": "купить",
@@ -94,7 +94,7 @@
             "productId": "1235fas"
         },
         "tovar5": {
-            "TovarName": "i7-10700k",
+            "TovarName": "ddr3 4gb",
             "TovarPrice": "26800",
             "CardText": "lorem 1...",
             "btnText": "купить",
@@ -103,7 +103,7 @@
             "productId": "1235fas"
         },
         "tovar6": {
-            "TovarName": "i9-10900k",
+            "TovarName": "ddr3 4gb",
             "TovarPrice": "450000",
             "CardText": "lorem 1...",
             "btnText": "купить",
@@ -112,7 +112,7 @@
             "productId": "1235fas"
         },
         "tovar7": {
-            "TovarName": "i9-11900k",
+            "TovarName": "ddr3 4gb",
             "TovarPrice": "450000",
             "CardText": "lorem 1...",
             "btnText": "buy",
@@ -121,32 +121,6 @@
             "productId": "1235fas"
         }
     },
-    "filterOptions": {
-        "filterProp0": "gigabyte",
-        "filterProp1": "asus",
-        "filterProp2": "msi",
-        "filterProp3": "BIOSTAR",
-        "filterProp4": "asrock",
-        "filterProp5": "msi",
-        "filterProp6": "gigabyte",
-        "filterProp7": "asus",
-        "filterProp8": "msi",
-        "filterProp9": "BIOSTAR",
-        "filterProp10": "asrock"
-    },
-    "filterTitles": {
-        "filterTitle0": "option number 1",
-        "filterTitle1": "option number 2",
-        "filterTitle2": "option number 3",
-        "filterTitle3": "option number 4",
-        "filterTitle4": "option number 5",
-        "filterTitle5": "option number 6",
-        "filterTitle6": "option number 7",
-        "filterTitle7": "option number 8",
-        "filterTitle8": "option number 9",
-        "filterTitle9": "option number 10",
-        "filterTitle10": "option number 0"
-    },
     "PageNum": {
         "1": "1",
         "2": "2",
@@ -154,6 +128,28 @@
         "4": "4",
         "5": "5",
         "6": "6"
+    },
+    "filterPropertyes": {
+        "filterProp0": {
+            "filterTitle": "option number 1",
+            "filterValue": "gigabyte",
+            "filterId": "0"
+        },
+        "filterProp1": {
+            "filterTitle": "option number 1",
+            "filterValue": "gigabyte",
+            "filterId": "1"
+        },
+        "filterProp2": {
+            "filterTitle": "option number 1",
+            "filterValue": "gigabyte",
+            "filterId": "2"
+        },
+        "filterProp3": {
+            "filterTitle": "option number 1",
+            "filterValue": "gigabyte",
+            "filterId": "3"
+        }
     },
     "PhoneNum": "+7(913)-123-45-67",
     "Email": "nobodye'sEmail@mail.com",

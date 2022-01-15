@@ -1,92 +1,150 @@
 {
-    "items": {
+    "TovarTypeList": [
+        {
+            "property": "процессоры",
+            "MainPage": "processors",
+            "catalogId": "21"
+        },
+        {
+            "property": "матееринские платы",
+            "MainPage": "motherboards",
+            "catalogId": "12"
+        },
+        {
+            "property": "корпуса",
+            "MainPage": "cases",
+            "catalogId": "13"
+        },
+        {
+            "property": "холодильники",
+            "MainPage": "freezers",
+            "catalogId": "51"
+        },
+        {
+            "property": "видеокарты",
+            "MainPage": "videocards",
+            "catalogId": "9ra19"
+        },
+        {
+            "property": "блоки питания",
+            "MainPage": "powerblocks",
+            "catalogId": "17"
+        },
+        {
+            "property": "процессоры",
+            "MainPage": "processors",
+            "catalogId": "919"
+        },
+        {
+            "property": "иговые консоли",
+            "MainPage": "consoles",
+            "catalogId": "951"
+        },
+        {
+            "property": "колонки",
+            "MainPage": "audio",
+            "catalogId": "015"
+        },
+        {
+            "property": "оперативная память",
+            "MainPage": "ram",
+            "catalogId": "164"
+        }
+    ],
+    "TovarList": {
         "tovar0": {
-            "TovarName": "i3-10100f",
+            "TovarName": "asus z490",
             "TovarPrice": "6500",
             "CardText": "lorem 1...",
             "btnText": "Купить",
             "page": "motherboards",
             "currency": "рублей",
-            "SearchProperty":"comin soon>>>"
+            "SearchProperty": "comin soon>>>",
+            "productId": "1235fas"
         },
         "tovar1": {
-            "TovarName": "i3-10105f",
+            "TovarName": "asus z590",
             "TovarPrice": "7500",
             "CardText": "lorem 2...",
             "btnText": "купить",
-            "page": "motherboards"
+            "page": "motherboards",
+            "productId": "1235fas"
         },
         "tovar2": {
-            "TovarName": "i5-10400f",
+            "TovarName": "asus z690",
             "TovarPrice": "12500",
             "CardText": "lorem 1...",
             "btnText": "купить",
-            "page": "motherboards"
+            "page": "motherboards",
+            "productId": "1235fas"
         },
         "tovar3": {
-            "TovarName": "i5-10600kf",
+            "TovarName": "asus z390",
             "TovarPrice": "15000",
             "CardText": "lorem 1...",
             "btnText": "купить",
-            "page": "motherboards"
+            "page": "motherboards",
+            "productId": "1235fas"
         },
         "tovar4": {
-            "TovarName": "i7-10700",
+            "TovarName": "asus z290",
             "TovarPrice": "25000",
             "CardText": "lorem 1...",
             "btnText": "купить",
             "page": "motherboards",
-            "currency": "рублей"
+            "currency": "рублей",
+            "productId": "1235fas"
         },
         "tovar5": {
-            "TovarName": "i7-10700k",
+            "TovarName": "asus z170",
             "TovarPrice": "26800",
             "CardText": "lorem 1...",
             "btnText": "купить",
             "page": "motherboards",
-            "currency": "рублей"
+            "currency": "рублей",
+            "productId": "1235fas"
         },
         "tovar6": {
-            "TovarName": "i9-10900k",
+            "TovarName": "asus z97",
             "TovarPrice": "450000",
             "CardText": "lorem 1...",
             "btnText": "купить",
             "page": "motherboards",
-            "currency": "рублей"
+            "currency": "рублей",
+            "productId": "1235fas"
         },
         "tovar7": {
-            "TovarName": "i9-11900k",
+            "TovarName": "asus z87",
             "TovarPrice": "450000",
             "CardText": "lorem 1...",
             "btnText": "buy",
             "page": "motherboards",
-            "currency": "рублей"
+            "currency": "рублей",
+            "productId": "1235fas"
         }
     },
-    "filterVar": [
-        "asus",
-        "biostar",
-        "acer",
-        "msi",
-        "asrock",
-        "nintendo",
-        "samsung",
-        "panasonic",
-        "LG",
-        "Xiomi"
-    ],
-    "filterTitle": [
-        "another",
-        "brand",
-        "year",
-        "something",
-        "some",
-        "aboba",
-        "something",
-        "aboba2",
-        "igogo",
-        "eldorado"
-    ],
+    "filterPropertyes": {
+        "filterProp0": {
+            "filterTitle": "option number 1",
+            "filterValue": "gigabyte",
+            "filterId": "0"
+        },
+        "filterProp1": {
+            "filterTitle": "option number 1",
+            "filterValue": "gigabyte",
+            "filterId": "1"
+        },
+        "filterProp2": {
+            "filterTitle": "option number 1",
+            "filterValue": "gigabyte",
+            "filterId": "2"
+        },
+        "filterProp3": {
+            "filterTitle": "option number 1",
+            "filterValue": "gigabyte",
+            "filterId": "3"
+        }
+    },
     "MainPage": "motherboards",
     "PhoneNum": "+7(913)-123-45-67",
     "Email": "nobodye'sEmail@mail.com",

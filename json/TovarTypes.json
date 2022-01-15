@@ -22,7 +22,8 @@
         },
         {
             "property": "видеокарты",
-            "MainPage": "videocards"
+            "MainPage": "videocards",
+            "catalogId": "9ra19"
         },
         {
             "property": "блоки питания",
@@ -190,44 +191,27 @@
             "productId": "1235fas"
         }
     },
-    "filterPropertyTitles": {
-        "filterTitle0": "option number 1",
-        "filterTitle1": "option number 2",
-        "filterTitle2": "option number 3",
-        "filterTitle3": "option number 4",
-        "filterTitle4": "option number 5",
-        "filterTitle5": "option number 6",
-        "filterTitle6": "option number 7",
-        "filterTitle7": "option number 8",
-        "filterTitle8": "option number 9",
-        "filterTitle9": "option number 10",
-        "filterTitle10": "option number 0"
-    },
-    "filterPropertyProp": {
-        "filterProp0": "gigabyte",
-        "filterProp1": "asus",
-        "filterProp2": "msi",
-        "filterProp3": "BIOSTAR",
-        "filterProp4": "asrock",
-        "filterProp5": "msi",
-        "filterProp6": "gigabyte",
-        "filterProp7": "asus",
-        "filterProp8": "msi",
-        "filterProp9": "BIOSTAR",
-        "filterProp10": "asrock"
-    },
-    "filterPropertyIds": {
-        "filterId0": "0",
-        "filterId1": "1",
-        "filterId2": "2",
-        "filterId3": "3",
-        "filterId4": "4",
-        "filterId5": "5",
-        "filterId6": "6",
-        "filterId7": "7",
-        "filterId8": "8",
-        "filterId9": "9",
-        "filterId10": "10"
+    "filterPropertyes": {
+        "filterProp0": {
+            "filterTitle": "option number 1",
+            "filterValue": "gigabyte",
+            "filterId": "0"
+        },
+        "filterProp1": {
+            "filterTitle": "option number 1",
+            "filterValue": "gigabyte",
+            "filterId": "1"
+        },
+        "filterProp2": {
+            "filterTitle": "option number 1",
+            "filterValue": "gigabyte",
+            "filterId": "2"
+        },
+        "filterProp3": {
+            "filterTitle": "option number 1",
+            "filterValue": "gigabyte",
+            "filterId": "3"
+        }
     },
     "PageNum": {
         "1": "1",
