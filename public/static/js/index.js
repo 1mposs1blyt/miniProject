@@ -45,52 +45,69 @@
 
 
 
-function addFunc() {
-  document.cookie = "email=aaa@ggg.ccc"
-  document.cookie = "password=qewrty"
-  alert(document.cookie);
+
+
+
+
+// CartFormSub.onclick = function () {
+//   let email = document.getElementById("EmailCart").value
+//   let promo = document.getElementById("CartPromo").value
+//   document.cookie = email, promo;
+//   if (email == email) {//как то сравнить с данными из json если true то что то сдлеать
+//     alert(this.value)
+//   }
+
+// }
+// CartPromoBTN.onclick = function () {
+// }
+
+function Cart() {
 
 }
-function delFunc() {
-}
-
-CartFormSub.onclick = function () {
-
-  // var val = document.getElementById('elem1').value;
-  // document.getElementById('str').innerHTML = "Вы ввели: " + val;
-  // let email = document.getElementById("#EmailCart");
-  // let email1 = document.value(email)
-  // alert(document.getElementById("EmailCart").value);
-  let email = document.getElementById("EmailCart").value
-  let promo = document.getElementById("CartPromo").value
-
-  document.cookie = email, promo;
-  if (email == email) {//как то сравнить с данными из json если true то что то сдлеать
-    alert(document.cookie)
+Cart.prototype.add = function (item) {
+  if (!this.goods) {
+    this.goods = [];
   }
+  this.goods.push(item); //добавляет товар в корзину
+  console.log('В корзине %s товаров', this.goods.length)
+};
+
+
+//редактируемый код
+function UserCart() {
 
 }
-CartPromoBTN.onclick = function () {
 
-  // let promo = document.getElementById("CartPromo").value
-  // if (promo == "2022") {//как то сравнить с данными из json если true то что то сдлеать
-  //   alert("скидка 0% =)")
-  // }
 
-  // // console.log('got result from server!')
-  // fs.writeFileSync('/json/data.json', JSON.stringify(data));
+function Item(CardId, CardName, CardPrice) {
+  this.CardId = CardId;
+  this.CardName = CardName;
+  this.CardPrice = CardPrice;
+}
 
-  // // берём старые данные
-  // const dbData = JSON.parse(fs.readFileSync('/json/data.json', (err, data) => (data)))
+UserCart.prototype = Object.create(Cart.prototype);
 
-  // // сливает данные
-  // fs.writeFileSync('/json/data.json', JSON.stringify([...dbData, ...data]));
 
-  // // читаем файл
-  // const text = fs.readFileSync('/json/data.json', 'utf8');
-  // console.log(JSON.parse(text));
+const cart = new UserCart();
+// const item = new Item("99", 'Сhair', "20$");
+// let CardId = Math.floor(Math.random() * 101);
+let CardName = document.getElementById("cardTitleName").innerHTML
+let CardPrice = document.getElementById("cardTitlePrice").innerHTML
+alert(Math.floor(Math.random() * 1001), CardName, CardPrice)
+let item = { "CardId": Math.floor(Math.random() * 1001), "CardName": CardName, "CardPrice": CardPrice }
+
+cart.add(item);//нужно чтобы функция считала значения товара(имя цена и тд)
+
+
+function addToCart() {
+  // document.cookie = "email=aaa@ggg.ccc"
+  // document.cookie = "password=qewrty"
+  // alert(document.cookie);
+  cart.add(item);
+  console.log(cart.goods);
 
 }
+
 
 
 // создаём файл

@@ -59,7 +59,8 @@
             "btnText": "Купить",
             "page": "processor",
             "currency": "рублей",
-            "productId": "1235fas"
+            "productId": "1235fas",
+            "CardNameId": "18"
         },
         "tovar1": {
             "TovarName": "i3-10105f",
@@ -67,7 +68,8 @@
             "CardText": "lorem 2...",
             "btnText": "купить",
             "page": "processor",
-            "productId": "1235fas"
+            "productId": "1235fas",
+            "CardNameId": "28"
         },
         "tovar2": {
             "TovarName": "i5-10400f",
@@ -75,7 +77,8 @@
             "CardText": "lorem 1...",
             "btnText": "купить",
             "page": "processor",
-            "productId": "1235fas"
+            "productId": "1235fas",
+            "CardNameId": "38"
         },
         "tovar3": {
             "TovarName": "i5-10600kf",
@@ -83,7 +86,8 @@
             "CardText": "lorem 1...",
             "btnText": "купить",
             "page": "processor",
-            "productId": "1235fas"
+            "productId": "1235fas",
+            "CardNameId": "48"
         },
         "tovar4": {
             "TovarName": "i7-10700",
@@ -92,7 +96,9 @@
             "btnText": "купить",
             "page": "processor",
             "currency": "рублей",
-            "productId": "1235fas"
+            "productId": "1235fas",
+            "CardNameId": "48"
+
         },
         "tovar5": {
             "TovarName": "i7-10700k",

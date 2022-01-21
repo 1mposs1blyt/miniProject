@@ -18,10 +18,6 @@ app.use(express.static(__dirname + '/public'));
 
 
 const nunjucks = require('nunjucks');
-const { userInfo } = require('os');
-const { dirname } = require('path');
-const { data } = require('jquery');
-const e = require('express');
 var TmplPath = '.';
 nunjucks.configure(TmplPath, {
     autoescape: true,
@@ -67,6 +63,9 @@ app.get('/product/:productId/:productName', function (request, response) {
     response.render(__dirname + "/nunjucks/TovarPage.njk", json);
 });
 app.get('/catalog/:catalogId/:category', function (request, response) {
+    function addToCart() {
+        alert("hi")
+    }
     catalogId = request.params["catalogId"]
     category = request.params["category"]
     if (category == "processors") {

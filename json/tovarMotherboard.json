@@ -60,7 +60,8 @@
             "page": "motherboards",
             "currency": "рублей",
             "SearchProperty": "comin soon>>>",
-            "productId": "1235fas"
+            "productId": "1235fas",
+            "CardNameId": "1"
         },
         "tovar1": {
             "TovarName": "asus z590",
@@ -68,7 +69,8 @@
             "CardText": "lorem 2...",
             "btnText": "купить",
             "page": "motherboards",
-            "productId": "1235fas"
+            "productId": "1235fas",
+            "CardNameId": "2"
         },
         "tovar2": {
             "TovarName": "asus z690",
@@ -76,7 +78,8 @@
             "CardText": "lorem 1...",
             "btnText": "купить",
             "page": "motherboards",
-            "productId": "1235fas"
+            "productId": "1235fas",
+            "CardNameId": "3"
         },
         "tovar3": {
             "TovarName": "asus z390",
@@ -84,7 +87,8 @@
             "CardText": "lorem 1...",
             "btnText": "купить",
             "page": "motherboards",
-            "productId": "1235fas"
+            "productId": "1235fas",
+            "CardNameId": "4"
         },
         "tovar4": {
             "TovarName": "asus z290",
@@ -93,7 +97,8 @@
             "btnText": "купить",
             "page": "motherboards",
             "currency": "рублей",
-            "productId": "1235fas"
+            "productId": "1235fas",
+            "CardNameId": "5"
         },
         "tovar5": {
             "TovarName": "asus z170",
@@ -102,7 +107,8 @@
             "btnText": "купить",
             "page": "motherboards",
             "currency": "рублей",
-            "productId": "1235fas"
+            "productId": "1235fas",
+            "CardNameId": "6"
         },
         "tovar6": {
             "TovarName": "asus z97",
@@ -111,7 +117,10 @@
             "btnText": "купить",
             "page": "motherboards",
             "currency": "рублей",
-            "productId": "1235fas"
+            "productId": "1235fas",
+            "CardNameId": "7"
+
+
         },
         "tovar7": {
             "TovarName": "asus z87",
@@ -120,7 +129,9 @@
             "btnText": "buy",
             "page": "motherboards",
             "currency": "рублей",
-            "productId": "1235fas"
+            "productId": "1235fas",
+            "CardNameId": "8"
+
         }
     },
     "filterPropertyes": {
