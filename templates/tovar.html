@@ -2,9 +2,9 @@
     <div class="card">
         <img src="https://via.placeholder.com/1920x1080/a" class="card-img-top" alt="image">
         <div class="card-body">
-            <h5 class="card-title"><a id="cardTitleName" role="button"
+            <h5 class="card-title"><a id="cardTitleName" class="cardTitleName" role="button"
                     href="/product/{{item.productId}}/{{item.TovarName}}">{{item.TovarName}}</a></h5>
-            <h6 id="cardTitlePrice" class="card-title">{{item.TovarPrice}} {{item.currency}}</h6>
+            <h6 id="cardTitlePrice" class="card-title">{{item.TovarPrice}}<a> {{item.currency}}</a></h6>
             <p id="cardText" class="card-text">{{item.CardText}}</p>
             <!-- <input type="button" class="btn btn-primary" value="{{btnText}}" onclick="GoPage()" id="GoPageBTN">
             <button id="addToCartid" class="btn btn-primary">{{btnText}}</button> -->

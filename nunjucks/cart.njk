@@ -7,6 +7,8 @@
         {% include "templates/header.njk" %}
         <main>
             <h1>Корзина</h1>
+            <a>Товаров:{{CardTovarQuantity}} 4 на сумму: {{FavoriteTovarSum}}10 500{{item.currency}}</a>
+            <p><input type="checkbox">Выбрать все<a role="button" onclick="CartClean()"> Удалить выбранные</a></p>
             <div class="row">
                 <div class="col-8">
                     {% for CartItem, item in CartItems %}
@@ -15,7 +17,8 @@
                 </div>
                 <div class="col-4">
                     <div class="card">
-                        <div class="card-body">
+                        <div class="card-body"> 
+                            <h5>Итого: X товаров на x рублей</h5>
                             <form name="CartOrder">
                                 <div class="mb-3">
                                     <label class="form-label">Promo-code</label>
@@ -23,25 +26,24 @@
                                     name="promo">
                                 </div>
                                 <button id="CartPromoBTN" type="submit" class="btn btn-primary">Клик!</button>
-                            <hr>
-
-                            <div class="mb-3">
-                                <label class="form-label">Email address</label>
-                                <input id="EmailCart" type="email" class="form-control" aria-describedby="emailHelp" name="email"
+                                <hr>
+                                <div class="mb-3">
+                                    <label class="form-label">Email address</label>
+                                    <input id="EmailCart" type="email" class="form-control" aria-describedby="emailHelp" name="email"
                                     required value="aaa@mail.com">
-                                <div class="form-text"></div>
-                            </div>
-                            {# <div class="mb-3 form-check">
+                                    <div class="form-text"></div>
+                                </div>
+                                {# <div class="mb-3 form-check">
                                     <input type="checkbox" class="form-check-input" name="NotBot" required>
                                     <label class="form-check-label">Я не робот</label>
                                 </div> #}
-                            <button id="CartFormSub" type="submit" class="btn btn-primary">Оформить заказ</button>
-                        </form>
+                                <button id="CartFormSub" type="submit" class="btn btn-primary">Оформить заказ</button>
+                            </form>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </main>
-    {% include "templates/footer.html"%}
-</body>
+        </main>
+        {% include "templates/footer.html"%}
+    </body>
 </html>

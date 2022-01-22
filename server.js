@@ -88,6 +88,12 @@ app.get('/catalog/:catalogId/', function (request, response) {
     let json = require(__dirname + '/json/TovarTypes.json');
     response.render(__dirname + "/nunjucks/TovarsPage.njk", json);
 });
+app.get('/catalog/', function (request, response) {
+    response.send("<h1>Catalog page coming soon...</h1> <h1><a href='/'>Back</a></h1>")
+    // catalogId = request.params["catalogId"]
+    // let json = require(__dirname + '/json/TovarTypes.json');
+    // response.render(__dirname + "/nunjucks/TovarsPage.njk", json);
+});
 ////////////////////////////////////
 app.listen(port, function () {
     console.log(`Server stated on: http://${hostname}:${port}`)

@@ -60,53 +60,96 @@
 // }
 // CartPromoBTN.onclick = function () {
 // }
-
-function Cart() {
-
+const randomId = () => {
+  return Math.floor(Math.random() * 100);
 }
-Cart.prototype.add = function (item) {
-  if (!this.goods) {
-    this.goods = [];
-  }
-  this.goods.push(item); //добавляет товар в корзину
-  console.log('В корзине %s товаров', this.goods.length)
-};
+let CardNameT = document.getElementById("cardTitleName").innerHTML;
+let CardPriceT = document.getElementById("cardTitlePrice").innerHTML;
 
 
-//редактируемый код
-function UserCart() {
 
+
+
+
+function CartClean(){
+  alert("Cleaned!")
 }
-
-
-function Item(CardId, CardName, CardPrice) {
-  this.CardId = CardId;
-  this.CardName = CardName;
-  this.CardPrice = CardPrice;
-}
-
-UserCart.prototype = Object.create(Cart.prototype);
-
-
-const cart = new UserCart();
-// const item = new Item("99", 'Сhair', "20$");
-// let CardId = Math.floor(Math.random() * 101);
-let CardName = document.getElementById("cardTitleName").innerHTML
-let CardPrice = document.getElementById("cardTitlePrice").innerHTML
-alert(Math.floor(Math.random() * 1001), CardName, CardPrice)
-let item = { "CardId": Math.floor(Math.random() * 1001), "CardName": CardName, "CardPrice": CardPrice }
-
-cart.add(item);//нужно чтобы функция считала значения товара(имя цена и тд)
-
-
 function addToCart() {
-  // document.cookie = "email=aaa@ggg.ccc"
-  // document.cookie = "password=qewrty"
-  // alert(document.cookie);
-  cart.add(item);
-  console.log(cart.goods);
+  let CardName = document.getElementsByClassName("cardTitleName").innerHTML;
+  let CardPrice = document.getElementsByClassName("cardTitlePrice").innerHTML;
+  alert(CardPriceT)
+  let cookie = { "CardName": randomId, "CardPrice": CardPrice }
+  // document.cookie
+  // alert(cookie)
+  console.log(cookie)
 
+  // let ids = '';
+  // for (let i = 0; i < CardName.length; i++) {
+  //   ids += CardName[i].id;
+  // }
+  // console.log(ids.innerHTML)
+  // for (let i = 0; i < CardPrice.length; i++) {
+  //   ids += CardPrice[i].id;
+  // }
+  // console.log(idsinnerHTML)
+  // console.log(cookie)
 }
+
+// function Cart() {
+
+// }
+// Cart.prototype.add = function (item) {
+//   if (!this.goods) {
+//     this.goods = [];
+//   }
+//   this.goods.push(item); //добавляет товар в корзину
+//   console.log('В корзине %s товаров', this.goods.length)
+// };
+
+
+// //редактируемый код
+// function UserCart() {
+
+// }
+
+
+// function Item(CardId, CardName, CardPrice) {
+//   this.CardId = CardId;
+//   this.CardName = CardName;
+//   this.CardPrice = CardPrice;
+// }
+
+// UserCart.prototype = Object.create(Cart.prototype);
+
+
+// const cart = new UserCart();
+// // const item = new Item("99", 'Сhair', "20$");
+// // let CardId = Math.floor(Math.random() * 101);
+// function randomId() {
+//   let CardId = Math.floor(Math.random() * 100);     // returns a random integer from 0 to 99
+// }
+// // const val = document. querySelector('input'). value;
+
+// let CardName = document.getElementsByClassName('card-title').innerHTML;
+// let CardPrice = document.querySelector('a').innerHTML;
+
+// // let CardName = document.getElementById("cardTitleName").innerHTML
+// // let CardPrice = document.getElementById("cardTitlePrice").innerHTML
+// let item = { "CardName": CardName, "CardPrice": CardPrice }
+
+
+// cart.add(item);//нужно чтобы функция считала значения товара(имя цена и тд)
+
+// function addToCart() {
+//   // document.cookie = "email=aaa@ggg.ccc"
+//   // document.cookie = "password=qewrty"
+//   // alert(document.cookie);
+//   cart.add(item);
+//   console.log(cart.goods);
+//   alert(cart.goods)
+//   // Значение кнопки "Купить должно меняться после нажатия на "В корзине" или галочку(Типа тоже в корзине)
+// }
+
 
 
 
