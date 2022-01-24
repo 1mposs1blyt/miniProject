@@ -29,9 +29,9 @@ body {
     background-color: rgb(243, 0, 0);
 }
 
-/* .filter::-webkit-scrollbar {
+#MiniCart::-webkit-scrollbar {
     display: none;
-} */
+}
 header {
     max-width: 2560px;
     padding-top: 10px;

@@ -1,29 +1,31 @@
-    <!DOCTYPE html>
-    <html lang="en">
-        <head>
-            {% include "templates/head.html"%}
-        </head>
-        <body>
-            {% include "templates/header.njk" %}
-            <main>
-                <div class="container">
-                    <div class="row  cols-xs-8">
-                        {% include "templates/filter.njk"%}
-                        {# {% if loop.index <= 7 %} #}
-                        <div class="row">
-                            {# <div class="col-3 col-xs-4"></div> #}
-                            {% for tovar, item in TovarList %}
-                                {% include "templates/tovar.html" %}
-                            {% endfor %}
-                        </div>
-                        {# {% endif %} #}
-                        {# {% else %} #}
-                        {# <h1>eror</h1> #}
+<!DOCTYPE html>
+<html lang="en">
 
-                    </div>
-                    {% include "templates/PagMenu.njk"%}
-                </div>
-            </main>
-            {% include "templates/footer.html"%}
-        </body>
-    </html>
+<head>
+    {% include "templates/head.html"%}
+</head>
+
+<body>
+    {% include "templates/header.njk" %}
+    <main>
+        <div class="container">
+            <div class="row  cols-xs-8">
+                {% include "templates/filter.njk"%}
+                {# {% if loop.index <= 7 %} #} <div class="row">
+                    {# <div class="col-3 col-xs-4"></div> #}
+                    {% for tovar, item in TovarList %}
+                    {% include "templates/tovar.html" %}
+                    {% endfor %}
+            </div>
+            {# {% endif %} #}
+            {# {% else %} #}
+            {# <h1>eror</h1> #}
+
+        </div>
+        {% include "templates/PagMenu.njk"%}
+        </div>
+    </main>
+    {% include "templates/footer.html"%}
+</body>
+
+</html>

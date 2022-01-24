@@ -1,6 +1,6 @@
 <div id="MainTovarCard" class="col-3 col-xs-4">
     <div class="card">
-        <img src="https://via.placeholder.com/1920x1080/a" class="card-img-top" alt="image">
+        <img src="{{item.cardImage}}" class="card-img-top" alt="image">
         <div class="card-body">
             <h5 class="card-title"><a id="cardTitleName" class="cardTitleName" role="button"
                     href="/product/{{item.productId}}/{{item.TovarName}}">{{item.TovarName}}</a></h5>
@@ -8,7 +8,7 @@
             <p id="cardText" class="card-text">{{item.CardText}}</p>
             <!-- <input type="button" class="btn btn-primary" value="{{btnText}}" onclick="GoPage()" id="GoPageBTN">
             <button id="addToCartid" class="btn btn-primary">{{btnText}}</button> -->
-            <a onclick="addToCart()" class="btn btn-primary" role="button">{{item.btnText}}</a>
+            <a onclick="addToCart(),MiniCartF(),MiniCartFclose()" id="CardBTN" class="btn btn-primary" role="button">{{item.btnText}}</a>
 
         </div>
     </div>

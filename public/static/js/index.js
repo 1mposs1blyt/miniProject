@@ -42,6 +42,8 @@
 //     });
 //   });
 
+const { on } = require("nodemon");
+
 
 
 
@@ -63,25 +65,51 @@
 const randomId = () => {
   return Math.floor(Math.random() * 100);
 }
-let CardNameT = document.getElementById("cardTitleName").innerHTML;
-let CardPriceT = document.getElementById("cardTitlePrice").innerHTML;
+let CardNameT = document.getElementById("cardTitleName")
+let CardPriceT = document.getElementById("cardTitlePrice")
 
 
 
 
-
-
-function CartClean(){
+function CartClean() {
   alert("Cleaned!")
 }
+function delFromMiniBin() {
+  alert("Will be deleted!")
+}
+function MiniCartF() {
+  let miniCart = document.getElementById("MiniCart");
+  miniCart.style.transition = "0.7s"
+  miniCart.style.width = "450px"
+  miniCart.style.height = "300px"
+  miniCart.style.visibility = "visible"
+}
+
+function MiniCartFclose() {
+  let miniCart = document.getElementById("MiniCart");
+  miniCart.style.transition = "0.7s"
+  miniCart.style.width = "450px"
+  miniCart.style.height = "0px"
+  miniCart.style.visibility = "hidden"
+}
 function addToCart() {
-  let CardName = document.getElementsByClassName("cardTitleName").innerHTML;
-  let CardPrice = document.getElementsByClassName("cardTitlePrice").innerHTML;
-  alert(CardPriceT)
-  let cookie = { "CardName": randomId, "CardPrice": CardPrice }
-  // document.cookie
-  // alert(cookie)
-  console.log(cookie)
+  let addToCart = document.querySelectorAll("#CardBTN");
+  let miniCart = document.getElementById("MiniCart");
+  miniCart.style.transition = "0.7s"
+  miniCart.style.width = "450px"
+  miniCart.style.height = "300px"
+  miniCart.style.visibility = "visible"
+  let testTimeout = setTimeout(MiniCartFclose, 1200);
+  onmouseover.clearTimeout(testTimeout)
+  // addToCart.innerHTML = ""
+  // console.log(addToCart)
+  // let CardName = document.getElementsByClassName("cardTitleName").innerHTML;
+  // let CardPrice = document.getElementsByClassName("cardTitlePrice").innerHTML;
+  // alert(CardPriceT)
+  // let cookie = { "CardName": randomId, "CardPrice": CardPrice }
+  // // document.cookie
+  // // alert(cookie)
+  // console.log(cookie)
 
   // let ids = '';
   // for (let i = 0; i < CardName.length; i++) {

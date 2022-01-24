@@ -63,25 +63,27 @@ app.get('/product/:productId/:productName', function (request, response) {
     response.render(__dirname + "/nunjucks/TovarPage.njk", json);
 });
 app.get('/catalog/:catalogId/:category', function (request, response) {
-    function addToCart() {
-        alert("hi")
-    }
-    catalogId = request.params["catalogId"]
-    category = request.params["category"]
-    if (category == "processors") {
+    // function addToCart() {
+    //     alert("hi")
+    // }
+    // catalogId = request.params["catalogId"]
+    // category = request.params["category"]
+    // if (category == "processors") {
+    //     let json = require(__dirname + '/json/TovarTypes.json');
+    //     response.render(__dirname + "/nunjucks/TovarsPage.njk", json);
+    // } else if (category == "ram") {
+    //     let json = require(__dirname + '/json/TovarRam.json');
+    //     response.render(__dirname + "/nunjucks/TovarsPage.njk", json);
+    // } else if (category == "motherboards") {
+    //     let json = require(__dirname + '/json/tovarMotherboard.json');
+    //     response.render(__dirname + "/nunjucks/TovarsPage.njk", json);
+    // }
+    // else {
+    //     let json = require(__dirname + '/json/TovarTypes.json');
+    //     response.render(__dirname + "/nunjucks/TovarsPage.njk", json);
+    // }
         let json = require(__dirname + '/json/TovarTypes.json');
         response.render(__dirname + "/nunjucks/TovarsPage.njk", json);
-    } else if (category == "ram") {
-        let json = require(__dirname + '/json/TovarRam.json');
-        response.render(__dirname + "/nunjucks/TovarsPage.njk", json);
-    } else if (category == "motherboards") {
-        let json = require(__dirname + '/json/tovarMotherboard.json');
-        response.render(__dirname + "/nunjucks/TovarsPage.njk", json);
-    }
-    else {
-        let json = require(__dirname + '/json/TovarTypes.json');
-        response.render(__dirname + "/nunjucks/TovarsPage.njk", json);
-    }
 });
 app.get('/catalog/:catalogId/', function (request, response) {
     catalogId = request.params["catalogId"]

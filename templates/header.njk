@@ -18,7 +18,7 @@
                         <li>
                             <a class="dropdown-item" href="/catalog/{{item.catalogId}}/{{item.MainPage}}">{{item.property}}</a>
                         </li>
-                        {% endfor%}
+                    {% endfor%}
                     </ul>
                 </div>
             </div>
@@ -28,7 +28,7 @@
                     <button class="btn btn-outline-success" type="submit">Поиск</button>
                 </form>
             </div>
-            <div class="col-1">
+            <div class="col-1"onmouseover="MiniCartF()" id="CartIco">
                 <li class="nav-item">
                     <a class="nav-link active position-relative" aria-current="page" href="/{{UserId}}/cart">
                         <svg width="2em" height="2em" viewBox="0 0 16 16" class="bi bi-cart" fill="currentColor"
@@ -76,5 +76,5 @@
             </ol>
         </nav>
     </div>
-
+        {% include "templates/MiniCart.html" %}
 </header>
