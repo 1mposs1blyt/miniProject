@@ -42,8 +42,6 @@
 //     });
 //   });
 
-const { on } = require("nodemon");
-
 
 
 
@@ -62,45 +60,41 @@ const { on } = require("nodemon");
 // }
 // CartPromoBTN.onclick = function () {
 // }
-const randomId = () => {
-  return Math.floor(Math.random() * 100);
-}
-let CardNameT = document.getElementById("cardTitleName")
-let CardPriceT = document.getElementById("cardTitlePrice")
+
 
 
 
 
 function CartClean() {
-  alert("Cleaned!")
+  alert("Wil be Cleaned!")
 }
 function delFromMiniBin() {
   alert("Will be deleted!")
 }
 function MiniCartF() {
   let miniCart = document.getElementById("MiniCart");
-  miniCart.style.transition = "0.7s"
+  miniCart.style.transition = "0.4s"
   miniCart.style.width = "450px"
-  miniCart.style.height = "300px"
+  miniCart.style.height = "390px"
   miniCart.style.visibility = "visible"
 }
 
 function MiniCartFclose() {
   let miniCart = document.getElementById("MiniCart");
-  miniCart.style.transition = "0.7s"
+  miniCart.style.transition = "0.4s"
   miniCart.style.width = "450px"
   miniCart.style.height = "0px"
   miniCart.style.visibility = "hidden"
 }
 function addToCart() {
-  let addToCart = document.querySelectorAll("#CardBTN");
+  // let CardBTN = document.querySelectorAll("#CardBTN")
   let miniCart = document.getElementById("MiniCart");
-  miniCart.style.transition = "0.7s"
+  miniCart.style.transition = "1.2s"
   miniCart.style.width = "450px"
-  miniCart.style.height = "300px"
+  miniCart.style.height = "390px"
   miniCart.style.visibility = "visible"
-  let testTimeout = setTimeout(MiniCartFclose, 1200);
-  onmouseover.clearTimeout(testTimeout)
+  setTimeout(MiniCartFclose, 1800);
+  clearTimeout(a)
   // addToCart.innerHTML = ""
   // console.log(addToCart)
   // let CardName = document.getElementsByClassName("cardTitleName").innerHTML;

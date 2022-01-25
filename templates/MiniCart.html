@@ -1,10 +1,10 @@
-<div onmouseover="MiniCartF()" onmouseout="MiniCartFclose()" id="MiniCart" class="container" style=" visibility: hidden;border: 1px solid; border-radius: 10px; z-index: 11111111111; width: 450px; height:0px; max-height: 600px; overflow: scroll; margin-right: 10.5rem;
-    margin-top: -50px;">
-    <h5 style="text-align: left;">В корзине: x товаров <a onclick="CartClean()" id="cleanAllCart" href="#">очистить
+<div onmouseover="MiniCartF()" onmouseout="MiniCartFclose()" id="MiniCart" class="container">
+    <h5 style="text-align: left; padding-top:10px">В корзине: x товаров <a onclick="CartClean()" id="cleanAllCart"
+            href="#">очистить
             список</a></h5>
     <hr>
     {% for tovar, item in TovarList %}
-    <div class="card mb-3" style="max-width: 500px;  max-height:100px; background-color:rgb(114, 114, 114);">
+    <div class="card mb-3" id="MiniCartCard">
         <div class="row g-0">
             <div class="col-md-4">
                 <img src="{{item.cardImage}}" class="img-fluid rounded-start" alt="...">

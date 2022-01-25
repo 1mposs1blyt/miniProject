@@ -33,11 +33,11 @@ app.get('/', function (request, response) {
 });
 
 //  "/:userId/профиль,избранное,корзина"
-app.get('/:userId/profile', function (request, response) {
-    userId = request.params["userId"]
-    let json = require(__dirname + '/json/cart.json');
-    response.render(__dirname + "/nunjucks/profile.njk", json);
-});
+// app.get('/:userId/profile', function (request, response) {
+//     userId = request.params["userId"]
+//     let json = require(__dirname + '/json/cart.json');
+//     response.render(__dirname + "/nunjucks/profile.njk", json);
+// });
 app.get('/:userId/favorites', function (request, response) {
     userId = request.params["userId"]
     let json = require(__dirname + '/json/cart.json');

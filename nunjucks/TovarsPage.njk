@@ -8,21 +8,15 @@
 <body>
     {% include "templates/header.njk" %}
     <main>
-        <div class="container">
-            <div class="row  cols-xs-8">
-                {% include "templates/filter.njk"%}
-                {# {% if loop.index <= 7 %} #} <div class="row">
-                    {# <div class="col-3 col-xs-4"></div> #}
-                    {% for tovar, item in TovarList %}
-                    {% include "templates/tovar.html" %}
-                    {% endfor %}
+        <div id="CardsRow" class="container">
+            <div class="row  cols-xs-8">{% include "templates/filter.njk"%}</div>
+            <div class="row card-group">
+                {% for tovar, item in TovarList %}
+                {% include "templates/tovar.html" %}
+                {% endfor %}
             </div>
-            {# {% endif %} #}
-            {# {% else %} #}
-            {# <h1>eror</h1> #}
-
+            {% include "templates/PagMenu.njk"%}
         </div>
-        {% include "templates/PagMenu.njk"%}
         </div>
     </main>
     {% include "templates/footer.html"%}

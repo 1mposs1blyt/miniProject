@@ -1,47 +1,36 @@
-main {
-    /* margin-left: 25%;
-    margin-right: 25%; */
-    padding-left: 25%;
-    padding-right: 25%;
-    max-width: 2560px;
-    width: 100%;
-}
-
-#MainTovarCard {
-    padding-bottom: 20px;
-}
-
-#CartCard {
-    border-radius: 5px;
-
-}
-
-#offcanvasScrolling {
-    max-width: 24%;
-}
-
-#cardImage {
-    padding-left: 10px;
-    /* border-radius: 13px; */
-}
-
-body {
-    background-color: rgb(243, 0, 0);
-}
-
-#MiniCart::-webkit-scrollbar {
-    display: none;
-}
 header {
     max-width: 2560px;
     padding-top: 10px;
-    padding-bottom: 10px;
+    padding-bottom: 25px;
     /* margin-left: 15%;
     margin-right: 15%; */
     /* width: 100%; */
     padding-left: 25%;
     padding-right: 25%;
+    display: fixed;
+    position: fixed;
+    z-index: 1;
+    background-color: rgb(255, 255, 255);
+    height: 6.4rem;
+    /* background-color: #ffffff; */
     /* justify-content: space-between; */
+}
+
+body {
+    background-color: #ccffed;
+
+}
+
+main {
+    /* margin-left: 25%;
+    margin-right: 25%; */
+    /* background-image: url(https://images.freeimages.com/images/premium/previews/1987/19872150-graffiti-seamless-texture.jpg); */
+    background-color:rgb(211, 211, 211);
+    padding-left: 25%;
+    padding-right: 25%;
+    max-width: 2560px;
+    width: 100%;
+    padding-top: 6.5rem
 }
 
 footer {
@@ -52,6 +41,9 @@ footer {
     padding-bottom: 5%;
     width: 100%;
 }
+
+
+
 
 li {
     list-style-type: none;
@@ -79,8 +71,8 @@ li {
 }
 
 .row {
-    padding-top: 10px;
-    padding-bottom: 10px;
+    padding-top: 13px;
+    padding-bottom: 13px;
 }
 
 /* .row>.filter {
@@ -108,3 +100,59 @@ li {
     left: 15px;
     overflow: hidden;
 }*/
+#indexMain {
+    background-color: white;
+}
+
+#MainTovarCard {
+    border: 2px solid transparent;
+}
+
+#CardsRow {
+    background: whitesmoke;
+}
+
+#MiniCart {
+    background-color: rgb(199, 199, 199);
+    visibility: hidden;
+    /* border:; */
+    border-radius: 10px;
+    width: 450px;
+    height: 0px;
+    max-height: 600px;
+    overflow: scroll;
+    margin-right: 10%;
+    margin-top: -50px;
+}
+
+#MiniCartCard {
+    max-width: 500px;
+    /* max-height: 100px; */
+    background-color: rgb(255, 241, 241);
+}
+
+#MiniCart::-webkit-scrollbar {
+    display: none;
+}
+
+#MainTovarCard {
+
+    padding-left: 5px;
+    padding-top: 10px;
+    padding-bottom: 20px;
+}
+
+#CartCard {
+    border-radius: 5px;
+
+}
+
+#offcanvasScrolling {
+    max-width: 24%;
+}
+
+#cardImage {
+
+    padding-left: 10px;
+    /* border-radius: 13px; */
+}
