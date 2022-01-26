@@ -1,12 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>{% include "templates/head.html"%}
-    
+
     </head>
-<body>
-    {% include "templates/header.njk" %}
-    <h1>Страница каталога</h1>
-    <a href="/">back</a>
-{% include "templates/footer.html"%}
-</body>
-</html>
+    <body>
+        {% include "templates/header.njk" %}
+        <h1>Страница каталога</h1>
+        <a href="/">back</a>
+        <main>
+            <div class="row">
+
+                <div class="card-group">
+                    {%for prop, item in TovarTypeList%}
+                        <div onmouseover="this.style.border = '2px solid rgb(204, 204, 204)'"
+    onmouseout=" this.style.border= ' 2px solid transparent'" id="MainTovarCard" class="col-3 col-xs-4 " class="card">
+                            <img src="{{item.cardImage}}" class="card-img-top" alt="image">
+                            <div class="card-body">
+                                <h5 class="card-title"><a href="/catalog/{{item.catalogId}}/{{item.MainPage}}">{{item.property}}</a></h5>
+                            </div>
+                        </div>{%endfor%}
+
+                    </div>
+                </div>
+            </main>
+            {% include "templates/footer.html"%}
+
+        </body>
+    </html>

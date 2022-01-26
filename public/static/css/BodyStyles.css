@@ -9,7 +9,7 @@ header {
     padding-right: 25%;
     display: fixed;
     position: fixed;
-    z-index: 1;
+    z-index: 10;
     background-color: rgb(255, 255, 255);
     height: 6.4rem;
     /* background-color: #ffffff; */
@@ -24,8 +24,10 @@ body {
 main {
     /* margin-left: 25%;
     margin-right: 25%; */
+
+    z-index: 1;
     /* background-image: url(https://images.freeimages.com/images/premium/previews/1987/19872150-graffiti-seamless-texture.jpg); */
-    background-color:rgb(211, 211, 211);
+    background-color: rgb(241, 241, 241);
     padding-left: 25%;
     padding-right: 25%;
     max-width: 2560px;
@@ -34,8 +36,11 @@ main {
 }
 
 footer {
+   display: fixed;
+    position: relative;
+    z-index: 9;
     background: rgb(19, 0, 102);
-    color: rgb(211, 211, 211);
+    color: rgb(255, 255, 255);
     padding-top: 50px;
     bottom: 0px;
     padding-bottom: 5%;
