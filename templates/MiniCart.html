@@ -3,11 +3,11 @@
             href="#">очистить
             список</a></h5>
     <hr>
-    {% for tovar, item in TovarList %}
+    {% for item in TovarList %}
     <div class="card mb-3" id="MiniCartCard">
         <div class="row g-0">
             <div class="col-md-4">
-                <img src="{{item.cardImage}}" class="img-fluid rounded-start" alt="...">
+                <img src="{{item.cardImage}}" id="MiniCartImg" class="img-fluid rounded-start" alt="...">
             </div>
             <div class="col-md-4">
                 <div class="card-body">

@@ -4,7 +4,7 @@ header {
     padding-bottom: 25px;
     /* margin-left: 15%;
     margin-right: 15%; */
-    /* width: 100%; */
+    width: 100%;
     padding-left: 25%;
     padding-right: 25%;
     display: fixed;
@@ -36,7 +36,7 @@ main {
 }
 
 footer {
-   display: fixed;
+    display: fixed;
     position: relative;
     z-index: 9;
     background: rgb(19, 0, 102);
@@ -110,10 +110,20 @@ li {
 }
 
 #MainTovarCard {
+    height: 100%;
     border: 2px solid transparent;
+
+
+}
+
+#CardMainImg {
+    max-height: 40%;
+    height: 40%;
+    /* height: 219px; */
 }
 
 #CardsRow {
+
     background: whitesmoke;
 }
 
@@ -130,7 +140,16 @@ li {
     margin-top: -50px;
 }
 
+#MiniCartImg {
+    padding-top: 2%;
+    padding-bottom: 2%;
+    padding-left: 20%;
+    max-height: 100px;
+    max-width: 100px;
+}
+
 #MiniCartCard {
+
     max-width: 500px;
     /* max-height: 100px; */
     background-color: rgb(255, 241, 241);
@@ -141,7 +160,6 @@ li {
 }
 
 #MainTovarCard {
-
     padding-left: 5px;
     padding-top: 10px;
     padding-bottom: 20px;
@@ -157,7 +175,8 @@ li {
 }
 
 #cardImage {
-
+    max-height: 140px;
+    max-width: 140px;
     padding-left: 10px;
     /* border-radius: 13px; */
 }

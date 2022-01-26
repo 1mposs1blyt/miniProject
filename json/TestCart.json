@@ -1,8 +1,216 @@
 {
- "users":{
-    "user1":{"email":"","password":""},     
-    "user2":{"email":"","password":""},  
-    "user3":{"email":"","password":""},
-    "user4":{"email":"","password":""}
-}   
+    "allgoodslist": {
+        "TovarTypeList": {
+            "processors": [
+                {
+                    "property": "процессоры",
+                    "MainPage": "processors",
+                    "catalogId": "21",
+                    "TovarName": "i3-10100f",
+                    "TovarPrice": "6500",
+                    "CardText": "lorem 1...",
+                    "cardImage": "/static/images/placeholder.png",
+                    "page": "processor",
+                    "productId": "1235fas",
+                    "btnText": "Купить"
+                },
+                {
+                    "property": "процессоры",
+                    "MainPage": "processors",
+                    "catalogId": "21",
+                    "TovarName": "i3-10100f",
+                    "TovarPrice": "6500",
+                    "CardText": "lorem 1...",
+                    "cardImage": "/static/images/placeholder.png",
+                    "page": "processor",
+                    "productId": "1235fas",
+                    "btnText": "Купить"
+                },
+                {
+                    "property": "процессоры",
+                    "MainPage": "processors",
+                    "catalogId": "21",
+                    "TovarName": "i3-10100f",
+                    "TovarPrice": "6500",
+                    "CardText": "lorem 1...",
+                    "cardImage": "/static/images/placeholder.png",
+                    "page": "processor",
+                    "productId": "1235fas",
+                    "btnText": "Купить"
+                },
+                {
+                    "property": "процессоры",
+                    "MainPage": "processors",
+                    "catalogId": "21",
+                    "TovarName": "i3-10100f",
+                    "TovarPrice": "6500",
+                    "CardText": "lorem 1...",
+                    "cardImage": "/static/images/placeholder.png",
+                    "page": "processor",
+                    "productId": "1235fas",
+                    "btnText": "Купить"
+                },
+                {
+                    "property": "процессоры",
+                    "MainPage": "processors",
+                    "catalogId": "21",
+                    "TovarName": "i3-10100f",
+                    "TovarPrice": "6500",
+                    "CardText": "lorem 1...",
+                    "cardImage": "/static/images/placeholder.png",
+                    "page": "processor",
+                    "productId": "1235fas",
+                    "btnText": "Купить"
+                }
+            ],
+            "MoBo": [
+                {
+                    "property": "процессоры",
+                    "MainPage": "processors",
+                    "catalogId": "21",
+                    "TovarName": "i3-10100f",
+                    "TovarPrice": "6500",
+                    "CardText": "lorem 1...",
+                    "cardImage": "/static/images/placeholder.png",
+                    "page": "processor",
+                    "productId": "1235fas",
+                    "btnText": "Купить"
+                },
+                {
+                    "property": "процессоры",
+                    "MainPage": "processors",
+                    "catalogId": "21",
+                    "TovarName": "i3-10100f",
+                    "TovarPrice": "6500",
+                    "CardText": "lorem 1...",
+                    "cardImage": "/static/images/placeholder.png",
+                    "page": "processor",
+                    "productId": "1235fas",
+                    "btnText": "Купить"
+                },
+                {
+                    "property": "процессоры",
+                    "MainPage": "processors",
+                    "catalogId": "21",
+                    "TovarName": "i3-10100f",
+                    "TovarPrice": "6500",
+                    "CardText": "lorem 1...",
+                    "cardImage": "/static/images/placeholder.png",
+                    "page": "processor",
+                    "productId": "1235fas",
+                    "btnText": "Купить"
+                },
+                {
+                    "property": "процессоры",
+                    "MainPage": "processors",
+                    "catalogId": "21",
+                    "TovarName": "i3-10100f",
+                    "TovarPrice": "6500",
+                    "CardText": "lorem 1...",
+                    "cardImage": "/static/images/placeholder.png",
+                    "page": "processor",
+                    "productId": "1235fas",
+                    "btnText": "Купить"
+                },
+                {
+                    "property": "процессоры",
+                    "MainPage": "processors",
+                    "catalogId": "21",
+                    "TovarName": "i3-10100f",
+                    "TovarPrice": "6500",
+                    "CardText": "lorem 1...",
+                    "cardImage": "/static/images/placeholder.png",
+                    "page": "processor",
+                    "productId": "1235fas",
+                    "btnText": "Купить"
+                },
+                {
+                    "property": "процессоры",
+                    "MainPage": "processors",
+                    "catalogId": "21",
+                    "TovarName": "i3-10100f",
+                    "TovarPrice": "6500",
+                    "CardText": "lorem 1...",
+                    "cardImage": "/static/images/placeholder.png",
+                    "page": "processor",
+                    "productId": "1235fas",
+                    "btnText": "Купить"
+                }
+            ],
+            "RAM": [
+                {
+                    "property": "процессоры",
+                    "MainPage": "processors",
+                    "catalogId": "21",
+                    "TovarName": "i3-10100f",
+                    "TovarPrice": "6500",
+                    "CardText": "lorem 1...",
+                    "cardImage": "/static/images/placeholder.png",
+                    "page": "processor",
+                    "productId": "1235fas",
+                    "btnText": "Купить"
+                },
+                {
+                    "property": "процессоры",
+                    "MainPage": "processors",
+                    "catalogId": "21",
+                    "TovarName": "i3-10100f",
+                    "TovarPrice": "6500",
+                    "CardText": "lorem 1...",
+                    "cardImage": "/static/images/placeholder.png",
+                    "page": "processor",
+                    "productId": "1235fas",
+                    "btnText": "Купить"
+                },
+                {
+                    "property": "процессоры",
+                    "MainPage": "processors",
+                    "catalogId": "21",
+                    "TovarName": "i3-10100f",
+                    "TovarPrice": "6500",
+                    "CardText": "lorem 1...",
+                    "cardImage": "/static/images/placeholder.png",
+                    "page": "processor",
+                    "productId": "1235fas",
+                    "btnText": "Купить"
+                },
+                {
+                    "property": "процессоры",
+                    "MainPage": "processors",
+                    "catalogId": "21",
+                    "TovarName": "i3-10100f",
+                    "TovarPrice": "6500",
+                    "CardText": "lorem 1...",
+                    "cardImage": "/static/images/placeholder.png",
+                    "page": "processor",
+                    "productId": "1235fas",
+                    "btnText": "Купить"
+                },
+                {
+                    "property": "процессоры",
+                    "MainPage": "processors",
+                    "catalogId": "21",
+                    "TovarName": "i3-10100f",
+                    "TovarPrice": "6500",
+                    "CardText": "lorem 1...",
+                    "cardImage": "/static/images/placeholder.png",
+                    "page": "processor",
+                    "productId": "1235fas",
+                    "btnText": "Купить"
+                },
+                {
+                    "property": "процессоры",
+                    "MainPage": "processors",
+                    "catalogId": "21",
+                    "TovarName": "i3-10100f",
+                    "TovarPrice": "6500",
+                    "CardText": "lorem 1...",
+                    "cardImage": "/static/images/placeholder.png",
+                    "page": "processor",
+                    "productId": "1235fas",
+                    "btnText": "Купить"
+                }
+            ]
+        }
+    }
 }

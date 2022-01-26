@@ -1,126 +1,222 @@
 {
     "TovarTypeList": {
-        "TovarType1": {
+        "a0": {
             "property": "процессоры",
             "MainPage": "processors",
-            "catalogId": "21"
+            "catalogId": "21",
+            "cardImage": "/static/images/placeholder.png"
         },
-        "TovarType2": {
+        "a1": {
             "property": "матееринские платы",
             "MainPage": "motherboards",
-            "catalogId": "12"
+            "catalogId": "12",
+            "cardImage": "/static/images/placeholder.png"
         },
-        "TovarType3": {
+        "a2": {
             "property": "корпуса",
             "MainPage": "cases",
-            "catalogId": "13"
+            "catalogId": "13",
+            "cardImage": "/static/images/placeholder.png"
         },
-        "TovarType4": {
+        "a3": {
             "property": "холодильники",
             "MainPage": "freezers",
-            "catalogId": "51"
+            "catalogId": "51",
+            "cardImage": "/static/images/placeholder.png"
         },
-        "TovarType5": {
+        "a4": {
             "property": "видеокарты",
-            "MainPage": "videocards"
+            "MainPage": "videocards",
+            "catalogId": "9ra19",
+            "cardImage": "/static/images/placeholder.png"
         },
-        "TovarType6": {
+        "a5": {
             "property": "блоки питания",
             "MainPage": "powerblocks",
-            "catalogId": "17"
+            "catalogId": "17",
+            "cardImage": "/static/images/placeholder.png"
         },
-        "TovarType7": {
+        "a6": {
             "property": "процессоры",
             "MainPage": "processors",
-            "catalogId": "919"
+            "catalogId": "919",
+            "cardImage": "/static/images/placeholder.png"
         },
-        "TovarType8": {
+        "a7": {
             "property": "иговые консоли",
             "MainPage": "consoles",
-            "catalogId": "951"
+            "catalogId": "951",
+            "cardImage": "/static/images/placeholder.png"
         },
-        "TovarType9": {
+        "a8": {
             "property": "колонки",
             "MainPage": "audio",
-            "catalogId": "015"
+            "catalogId": "015",
+            "cardImage": "/static/images/placeholder.png"
         },
-        "TovarType10": {
+        "a9": {
             "property": "оперативная память",
             "MainPage": "ram",
-            "catalogId": "164"
+            "catalogId": "164",
+            "cardImage": "/static/images/placeholder.png"
         }
     },
-    "TovarList": {
-        "tovar0": {
-            "TovarName": "dr4 8gb",
+    "TovarList": [
+        {
+            "TovarName": "i3-10100f",
             "TovarPrice": "6500",
             "CardText": "lorem 1...",
             "btnText": "Купить",
             "page": "processor",
             "currency": "рублей",
-            "productId": "1235fas"
+            "productId": "1235fas",
+            "cardImage": "/static/images/core_i3.jpg"
         },
-        "tovar1": {
-            "TovarName": "dr4 18gb",
+        {
+            "TovarName": "i3-10105f",
             "TovarPrice": "7500",
             "CardText": "lorem 2...",
             "btnText": "купить",
             "page": "processor",
-            "productId": "1235fas"
+            "productId": "1235fas",
+            "cardImage": "/static/images/core_i3.jpg"
         },
-        "tovar2": {
-            "TovarName": "dr4 128gb",
+        {
+            "TovarName": "i5-10400f",
             "TovarPrice": "12500",
             "CardText": "lorem 1...",
             "btnText": "купить",
             "page": "processor",
-            "productId": "1235fas"
+            "productId": "1235fas",
+            "cardImage": "/static/images/core_i5.jpg"
         },
-        "tovar3": {
-            "TovarName": "ddr3 4gb",
+        {
+            "TovarName": "i5-10600kf",
             "TovarPrice": "15000",
             "CardText": "lorem 1...",
             "btnText": "купить",
             "page": "processor",
-            "productId": "1235fas"
+            "productId": "1235fas",
+            "cardImage": "/static/images/core_i5.jpg"
         },
-        "tovar4": {
-            "TovarName": "ddr3 4gb",
+        {
+            "TovarName": "i7-10700",
             "TovarPrice": "25000",
             "CardText": "lorem 1...",
             "btnText": "купить",
             "page": "processor",
             "currency": "рублей",
-            "productId": "1235fas"
+            "productId": "1235fas",
+            "cardImage": "/static/images/core_i7.jpg"
         },
-        "tovar5": {
-            "TovarName": "ddr3 4gb",
+        {
+            "TovarName": "i7-10700k",
             "TovarPrice": "26800",
             "CardText": "lorem 1...",
             "btnText": "купить",
             "page": "processor",
             "currency": "рублей",
-            "productId": "1235fas"
+            "productId": "1235fas",
+            "cardImage": "/static/images/core_i7.jpg"
         },
-        "tovar6": {
-            "TovarName": "ddr3 4gb",
+        {
+            "TovarName": "i9-10900k",
             "TovarPrice": "450000",
             "CardText": "lorem 1...",
             "btnText": "купить",
             "page": "processor",
             "currency": "рублей",
-            "productId": "1235fas"
+            "productId": "1235fas",
+            "cardImage": "/static/images/core_i7.jpg"
         },
-        "tovar7": {
-            "TovarName": "ddr3 4gb",
+        {
+            "TovarName": "i9-11900k",
             "TovarPrice": "450000",
             "CardText": "lorem 1...",
             "btnText": "buy",
             "page": "processor",
             "currency": "рублей",
-            "productId": "1235fas"
+            "productId": "1235fas",
+            "cardImage": "/static/images/core_i7.jpg"
+        },
+        {
+            "TovarName": "i3-10100f",
+            "TovarPrice": "6500",
+            "CardText": "lorem 1...",
+            "btnText": "Купить",
+            "page": "processor",
+            "currency": "рублей",
+            "productId": "1235fas",
+            "cardImage": "/static/images/core_i3.jpg"
+        },
+        {
+            "TovarName": "i3-10105f",
+            "TovarPrice": "7500",
+            "CardText": "lorem 2...",
+            "btnText": "купить",
+            "page": "processor",
+            "productId": "1235fas",
+            "cardImage": "/static/images/core_i3.jpg"
+        },
+        {
+            "TovarName": "i5-10400f",
+            "TovarPrice": "12500",
+            "CardText": "lorem 1...",
+            "btnText": "купить",
+            "page": "processor",
+            "productId": "1235fas",
+            "cardImage": "/static/images/core_i5.jpg"
+        },
+        {
+            "TovarName": "i5-10600kf",
+            "TovarPrice": "15000",
+            "CardText": "lorem 1...",
+            "btnText": "купить",
+            "page": "processor",
+            "productId": "1235fas",
+            "cardImage": "/static/images/core_i5.jpg"
+        },
+        {
+            "TovarName": "i7-10700",
+            "TovarPrice": "25000",
+            "CardText": "lorem 1...",
+            "btnText": "купить",
+            "page": "processor",
+            "currency": "рублей",
+            "productId": "1235fas",
+            "cardImage": "/static/images/core_i7.jpg"
+        },
+        {
+            "TovarName": "i7-10700k",
+            "TovarPrice": "26800",
+            "CardText": "lorem 1...",
+            "btnText": "купить",
+            "page": "processor",
+            "currency": "рублей",
+            "productId": "1235fas",
+            "cardImage": "/static/images/core_i7.jpg"
+        },
+        {
+            "TovarName": "i9-10900k",
+            "TovarPrice": "450000",
+            "CardText": "lorem 1...",
+            "btnText": "купить",
+            "page": "processor",
+            "currency": "рублей",
+            "productId": "1235fas",
+            "cardImage": "/static/images/core_i7.jpg"
+        },
+        {
+            "TovarName": "i9-11900k",
+            "TovarPrice": "450000",
+            "CardText": "lorem 1...",
+            "btnText": "купить",
+            "page": "processor",
+            "currency": "рублей",
+            "productId": "1235fas",
+            "cardImage": "/static/images/placeholder.png"
         }
-    },
+    ],
     "PageNum": {
         "1": "1",
         "2": "2",
@@ -129,29 +225,15 @@
         "5": "5",
         "6": "6"
     },
-    "filterPropertyes": {
-        "filterProp0": {
-            "filterTitle": "option number 1",
-            "filterValue": "gigabyte",
-            "filterId": "0"
-        },
-        "filterProp1": {
-            "filterTitle": "option number 1",
-            "filterValue": "gigabyte",
-            "filterId": "1"
-        },
-        "filterProp2": {
-            "filterTitle": "option number 1",
-            "filterValue": "gigabyte",
-            "filterId": "2"
-        },
-        "filterProp3": {
-            "filterTitle": "option number 1",
-            "filterValue": "gigabyte",
-            "filterId": "3"
-        }
-    },
     "PhoneNum": "+7(913)-123-45-67",
     "Email": "nobodye'sEmail@mail.com",
-    "tovar": "templates/tovar.html"
+    "tovar": "templates/tovar.html",
+    "UserId": "dt123g5d57qdsf",
+    "userdata": [
+        {
+            "goodsInCartCount": "2",
+            "password": "qwerts123"
+        }
+    ],
+    "cardImage": "/static/images/placeholder.png"
 }

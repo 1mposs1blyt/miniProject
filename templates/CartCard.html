@@ -1,8 +1,9 @@
 <div class="card mb-3" style="max-width: 1200px;">
     <div id="CartCard" class="row g-0" style="background-color: rgb(202, 202, 202);">
         <div class="col-md-4">
-             <input type="checkbox" name="CartCheck" checked> <!--Дописать Css поменяв расположение кнопки -->
-            <img id="cardImage" src="{{cardImage}}" class="img-fluid rounded-start" alt="=)">
+            <input type="checkbox" name="CartCheck" checked>
+            <!--Дописать Css поменяв расположение кнопки -->
+            <img id="cardImage" src="{{item.cardImage}}" class="img-fluid rounded-start" alt="=)">
         </div>
         <div class="col-md-8">
             <div class="card-body">
@@ -10,9 +11,14 @@
                 <h6 class="card-title">{{item.TovarPrice}} {{item.currency}}</h6>
                 <a role="button" onclick="addToFav()">В избранное</a>
                 <a role="button" onclick="delFromFav()">Удалить</a>
-                <!-- <p class="card-text">{{item.CardText}}</p> -->
-                <!-- <a class="btn btn-primary" href="/product/{{item.productId}}/{{item.TovarName}}"
-                    role="button">{{item.btnText}}</a> -->
+                <div class="items count-wrapper" style="color: black">
+                    <a class="items__control" data-action="minus">-</a>
+                    <a class="items__current" data-counter>1</a>
+                    <a class="items__control" data-action="plus">+</a>
+                    <!-- <div class="itemControl" data-action="minus">-</div>
+                    <div class="CurrentCount" data-counter>1</div>
+                    <div class="itemControl" data-action="plus">+</div> -->
+                </div>
             </div>
         </div>
     </div>

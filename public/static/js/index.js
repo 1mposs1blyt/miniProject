@@ -62,7 +62,44 @@
 // }
 
 
+const btnminus = document.querySelector('[data-action="minus"]')
+const btnplus = document.querySelector('[data-action="plus"]')
+const counter = document.querySelector('[data-counter]')
+btnminus.addEventListener('click', function () {
 
+  if (parseInt(counter.innerText) > 1) {//проверяет если значение цифры больше 1( не может быть меньше 1)
+    counter.innerText = --counter.innerText;
+  }
+})
+btnplus.addEventListener('click', function () {
+  counter.innerText = ++counter.innerText;
+
+})
+
+window.addEventListener('click', function () {
+  let counter;
+  if (event.target.dataset.action === 'plus') {
+    const CountWraper = event.target.closest('.items__current')
+    const counter = CountWraper.querySelectorAll('[data-counter]')
+    counter.innerText = ++counter.innerText;
+  }
+})
+// window.addEventListener('click', function () {
+//   let counter;
+//   if (event.target.dataset.action === 'plus' || event.target.dataset.action === 'minus') {
+//     const countwrapper = event.target.closest('.CurrentCount')
+//     counter = countwrapper.querySelector('[data-counter]')
+
+//   }
+//   // if () {
+//   //   const countwrapper = event.target.closest('.CurrentCount')
+//   //   console.log(countwrapper);
+//   //   const counter = countwrapper.querySelectorAll('[data-counter]')
+//   //   console.log(counter);
+//   //   counter.innerText = --counter.innerText;
+
+//   // }
+// })
 
 
 function CartClean() {

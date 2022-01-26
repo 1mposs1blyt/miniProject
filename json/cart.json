@@ -1,42 +1,107 @@
 {
-    "CartItems": {
-        "CartItem1": {
-            "TovarName": "i9-11099900k",
-            "TovarPrice": "450000",
-            "CardText": "lorem 1...",
-            "btnText": "buy",
-            "page": "processor",
-            "currency": "рублей",
-            "productId": "1235fas"
+    "TovarTypeList": {
+        "a0": {
+            "property": "процессоры",
+            "MainPage": "processors",
+            "catalogId": "21",
+            "cardImage": "/static/images/placeholder.png"
         },
-        "CartItem12": {
-            "TovarName": "i9-1111900k",
-            "TovarPrice": "450000",
-            "CardText": "lorem 1...",
-            "btnText": "buy",
-            "page": "processor",
-            "currency": "рублей",
-            "productId": "1235fas"
+        "a1": {
+            "property": "матееринские платы",
+            "MainPage": "motherboards",
+            "catalogId": "12",
+            "cardImage": "/static/images/placeholder.png"
         },
-        "CartItem13": {
-            "TovarName": "i999-121900k",
-            "TovarPrice": "450000",
-            "CardText": "lorem 1...",
-            "btnText": "buy",
-            "page": "processor",
-            "currency": "рублей",
-            "productId": "1235fas"
+        "a2": {
+            "property": "корпуса",
+            "MainPage": "cases",
+            "catalogId": "13",
+            "cardImage": "/static/images/placeholder.png"
         },
-        "CartItem14": {
-            "TovarName": "i9-99911900k",
-            "TovarPrice": "49950000",
-            "CardText": "lorem 1...",
-            "btnText": "buy",
-            "page": "processor",
-            "currency": "рублей",
-            "productId": "1235fas"
+        "a3": {
+            "property": "холодильники",
+            "MainPage": "freezers",
+            "catalogId": "51",
+            "cardImage": "/static/images/placeholder.png"
+        },
+        "a4": {
+            "property": "видеокарты",
+            "MainPage": "videocards",
+            "catalogId": "9ra19",
+            "cardImage": "/static/images/placeholder.png"
+        },
+        "a5": {
+            "property": "блоки питания",
+            "MainPage": "powerblocks",
+            "catalogId": "17",
+            "cardImage": "/static/images/placeholder.png"
+        },
+        "a6": {
+            "property": "процессоры",
+            "MainPage": "processors",
+            "catalogId": "919",
+            "cardImage": "/static/images/placeholder.png"
+        },
+        "a7": {
+            "property": "иговые консоли",
+            "MainPage": "consoles",
+            "catalogId": "951",
+            "cardImage": "/static/images/placeholder.png"
+        },
+        "a8": {
+            "property": "колонки",
+            "MainPage": "audio",
+            "catalogId": "015",
+            "cardImage": "/static/images/placeholder.png"
+        },
+        "a9": {
+            "property": "оперативная память",
+            "MainPage": "ram",
+            "catalogId": "164",
+            "cardImage": "/static/images/placeholder.png"
         }
     },
+    "CartItems": [
+        {
+            "TovarName": "i5-10600kf",
+            "TovarPrice": "15000",
+            "CardText": "lorem 1...",
+            "btnText": "купить",
+            "page": "processor",
+            "productId": "1235fas",
+            "cardImage": "/static/images/core_i5.jpg"
+        },
+        {
+            "TovarName": "i7-10700",
+            "TovarPrice": "25000",
+            "CardText": "lorem 1...",
+            "btnText": "купить",
+            "page": "processor",
+            "currency": "рублей",
+            "productId": "1235fas",
+            "cardImage": "/static/images/core_i7.jpg"
+        },
+        {
+            "TovarName": "i7-10700k",
+            "TovarPrice": "26800",
+            "CardText": "lorem 1...",
+            "btnText": "купить",
+            "page": "processor",
+            "currency": "рублей",
+            "productId": "1235fas",
+            "cardImage": "/static/images/core_i7.jpg"
+        },
+        {
+            "TovarName": "i9-10900k",
+            "TovarPrice": "450000",
+            "CardText": "lorem 1...",
+            "btnText": "купить",
+            "page": "processor",
+            "currency": "рублей",
+            "productId": "1235fas",
+            "cardImage": "/static/images/core_i7.jpg"
+        }
+    ],
     "UserId": "dt123g5d57qdsf",
     "PhoneNum": "+7(913)-123-45-67",
     "Email": "nobodye'sEmail@mail.com",
