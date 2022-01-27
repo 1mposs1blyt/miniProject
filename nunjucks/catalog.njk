@@ -7,11 +7,11 @@
         {% include "templates/header.njk" %}
         <main>
             <div class="container">
-                <div class="row">
-                    <div class="card-group">
-                        {%for prop, item in TovarTypeList%}
+                <div id="CardsRow" class="container">
+                    <div class="row cols-xs-12 cols-sm-12 cols-md-12 cols-lg-12 cols-xl-12 cols-xxl-12 card-group">
+                        {% for item in TovarTypeList %}
                             <div onmouseover="this.style.border = '2px solid rgb(204, 204, 204)'"
-    onmouseout=" this.style.border= ' 2px solid transparent'" id="MainTovarCard" class="col-3 col-xs-4 " class="card">
+    onmouseout=" this.style.border= ' 2px solid transparent'" id="MainTovarCard" class="col-xs-6 col-sm-6 col-md-6 col-lg-4 col-xl-4 col-xxl-4" class="card">
                                 <img src="{{item.cardImage}}" class="card-img-top" alt="image">
                                 <div class="card-body">
                                     <h5 class="card-title">
@@ -19,9 +19,9 @@
                                     </h5>
                                 </div>
                             </div>
-                            {%endfor%}
-                        </div>
+                        {% endfor %}
                     </div>
+                    {# {% include "templates/PagMenu.njk"%} Потом сделаю =) #}
                 </div>
             </main>
             {% include "templates/footer.html"%}

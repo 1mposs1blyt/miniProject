@@ -1,52 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        {% include "templates/head.html"%}
-    </head>
-    <body>
-        {% include "templates/header.njk"%}
-        <main>
-            <div class="container">
+
+<head>
+    {% include "templates/head.html"%}
+</head>
+
+<body>
+    {% include "templates/header.njk"%}
+    <main>
+        <div class="container">
+            <div class="row">
                 <h1>Корзина</h1>
                 <a>Товаров:{{CardTovarQuantity}} 4 на сумму: {{FavoriteTovarSum}}10 500{{item.currency}}</a>
                 <p><input type="checkbox">Выбрать все<a role="button" onclick="CartClean()"> Удалить выбранные</a>
                 </p>
-                <div class="row">
-                    <div class="col-8">
-                        {% for item in CartItems %}
-                            {% include "templates/CartCard.html"%}
-                        {% endfor %}
-                    </div>
-                    <div class="col-4">
-                        <div class="card">
-                            <div class="card-body">
-                                <h5>Итого: X товаров на x рублей</h5>
-                                <form name="CartOrder">
-                                    <div class="mb-3">
-                                        <label class="form-label">Promo-code</label>
-                                        <input id="CartPromo" type="text" class="form-control" placeholder="Не пытайтесь искать не найдете"
-                                    name="promo">
-                                    </div>
-                                    <button id="CartPromoBTN" type="submit" class="btn btn-primary">Клик!</button>
-                                    <hr>
-                                    <div class="mb-3">
-                                        <label class="form-label">Email address</label>
-                                        <input id="EmailCart" type="email" class="form-control" aria-describedby="emailHelp" name="email"
-                                    required value="aaa@mail.com">
-                                        <div class="form-text"></div>
-                                    </div>
-                                    {# <div class="mb-3 form-check">
+                <div class="col-xs-8 col-sm-8 col-md-4 col-lg-4 col-xl-4 col-xxl-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5>Итого: X товаров на x рублей</h5>
+                            <form name="CartOrder">
+                                <div class="mb-3">
+                                    <label class="form-label">Promo-code</label>
+                                    <input id="CartPromo" type="text" class="form-control"
+                                        placeholder="Не пытайтесь искать не найдете" name="promo">
+                                </div>
+                                <button id="CartPromoBTN" type="submit" class="btn btn-primary">Клик!</button>
+                                <hr>
+                                <div class="mb-3">
+                                    <label class="form-label">Email address</label>
+                                    <input id="EmailCart" type="email" class="form-control" aria-describedby="emailHelp"
+                                        name="email" required value="aaa@mail.com">
+                                    <div class="form-text"></div>
+                                </div>
+                                <div class="mb-3 form-check">
                                     <input type="checkbox" class="form-check-input" name="NotBot" required>
                                     <label class="form-check-label">Я не робот</label>
-                                </div> #}
-                                    <button id="CartFormSub" type="submit" class="btn btn-primary">Оформить заказ</button>
-                                </form>
-                            </div>
+                                </div>
+                                <button id="CartFormSub" type="submit" class="btn btn-primary">Оформить заказ</button>
+                            </form>
                         </div>
                     </div>
                 </div>
+                <div class="col-xs-8 col-sm-8 col-md-8 col-lg-8 col-xl-8 col-xxl-8">
+                    {% for item in CartItems %}
+                    {% include "templates/CartCard.html"%}
+                    {% endfor %}
+                </div>
+
             </div>
-        </main>
-        {% include "templates/footer.html"%}
-    </body>
+        </div>
+    </main>
+    {% include "templates/footer.html"%}
+</body>
+
 </html>

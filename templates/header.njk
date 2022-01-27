@@ -34,7 +34,7 @@
                             Каталог
                         </a>
                         <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            {% for items, item in TovarTypeList%}
+                            {% for item in TovarTypeList%}
                             <li>
                                 <a class="dropdown-item"
                                     href="/catalog/{{item.catalogId}}/{{item.MainPage}}">{{item.property}}</a>

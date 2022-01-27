@@ -6,55 +6,24 @@
 
 
 {
-    "TovarTypeList": [
-        {
+"TovarTypeList": [
+         {
             "property": "процессоры",
             "MainPage": "processors",
-            "catalogId": "21"
+            "catalogId": "21",
+            "cardImage": "/static/images/placeholder.png"
         },
-        {
+         {
             "property": "матееринские платы",
             "MainPage": "motherboards",
-            "catalogId": "12"
-        },
-        {
-            "property": "корпуса",
-            "MainPage": "cases",
-            "catalogId": "13"
-        },
-        {
-            "property": "холодильники",
-            "MainPage": "freezers",
-            "catalogId": "51"
-        },
-        {
-            "property": "видеокарты",
-            "MainPage": "videocards"
-        },
-        {
-            "property": "блоки питания",
-            "MainPage": "powerblocks",
-            "catalogId": "17"
-        },
-        {
-            "property": "процессоры",
-            "MainPage": "processors",
-            "catalogId": "919"
-        },
-        {
-            "property": "иговые консоли",
-            "MainPage": "consoles",
-            "catalogId": "951"
-        },
-        {
-            "property": "колонки",
-            "MainPage": "audio",
-            "catalogId": "015"
+            "catalogId": "12",
+            "cardImage": "/static/images/placeholder.png"
         },
         {
             "property": "оперативная память",
             "MainPage": "ram",
-            "catalogId": "164"
+            "catalogId": "164",
+            "cardImage": "/static/images/placeholder.png"
         }
     ],
     "TovarTypeList2": 

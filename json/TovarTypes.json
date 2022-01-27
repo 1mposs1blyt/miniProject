@@ -1,24 +1,59 @@
 {
-    "TovarTypeList": {
-        "a0": {
+    "TovarTypeList": [
+        {
             "property": "процессоры",
             "MainPage": "processors",
             "catalogId": "21",
-            "cardImage": "/static/images/placeholder.png"
+            "cardImage": "/static/images/CPUHolder.png"
         },
-        "a1": {
+        {
             "property": "матееринские платы",
             "MainPage": "motherboards",
             "catalogId": "12",
-            "cardImage": "/static/images/placeholder.png"
+            "cardImage": "/static/images/moboholder.png"
         },
-        "a9": {
+        {
             "property": "оперативная память",
             "MainPage": "ram",
             "catalogId": "164",
-            "cardImage": "/static/images/placeholder.png"
+            "cardImage": "/static/images/RAMholder.png"
+        },
+        {
+            "property": "матееринские платы",
+            "MainPage": "motherboards",
+            "catalogId": "12",
+            "cardImage": "/static/images/moboholder.png"
+        },
+        {
+            "property": "процессоры",
+            "MainPage": "processors",
+            "catalogId": "21",
+            "cardImage": "/static/images/CPUHolder.png"
+        },
+        {
+            "property": "оперативная память",
+            "MainPage": "ram",
+            "catalogId": "164",
+            "cardImage": "/static/images/RAMholder.png"
+        },
+        {
+            "property": "матееринские платы",
+            "MainPage": "motherboards",
+            "catalogId": "12",
+            "cardImage": "/static/images/moboholder.png"
+        },
+        {
+            "property": "оперативная память",
+            "MainPage": "ram",
+            "catalogId": "164",
+            "cardImage": "/static/images/RAMholder.png"
+        },        {
+            "property": "процессоры",
+            "MainPage": "processors",
+            "catalogId": "21",
+            "cardImage": "/static/images/CPUHolder.png"
         }
-    },
+    ],
     "TovarList": [
         {
             "TovarName": "i3-10100f",

@@ -1,24 +1,24 @@
 {
-    "TovarTypeList": {
-        "a0": {
+"TovarTypeList": [
+         {
             "property": "процессоры",
             "MainPage": "processors",
             "catalogId": "21",
             "cardImage": "/static/images/placeholder.png"
         },
-        "a1": {
+         {
             "property": "матееринские платы",
             "MainPage": "motherboards",
             "catalogId": "12",
             "cardImage": "/static/images/placeholder.png"
         },
-        "a9": {
+        {
             "property": "оперативная память",
             "MainPage": "ram",
             "catalogId": "164",
             "cardImage": "/static/images/placeholder.png"
         }
-    },
+    ],
     "TovarList": [
         {
             "TovarName": "DDR4 16gb 2666mhz 2x8 kit",
