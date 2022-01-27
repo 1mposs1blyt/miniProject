@@ -1,45 +1,79 @@
-<div class="container" id="indexMain">
-    <div class="row cols-md-12 cols-xs-6">
-        <div class="col-9 col-sm-6 col-md-9 col-lg-9 col-xs-3">
-            <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+<div class="container">
+    <div class="row cols-12">
+        <div class="col-xs-3 col-sm-12 col-md-12 col-lg-12 col-xl-3 col-xxl-3">
+            <div class="card">
+                <div class="card-body">
+                    <h5>Акции</h5>
+                    <hr>
+                    <ol class="list-group list-group-numbered">
+                        <li class="list-group-item d-flex justify-content-between align-items-start">
+                            <div class="ms-2 me-auto">
+                                <div class="fw-bold"><a href="#sales/{{item.salename}}">Скидки на процессоры</a></div>
+                                Content for list item
+                            </div>
+                            <span class="badge bg-danger rounded-pill">5</span>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between align-items-start">
+                            <div class="ms-2 me-auto">
+                                <div class="fw-bold"><a href="#sales/{{item.salename}}">Бесплатная доставка</a></div>
+                                Content for list item
+                            </div>
+                            <span class="badge bg-danger rounded-pill">NEW</span>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between align-items-start">
+                            <div class="ms-2 me-auto">
+                                <div class="fw-bold"><a href="#sales/{{item.salename}}">Выгодные комплекты</a></div>
+                                Content for list item
+                            </div>
+                            <span class="badge bg-danger rounded-pill">14</span>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between align-items-start">
+                            <div class="ms-2 me-auto">
+                                <div class="fw-bold"><a href="#sales/{{item.salename}}">Доставка за 2 часа</a></div>
+                                Content for list item
+                            </div>
+                            <span class="badge bg-danger rounded-pill">NEW</span>
+                        </li>
+                        <!-- <li class="list-group-item d-flex justify-content-between align-items-start">
+                            <div class="ms-2 me-auto">
+                                <div class="fw-bold"><a href="#sales/{{item.salename}}">Some content</a></div>
+                                Content for list item
+                            </div>
+                            <span class="badge bg-danger rounded-pill">Limited</span>
+                        </li> -->
+                    </ol>
+                    <hr>
+                    <h5><a href="#/sales/">Больше...</a></h5>
+                </div>
+            </div>
+        </div>
+        <div class="col-xs-6 col-sm-12 col-md-12 col-lg-12 col-xl-6 col-xxl-6">
+            <div class="carousel slide" data-bs-ride="carousel">
                 <div class="carousel-indicators">
-                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
-                        class="active" aria-current="true" aria-label="Slide 1"></button>
-                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                    <button type="button" data-bs-target="#carouselIndicators" data-bs-slide-to="0" class="active"
+                        aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselIndicators" data-bs-slide-to="1"
                         aria-label="Slide 2"></button>
-                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                    <button type="button" data-bs-target="#carouselIndicators" data-bs-slide-to="2"
                         aria-label="Slide 3"></button>
                 </div>
                 <div class="carousel-inner">
                     <div class="carousel-item active">
-                        <a href="/catalog/?Category"><img src="{{cardImage}}"
-                                class="d-block w-100" alt="..."></a>
+                        <a href="/catalog/?Category"><img src="{{cardImage}}" class="d-block w-100" alt="..."></a>
                     </div>
                     <div class="carousel-item">
-                        <a href="/catalog/?Category"><img src="{{cardImage}}"
-                                class="d-block w-100" alt="..."></a>
+                        <a href="/catalog/?Category"><img src="{{cardImage}}" class="d-block w-100" alt="..."></a>
                     </div>
                     <div class="carousel-item">
-                        <a href="/catalog/?Category"><img src="{{cardImage}}"
-                                class="d-block w-100" alt="..."></a>
+                        <a href="/catalog/?Category"><img src="{{cardImage}}" class="d-block w-100" alt="..."></a>
                     </div>
                 </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
-                    data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Previous</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
-                    data-bs-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Next</span>
-                </button>
             </div>
         </div>
-        <div class="col-3 col-sm-3 col-md-3 col-lg-3 col-xs-3">
+        <div class="col-xs-3 col-sm-12 col-md-12 col-lg-12 col-xl-3 col-xxl-3">
             <div class="card">
                 <div class="card-body">
-                    <form>
+                    <form action="/" method="get">
                         <div class="mb-3">
                             <label class="form-label">Promo-code</label>
                             <input type="text" class="form-control" placeholder="Не пытайтесь искать не найдете"
@@ -69,82 +103,48 @@
             </div>
         </div>
     </div>
-    <div class="row cols-md-12 cols-xs-6">
-        <div class="col-4 col-sm-4 col-lg-4 col-xs-2">
-            <div class="card bg-dark text-white">
-                <a href="/catalog/?Category"><img src="{{cardImage}}" class="card-img"
-                        alt="..."></a>
+    <div class="row cols-12">
+        <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 col-xl-4 col-xxl-4">
+            <div class="card">
+                <a href="/catalog/?Category"><img src="{{cardImage}}" class="card-img" alt="..."></a>
             </div>
         </div>
-        <dive class="col-4 col-sm-4 col-lg-4 col-xs-2">
-            <div class="card bg-dark text-white">
-                <a href="/catalog/?Category"><img src="{{cardImage}}" class="card-img"
-                        alt="..."></a>
+        <dive class="col-xs-4 col-sm-4 col-md-4 col-lg-4 col-xl-4 col-xxl-4">
+            <div class="card">
+                <a href="/catalog/?Category"><img src="{{cardImage}}" class="card-img" alt="..."></a>
             </div>
         </dive>
-        <dive class="col-4 col-sm-4 col-lg-4 col-xs-2">
-            <div class="card bg-dark text-white">
-                <a href="/catalog/?Category"><img src="{{cardImage}}" class="card-img"
-                        alt="..."></a>
+        <dive class="col-xs-4 col-sm-4 col-md-4 col-lg-4 col-xl-4 col-xxl-4">
+            <div class="card">
+                <a href="/catalog/?Category"><img src="{{cardImage}}" class="card-img" alt="..."></a>
             </div>
         </dive>
     </div>
-    <div class="row cols-xs-6">
-        <div class="card bg-dark text-white">
-            <a href="/catalog/?Category"><img src="{{cardImage}}" class="card-img"
-                    alt="..."></a>
+    <div class="row cols-12">
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+            <a href="/catalog/?Category"><img src="{{cardImage}}" class="card-img" alt="image got lost =("></a>
         </div>
     </div>
-    <div class="row">
-        <div class="col-4 col-sm-4 col-lg-4 col-xs-2">
-            <div class="card bg-dark text-white">
-                <a href="/catalog/?Category"><img src="{{cardImage}}" class="card-img"
-                        alt="..."></a>
+    <div class="row cols-12">
+        <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 col-xl-4 col-xxl-4">
+            <div class="card">
+                <a href="/catalog/?Category"><img src="{{cardImage}}" class="card-img" alt="..."></a>
             </div>
         </div>
-        <dive class="col-4 col-sm-4 col-lg-4 col-xs-2">
-            <div class="card bg-dark text-white">
-                <a href="/catalog/?Category"><img src="{{cardImage}}" class="card-img"
-                        alt="..."></a>
+        <dive class="col-xs-4 col-sm-4 col-md-4 col-lg-4 col-xl-4 col-xxl-4">
+            <div class="card">
+                <a href="/catalog/?Category"><img src="{{cardImage}}" class="card-img" alt="..."></a>
             </div>
         </dive>
-        <dive class="col-4 col-sm-4 col-lg-4 col-xs-2">
-            <div class="card bg-dark text-white">
-                <a href="/catalog/?Category"><img src="{{cardImage}}" class="card-img"
-                        alt="..."></a>
+        <dive class="col-xs-4 col-sm-4 col-md-4 col-lg-4 col-xl-4 col-xxl-4">
+            <div class="card">
+                <a href="/catalog/?Category"><img src="{{cardImage}}" class="card-img" alt="..."></a>
             </div>
         </dive>
     </div>
-    <div class="row">
-        <div class="card bg-dark text-white">
-            <a href="/catalog/?Category"><img src="{{cardImage}}" class="card-img"
-                    alt="..."></a>
-        </div>
-    </div>
-    <div class="row">
-        <div class="col-4">
-            <div class="card bg-dark text-white">
-                <a href="/catalog/?Category"><img src="{{cardImage}}" class="card-img"
-                        alt="..."></a>
-            </div>
-        </div>
-        <dive class="col-4">
-            <div class="card bg-dark text-white">
-                <a href="/catalog/?Category"><img src="{{cardImage}}" class="card-img"
-                        alt="..."></a>
-            </div>
-        </dive>
-        <dive class="col-4">
-            <div class="card bg-dark text-white">
-                <a href="/catalog/?Category"><img src="{{cardImage}}" class="card-img"
-                        alt="..."></a>
-            </div>
-        </dive>
-    </div>
-    <div class="row">
-        <div class="card bg-dark text-white">
-            <a href="/catalog/?Category"><img src="{{cardImage}}" class="card-img"
-                    alt="..."></a>
+    <div class="row cols-12">
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+            <a href="/catalog/?Category"><img src="{{cardImage}}" class="card-img" alt="image got lost =("></a>
         </div>
     </div>
 </div>

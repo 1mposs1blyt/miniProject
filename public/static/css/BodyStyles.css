@@ -1,19 +1,13 @@
 header {
     max-width: 2560px;
     padding-top: 0px;
-    padding-bottom: 25px;
-    /* margin-left: 15%;
-    margin-right: 15%; */
+    padding-bottom: 0px;
     width: 100%;
-    padding-left: 25%;
-    padding-right: 25%;
     display: fixed;
     position: fixed;
     z-index: 10;
-    /* background-color: rgb(255, 255, 255); */
-    /* height: 6.4rem; */
-    /* background-color: #ffffff; */
-    /* justify-content: space-between; */
+    justify-content: space-between;
+
 }
 
 body {
@@ -22,17 +16,10 @@ body {
 }
 
 main {
-    /* margin-left: 25%;
-    margin-right: 25%; */
-
     z-index: 9;
-    /* background-image: url(https://images.freeimages.com/images/premium/previews/1987/19872150-graffiti-seamless-texture.jpg); */
     background-color: rgb(241, 241, 241);
-    padding-left: 25%;
-    padding-right: 25%;
     max-width: 2560px;
     width: 100%;
-    padding-top: 50px;
 }
 
 footer {
@@ -59,17 +46,6 @@ li {
     padding-right: 10px;
 }
 
-/* .accordion {
-    padding-top: 10px;
-    /* padding-bottom: 10px; 
-    width: 100%;
-    min-height: 70%;
-    height: 50%;
-    max-height: 1400px;
-    position: relative;
-     height: 1650px; 
-     max-height: 1400px; 
-} */
 
 #CarouselToTovar {
     border-radius: 7px;
@@ -80,31 +56,6 @@ li {
     padding-bottom: 13px;
 }
 
-/* .row>.filter {
-    z-index: 1;
-    width: 16%;
-    max-width: 19rem;
-    background-color: rgb(89, 145, 248);
-    display: flex;
-    min-height: 130%;
-    max-height: 260%;
-    height: auto;
-    border-radius: 7px;
-    position: absolute;
-    top: 5.5rem;
-    display: block;
-    overflow: auto;
-} */
-/*
-#applybtn {
-    z-index: 99; 
-    position: relative;
-    padding-top: 15px;
-    bottom: 10px;
-    right: 25px;
-    left: 15px;
-    overflow: hidden;
-}*/
 #indexMain {
     background-color: white;
 }
@@ -119,7 +70,6 @@ li {
 #CardMainImg {
     max-height: 40%;
     height: 40%;
-    /* height: 219px; */
 }
 
 #CardsRow {
@@ -127,18 +77,24 @@ li {
 }
 
 #MiniCart {
-    position: relative;
+    position: absolute;
     background-color: rgb(204, 204, 204);
     visibility: hidden;
     z-index: 1000;
-    border-radius: 0px;
     height: 0px;
     max-height: 600px;
     overflow: scroll;
-    padding-left: 10px;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    margin-left: 5rem;
+    max-width: 450px;
+    border-radius: 5px;
+    left: 0;
+    top: 50px;
 }
 
-#MiniCartImg {
+
+*/ #MiniCartImg {
     padding-top: 2%;
     padding-bottom: 2%;
     padding-left: 20%;
@@ -148,7 +104,6 @@ li {
 
 #MiniCartCard {
     max-width: 500px;
-    /* max-height: 100px; */
     background-color: whitesmoke;
 }
 
@@ -157,8 +112,6 @@ li {
 }
 
 #MainTovarCard {
-    /* padding-left: 5px;
-    padding-block-start: 5px; */
     padding-top: 1px;
     padding-bottom: 20px;
 }

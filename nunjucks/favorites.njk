@@ -6,16 +6,18 @@
     <body>
         {% include "templates/header.njk" %}
         <main>
-            <h1>Избранное</h1>
-            <a>Товаров:{{CardTovarQuantity}} 4 на сумму: {{FavoriteTovarSum}}10 500{{item.currency}}</a>
-            <p><input type="checkbox">Выбрать все<a role="button" onclick="CartClean()"> Удалить выбранные</a>
-            </p>
+            <div class="container">
+                <h1>Избранное</h1>
+                <a>Товаров:{{CardTovarQuantity}} 4 на сумму: {{FavoriteTovarSum}}10 500{{item.currency}}</a>
+                <p><input type="checkbox">Выбрать все<a role="button" onclick="CartClean()"> Удалить выбранные</a>
+                </p>
 
-            <div class="row">
-                <div class="col-12">
-                    {% for CartItem, item in CartItems %}
-                        {% include "templates/CartCard.html"%}
-                    {% endfor %}
+                <div class="row">
+                    <div class="col-12">
+                        {% for CartItem, item in CartItems %}
+                            {% include "templates/CartCard.html"%}
+                        {% endfor %}
+                    </div>
                 </div>
             </div>
         </main>

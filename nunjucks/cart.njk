@@ -4,100 +4,44 @@
         {% include "templates/head.html"%}
     </head>
     <body>
-<header>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="/">MyShopLogo</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                    <li onmouseover="MiniCartF()" onmouseout="MiniCartFclose()" class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="/{{UserId}}/cart">Корзина</a>
-                    </li>
-                    <!-- <div class="nav-item col-xs-2 col-sm-2 col-md-2 col-lg-2 col-xl-2 col-xxl-2"
-                        onmouseover="MiniCartF()" onmouseout="MiniCartFclose()" id="CartIco">
-                    </div> -->
-                    <!-- <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2 col-xl-2 col-xxl-2" onmouseover="MiniCartF()"
-                        onmouseout="MiniCartFclose()" id="CartIco">
-                        <li class="nav-item">
-                            <a class="nav-link active position-relative" aria-current="page" href="/{{UserId}}/cart">
-                                Корзина
-                            </a>
-
-                        </li>
-                    </div> -->
-                    <li class="nav-item">
-                        <a class="nav-link" href="/{{UserId}}/favorites">Избранное</a>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-                            data-bs-toggle="dropdown" aria-expanded="false">
-                            Каталог
-                        </a>
-                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            {% for items, item in TovarTypeList%}
-                            <li>
-                                <a class="dropdown-item"
-                                    href="/catalog/{{item.catalogId}}/{{item.MainPage}}">{{item.property}}</a>
-                            </li>
-                            {% endfor%}
-                        </ul>
-                    </li>
-                </ul>
-                <form class="d-flex">
-                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                    <button class="btn btn-outline-success" type="submit">Поиск</button>
-                </form>
-
-
-            </div>
-
-        </div>
-
-    </nav>
-    {# <div class="row">
-        {% include "templates/MiniCart.html" %}
-    </div> #}
-</header>
+        {% include "templates/header.njk"%}
         <main>
-            <h1>Корзина</h1>
-            <a>Товаров:{{CardTovarQuantity}} 4 на сумму: {{FavoriteTovarSum}}10 500{{item.currency}}</a>
-            <p><input type="checkbox">Выбрать все<a role="button" onclick="CartClean()"> Удалить выбранные</a>
-            </p>
-            <div class="row">
-                <div class="col-8">
-                    {% for item in CartItems %}
-                        {% include "templates/CartCard.html"%}
-                    {% endfor %}
-                </div>
-                <div class="col-4">
-                    <div class="card">
-                        <div class="card-body">
-                            <h5>Итого: X товаров на x рублей</h5>
-                            <form name="CartOrder">
-                                <div class="mb-3">
-                                    <label class="form-label">Promo-code</label>
-                                    <input id="CartPromo" type="text" class="form-control" placeholder="Не пытайтесь искать не найдете"
+            <div class="container">
+                <h1>Корзина</h1>
+                <a>Товаров:{{CardTovarQuantity}} 4 на сумму: {{FavoriteTovarSum}}10 500{{item.currency}}</a>
+                <p><input type="checkbox">Выбрать все<a role="button" onclick="CartClean()"> Удалить выбранные</a>
+                </p>
+                <div class="row">
+                    <div class="col-8">
+                        {% for item in CartItems %}
+                            {% include "templates/CartCard.html"%}
+                        {% endfor %}
+                    </div>
+                    <div class="col-4">
+                        <div class="card">
+                            <div class="card-body">
+                                <h5>Итого: X товаров на x рублей</h5>
+                                <form name="CartOrder">
+                                    <div class="mb-3">
+                                        <label class="form-label">Promo-code</label>
+                                        <input id="CartPromo" type="text" class="form-control" placeholder="Не пытайтесь искать не найдете"
                                     name="promo">
-                                </div>
-                                <button id="CartPromoBTN" type="submit" class="btn btn-primary">Клик!</button>
-                                <hr>
-                                <div class="mb-3">
-                                    <label class="form-label">Email address</label>
-                                    <input id="EmailCart" type="email" class="form-control" aria-describedby="emailHelp" name="email"
+                                    </div>
+                                    <button id="CartPromoBTN" type="submit" class="btn btn-primary">Клик!</button>
+                                    <hr>
+                                    <div class="mb-3">
+                                        <label class="form-label">Email address</label>
+                                        <input id="EmailCart" type="email" class="form-control" aria-describedby="emailHelp" name="email"
                                     required value="aaa@mail.com">
-                                    <div class="form-text"></div>
-                                </div>
-                                {# <div class="mb-3 form-check">
+                                        <div class="form-text"></div>
+                                    </div>
+                                    {# <div class="mb-3 form-check">
                                     <input type="checkbox" class="form-check-input" name="NotBot" required>
                                     <label class="form-check-label">Я не робот</label>
                                 </div> #}
-                                <button id="CartFormSub" type="submit" class="btn btn-primary">Оформить заказ</button>
-                            </form>
+                                    <button id="CartFormSub" type="submit" class="btn btn-primary">Оформить заказ</button>
+                                </form>
+                            </div>
                         </div>
                     </div>
                 </div>
