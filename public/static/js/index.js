@@ -62,28 +62,28 @@
 // }
 
 
-const btnminus = document.querySelector('[data-action="minus"]')
-const btnplus = document.querySelector('[data-action="plus"]')
-const counter = document.querySelector('[data-counter]')
-btnminus.addEventListener('click', function () {
+// const btnminus = document.querySelector('[data-action="minus"]')
+// const btnplus = document.querySelector('[data-action="plus"]')
+// const counter = document.querySelector('[data-counter]')
+// btnminus.addEventListener('click', function () {
 
-  if (parseInt(counter.innerText) > 1) {//проверяет если значение цифры больше 1( не может быть меньше 1)
-    counter.innerText = --counter.innerText;
-  }
-})
-btnplus.addEventListener('click', function () {
-  counter.innerText = ++counter.innerText;
+//   if (parseInt(counter.innerText) > 1) {//проверяет если значение цифры больше 1( не может быть меньше 1)
+//     counter.innerText = --counter.innerText;
+//   }
+// })
+// btnplus.addEventListener('click', function () {
+//   counter.innerText = ++counter.innerText;
 
-})
+// })
 
-window.addEventListener('click', function () {
-  let counter;
-  if (event.target.dataset.action === 'plus') {
-    const CountWraper = event.target.closest('.items__current')
-    const counter = CountWraper.querySelectorAll('[data-counter]')
-    counter.innerText = ++counter.innerText;
-  }
-})
+// window.addEventListener('click', function () {
+//   let counter;
+//   if (event.target.dataset.action === 'plus') {
+//     const CountWraper = event.target.closest('.items__current')
+//     const counter = CountWraper.querySelectorAll('[data-counter]')
+//     counter.innerText = ++counter.innerText;
+//   }
+// })
 // window.addEventListener('click', function () {
 //   let counter;
 //   if (event.target.dataset.action === 'plus' || event.target.dataset.action === 'minus') {
@@ -110,24 +110,24 @@ function delFromMiniBin() {
 }
 function MiniCartF() {
   let miniCart = document.getElementById("MiniCart");
-  miniCart.style.transition = "0.4s"
-  miniCart.style.width = "450px"
+  miniCart.style.transition = "0.5s"
+  // miniCart.style.width = "450px"
   miniCart.style.height = "390px"
   miniCart.style.visibility = "visible"
 }
 
 function MiniCartFclose() {
   let miniCart = document.getElementById("MiniCart");
-  miniCart.style.transition = "0.4s"
-  miniCart.style.width = "450px"
+  miniCart.style.transition = "0.5s"
+  // miniCart.style.width = "450px"
   miniCart.style.height = "0px"
   miniCart.style.visibility = "hidden"
 }
-function addToCart() {
+function addToCart() { 
   // let CardBTN = document.querySelectorAll("#CardBTN")
   let miniCart = document.getElementById("MiniCart");
   miniCart.style.transition = "1.2s"
-  miniCart.style.width = "450px"
+  // miniCart.style.width = "450px"
   miniCart.style.height = "390px"
   miniCart.style.visibility = "visible"
   setTimeout(MiniCartFclose, 1800);

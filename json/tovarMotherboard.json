@@ -12,48 +12,6 @@
             "catalogId": "12",
             "cardImage": "/static/images/placeholder.png"
         },
-        "a2": {
-            "property": "корпуса",
-            "MainPage": "cases",
-            "catalogId": "13",
-            "cardImage": "/static/images/placeholder.png"
-        },
-        "a3": {
-            "property": "холодильники",
-            "MainPage": "freezers",
-            "catalogId": "51",
-            "cardImage": "/static/images/placeholder.png"
-        },
-        "a4": {
-            "property": "видеокарты",
-            "MainPage": "videocards",
-            "catalogId": "9ra19",
-            "cardImage": "/static/images/placeholder.png"
-        },
-        "a5": {
-            "property": "блоки питания",
-            "MainPage": "powerblocks",
-            "catalogId": "17",
-            "cardImage": "/static/images/placeholder.png"
-        },
-        "a6": {
-            "property": "процессоры",
-            "MainPage": "processors",
-            "catalogId": "919",
-            "cardImage": "/static/images/placeholder.png"
-        },
-        "a7": {
-            "property": "иговые консоли",
-            "MainPage": "consoles",
-            "catalogId": "951",
-            "cardImage": "/static/images/placeholder.png"
-        },
-        "a8": {
-            "property": "колонки",
-            "MainPage": "audio",
-            "catalogId": "015",
-            "cardImage": "/static/images/placeholder.png"
-        },
         "a9": {
             "property": "оперативная память",
             "MainPage": "ram",
@@ -63,158 +21,234 @@
     },
     "TovarList": [
         {
-            "TovarName": "i3-10100f",
-            "TovarPrice": "6500",
+            "TovarName": "asus b560",
+            "TovarPrice": "10500",
             "CardText": "lorem 1...",
             "btnText": "Купить",
-            "page": "processor",
+            "page": "motherboard",
             "currency": "рублей",
             "productId": "1235fas",
-            "cardImage": "/static/images/core_i3.jpg"
+            "cardImage": "/static/images/moboholder.png"
         },
         {
-            "TovarName": "i3-10105f",
-            "TovarPrice": "7500",
-            "CardText": "lorem 2...",
-            "btnText": "купить",
-            "page": "processor",
-            "productId": "1235fas",
-            "cardImage": "/static/images/core_i3.jpg"
-        },
-        {
-            "TovarName": "i5-10400f",
-            "TovarPrice": "12500",
-            "CardText": "lorem 1...",
-            "btnText": "купить",
-            "page": "processor",
-            "productId": "1235fas",
-            "cardImage": "/static/images/core_i5.jpg"
-        },
-        {
-            "TovarName": "i5-10600kf",
-            "TovarPrice": "15000",
-            "CardText": "lorem 1...",
-            "btnText": "купить",
-            "page": "processor",
-            "productId": "1235fas",
-            "cardImage": "/static/images/core_i5.jpg"
-        },
-        {
-            "TovarName": "i7-10700",
-            "TovarPrice": "25000",
-            "CardText": "lorem 1...",
-            "btnText": "купить",
-            "page": "processor",
-            "currency": "рублей",
-            "productId": "1235fas",
-            "cardImage": "/static/images/core_i7.jpg"
-        },
-        {
-            "TovarName": "i7-10700k",
-            "TovarPrice": "26800",
-            "CardText": "lorem 1...",
-            "btnText": "купить",
-            "page": "processor",
-            "currency": "рублей",
-            "productId": "1235fas",
-            "cardImage": "/static/images/core_i7.jpg"
-        },
-        {
-            "TovarName": "i9-10900k",
-            "TovarPrice": "450000",
-            "CardText": "lorem 1...",
-            "btnText": "купить",
-            "page": "processor",
-            "currency": "рублей",
-            "productId": "1235fas",
-            "cardImage": "/static/images/core_i7.jpg"
-        },
-        {
-            "TovarName": "i9-11900k",
-            "TovarPrice": "450000",
-            "CardText": "lorem 1...",
-            "btnText": "buy",
-            "page": "processor",
-            "currency": "рублей",
-            "productId": "1235fas",
-            "cardImage": "/static/images/core_i7.jpg"
-        },
-        {
-            "TovarName": "i3-10100f",
-            "TovarPrice": "6500",
+            "TovarName": "asus b560",
+            "TovarPrice": "10500",
             "CardText": "lorem 1...",
             "btnText": "Купить",
-            "page": "processor",
+            "page": "motherboard",
             "currency": "рублей",
             "productId": "1235fas",
-            "cardImage": "/static/images/core_i3.jpg"
+            "cardImage": "/static/images/moboholder.png"
         },
         {
-            "TovarName": "i3-10105f",
-            "TovarPrice": "7500",
-            "CardText": "lorem 2...",
-            "btnText": "купить",
-            "page": "processor",
-            "productId": "1235fas",
-            "cardImage": "/static/images/core_i3.jpg"
-        },
-        {
-            "TovarName": "i5-10400f",
-            "TovarPrice": "12500",
+            "TovarName": "asus b560",
+            "TovarPrice": "10500",
             "CardText": "lorem 1...",
-            "btnText": "купить",
-            "page": "processor",
-            "productId": "1235fas",
-            "cardImage": "/static/images/core_i5.jpg"
-        },
-        {
-            "TovarName": "i5-10600kf",
-            "TovarPrice": "15000",
-            "CardText": "lorem 1...",
-            "btnText": "купить",
-            "page": "processor",
-            "productId": "1235fas",
-            "cardImage": "/static/images/core_i5.jpg"
-        },
-        {
-            "TovarName": "i7-10700",
-            "TovarPrice": "25000",
-            "CardText": "lorem 1...",
-            "btnText": "купить",
-            "page": "processor",
+            "btnText": "Купить",
+            "page": "motherboard",
             "currency": "рублей",
             "productId": "1235fas",
-            "cardImage": "/static/images/core_i7.jpg"
+            "cardImage": "/static/images/moboholder.png"
         },
         {
-            "TovarName": "i7-10700k",
-            "TovarPrice": "26800",
+            "TovarName": "asus b560",
+            "TovarPrice": "10500",
             "CardText": "lorem 1...",
-            "btnText": "купить",
-            "page": "processor",
+            "btnText": "Купить",
+            "page": "motherboard",
             "currency": "рублей",
             "productId": "1235fas",
-            "cardImage": "/static/images/core_i7.jpg"
+            "cardImage": "/static/images/moboholder.png"
         },
         {
-            "TovarName": "i9-10900k",
-            "TovarPrice": "450000",
+            "TovarName": "asus b560",
+            "TovarPrice": "10500",
             "CardText": "lorem 1...",
-            "btnText": "купить",
-            "page": "processor",
+            "btnText": "Купить",
+            "page": "motherboard",
             "currency": "рублей",
             "productId": "1235fas",
-            "cardImage": "/static/images/core_i7.jpg"
+            "cardImage": "/static/images/moboholder.png"
         },
         {
-            "TovarName": "i9-11900k",
-            "TovarPrice": "450000",
+            "TovarName": "asus b560",
+            "TovarPrice": "10500",
             "CardText": "lorem 1...",
-            "btnText": "купить",
-            "page": "processor",
+            "btnText": "Купить",
+            "page": "motherboard",
             "currency": "рублей",
             "productId": "1235fas",
-            "cardImage": "/static/images/placeholder.png"
+            "cardImage": "/static/images/moboholder.png"
+        },
+        {
+            "TovarName": "asus b560",
+            "TovarPrice": "10500",
+            "CardText": "lorem 1...",
+            "btnText": "Купить",
+            "page": "motherboard",
+            "currency": "рублей",
+            "productId": "1235fas",
+            "cardImage": "/static/images/moboholder.png"
+        },
+        {
+            "TovarName": "asus b560",
+            "TovarPrice": "10500",
+            "CardText": "lorem 1...",
+            "btnText": "Купить",
+            "page": "motherboard",
+            "currency": "рублей",
+            "productId": "1235fas",
+            "cardImage": "/static/images/moboholder.png"
+        },
+        {
+            "TovarName": "asus b560",
+            "TovarPrice": "10500",
+            "CardText": "lorem 1...",
+            "btnText": "Купить",
+            "page": "motherboard",
+            "currency": "рублей",
+            "productId": "1235fas",
+            "cardImage": "/static/images/moboholder.png"
+        },
+        {
+            "TovarName": "asus b560",
+            "TovarPrice": "10500",
+            "CardText": "lorem 1...",
+            "btnText": "Купить",
+            "page": "motherboard",
+            "currency": "рублей",
+            "productId": "1235fas",
+            "cardImage": "/static/images/moboholder.png"
+        },
+        {
+            "TovarName": "asus b560",
+            "TovarPrice": "10500",
+            "CardText": "lorem 1...",
+            "btnText": "Купить",
+            "page": "motherboard",
+            "currency": "рублей",
+            "productId": "1235fas",
+            "cardImage": "/static/images/moboholder.png"
+        },
+        {
+            "TovarName": "asus b560",
+            "TovarPrice": "10500",
+            "CardText": "lorem 1...",
+            "btnText": "Купить",
+            "page": "motherboard",
+            "currency": "рублей",
+            "productId": "1235fas",
+            "cardImage": "/static/images/moboholder.png"
+        },
+        {
+            "TovarName": "asus b560",
+            "TovarPrice": "10500",
+            "CardText": "lorem 1...",
+            "btnText": "Купить",
+            "page": "motherboard",
+            "currency": "рублей",
+            "productId": "1235fas",
+            "cardImage": "/static/images/moboholder.png"
+        },
+        {
+            "TovarName": "asus b560",
+            "TovarPrice": "10500",
+            "CardText": "lorem 1...",
+            "btnText": "Купить",
+            "page": "motherboard",
+            "currency": "рублей",
+            "productId": "1235fas",
+            "cardImage": "/static/images/moboholder.png"
+        },
+        {
+            "TovarName": "asus b560",
+            "TovarPrice": "10500",
+            "CardText": "lorem 1...",
+            "btnText": "Купить",
+            "page": "motherboard",
+            "currency": "рублей",
+            "productId": "1235fas",
+            "cardImage": "/static/images/moboholder.png"
+        },
+        {
+            "TovarName": "asus b560",
+            "TovarPrice": "10500",
+            "CardText": "lorem 1...",
+            "btnText": "Купить",
+            "page": "motherboard",
+            "currency": "рублей",
+            "productId": "1235fas",
+            "cardImage": "/static/images/moboholder.png"
+        },
+        {
+            "TovarName": "asus b560",
+            "TovarPrice": "10500",
+            "CardText": "lorem 1...",
+            "btnText": "Купить",
+            "page": "motherboard",
+            "currency": "рублей",
+            "productId": "1235fas",
+            "cardImage": "/static/images/moboholder.png"
+        },
+        {
+            "TovarName": "asus b560",
+            "TovarPrice": "10500",
+            "CardText": "lorem 1...",
+            "btnText": "Купить",
+            "page": "motherboard",
+            "currency": "рублей",
+            "productId": "1235fas",
+            "cardImage": "/static/images/moboholder.png"
+        },
+        {
+            "TovarName": "asus b560",
+            "TovarPrice": "10500",
+            "CardText": "lorem 1...",
+            "btnText": "Купить",
+            "page": "motherboard",
+            "currency": "рублей",
+            "productId": "1235fas",
+            "cardImage": "/static/images/moboholder.png"
+        },
+        {
+            "TovarName": "asus b560",
+            "TovarPrice": "10500",
+            "CardText": "lorem 1...",
+            "btnText": "Купить",
+            "page": "motherboard",
+            "currency": "рублей",
+            "productId": "1235fas",
+            "cardImage": "/static/images/moboholder.png"
+        },
+        {
+            "TovarName": "asus b560",
+            "TovarPrice": "10500",
+            "CardText": "lorem 1...",
+            "btnText": "Купить",
+            "page": "motherboard",
+            "currency": "рублей",
+            "productId": "1235fas",
+            "cardImage": "/static/images/moboholder.png"
+        },
+        {
+            "TovarName": "asus b560",
+            "TovarPrice": "10500",
+            "CardText": "lorem 1...",
+            "btnText": "Купить",
+            "page": "motherboard",
+            "currency": "рублей",
+            "productId": "1235fas",
+            "cardImage": "/static/images/moboholder.png"
+        },
+        {
+            "TovarName": "asus b560",
+            "TovarPrice": "10500",
+            "CardText": "lorem 1...",
+            "btnText": "Купить",
+            "page": "motherboard",
+            "currency": "рублей",
+            "productId": "1235fas",
+            "cardImage": "/static/images/moboholder.png"
         }
     ],
     "PageNum": {
@@ -234,6 +268,5 @@
             "goodsInCartCount": "2",
             "password": "qwerts123"
         }
-    ],
-    "cardImage": "/static/images/placeholder.png"
+    ]
 }

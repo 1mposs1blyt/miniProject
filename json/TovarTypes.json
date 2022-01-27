@@ -12,48 +12,6 @@
             "catalogId": "12",
             "cardImage": "/static/images/placeholder.png"
         },
-        "a2": {
-            "property": "корпуса",
-            "MainPage": "cases",
-            "catalogId": "13",
-            "cardImage": "/static/images/placeholder.png"
-        },
-        "a3": {
-            "property": "холодильники",
-            "MainPage": "freezers",
-            "catalogId": "51",
-            "cardImage": "/static/images/placeholder.png"
-        },
-        "a4": {
-            "property": "видеокарты",
-            "MainPage": "videocards",
-            "catalogId": "9ra19",
-            "cardImage": "/static/images/placeholder.png"
-        },
-        "a5": {
-            "property": "блоки питания",
-            "MainPage": "powerblocks",
-            "catalogId": "17",
-            "cardImage": "/static/images/placeholder.png"
-        },
-        "a6": {
-            "property": "процессоры",
-            "MainPage": "processors",
-            "catalogId": "919",
-            "cardImage": "/static/images/placeholder.png"
-        },
-        "a7": {
-            "property": "иговые консоли",
-            "MainPage": "consoles",
-            "catalogId": "951",
-            "cardImage": "/static/images/placeholder.png"
-        },
-        "a8": {
-            "property": "колонки",
-            "MainPage": "audio",
-            "catalogId": "015",
-            "cardImage": "/static/images/placeholder.png"
-        },
         "a9": {
             "property": "оперативная память",
             "MainPage": "ram",
@@ -70,7 +28,7 @@
             "page": "processor",
             "currency": "рублей",
             "productId": "1235fas",
-            "cardImage": "/static/images/core_i3.jpg"
+            "cardImage": "/static/images/CPUHolder.png"
         },
         {
             "TovarName": "i3-10105f",
@@ -79,7 +37,7 @@
             "btnText": "купить",
             "page": "processor",
             "productId": "1235fas",
-            "cardImage": "/static/images/core_i3.jpg"
+            "cardImage": "/static/images/CPUHolder.png"
         },
         {
             "TovarName": "i5-10400f",
@@ -88,7 +46,7 @@
             "btnText": "купить",
             "page": "processor",
             "productId": "1235fas",
-            "cardImage": "/static/images/core_i5.jpg"
+            "cardImage": "/static/images/CPUHolder.png"
         },
         {
             "TovarName": "i5-10600kf",
@@ -97,7 +55,7 @@
             "btnText": "купить",
             "page": "processor",
             "productId": "1235fas",
-            "cardImage": "/static/images/core_i5.jpg"
+            "cardImage": "/static/images/CPUHolder.png"
         },
         {
             "TovarName": "i7-10700",
@@ -107,7 +65,7 @@
             "page": "processor",
             "currency": "рублей",
             "productId": "1235fas",
-            "cardImage": "/static/images/core_i7.jpg"
+            "cardImage": "/static/images/CPUHolder.png"
         },
         {
             "TovarName": "i7-10700k",
@@ -117,7 +75,7 @@
             "page": "processor",
             "currency": "рублей",
             "productId": "1235fas",
-            "cardImage": "/static/images/core_i7.jpg"
+            "cardImage": "/static/images/CPUHolder.png"
         },
         {
             "TovarName": "i9-10900k",
@@ -127,7 +85,7 @@
             "page": "processor",
             "currency": "рублей",
             "productId": "1235fas",
-            "cardImage": "/static/images/core_i7.jpg"
+            "cardImage": "/static/images/CPUHolder.png"
         },
         {
             "TovarName": "i9-11900k",
@@ -137,7 +95,7 @@
             "page": "processor",
             "currency": "рублей",
             "productId": "1235fas",
-            "cardImage": "/static/images/core_i7.jpg"
+            "cardImage": "/static/images/CPUHolder.png"
         },
         {
             "TovarName": "i3-10100f",
@@ -147,7 +105,7 @@
             "page": "processor",
             "currency": "рублей",
             "productId": "1235fas",
-            "cardImage": "/static/images/core_i3.jpg"
+            "cardImage": "/static/images/CPUHolder.png"
         },
         {
             "TovarName": "i3-10105f",
@@ -156,7 +114,7 @@
             "btnText": "купить",
             "page": "processor",
             "productId": "1235fas",
-            "cardImage": "/static/images/core_i3.jpg"
+            "cardImage": "/static/images/CPUHolder.png"
         },
         {
             "TovarName": "i5-10400f",
@@ -165,7 +123,7 @@
             "btnText": "купить",
             "page": "processor",
             "productId": "1235fas",
-            "cardImage": "/static/images/core_i5.jpg"
+            "cardImage": "/static/images/CPUHolder.png"
         },
         {
             "TovarName": "i5-10600kf",
@@ -174,7 +132,7 @@
             "btnText": "купить",
             "page": "processor",
             "productId": "1235fas",
-            "cardImage": "/static/images/core_i5.jpg"
+            "cardImage": "/static/images/CPUHolder.png"
         },
         {
             "TovarName": "i7-10700",
@@ -184,7 +142,7 @@
             "page": "processor",
             "currency": "рублей",
             "productId": "1235fas",
-            "cardImage": "/static/images/core_i7.jpg"
+            "cardImage": "/static/images/CPUHolder.png"
         },
         {
             "TovarName": "i7-10700k",
@@ -194,7 +152,7 @@
             "page": "processor",
             "currency": "рублей",
             "productId": "1235fas",
-            "cardImage": "/static/images/core_i7.jpg"
+            "cardImage": "/static/images/CPUHolder.png"
         },
         {
             "TovarName": "i9-10900k",
@@ -204,7 +162,7 @@
             "page": "processor",
             "currency": "рублей",
             "productId": "1235fas",
-            "cardImage": "/static/images/core_i7.jpg"
+            "cardImage": "/static/images/CPUHolder.png"
         },
         {
             "TovarName": "i9-11900k",
@@ -214,7 +172,7 @@
             "page": "processor",
             "currency": "рублей",
             "productId": "1235fas",
-            "cardImage": "/static/images/placeholder.png"
+            "cardImage": "/static/images/CPUHolder.png"
         }
     ],
     "PageNum": {

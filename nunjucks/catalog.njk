@@ -16,7 +16,9 @@
     onmouseout=" this.style.border= ' 2px solid transparent'" id="MainTovarCard" class="col-3 col-xs-4 " class="card">
                             <img src="{{item.cardImage}}" class="card-img-top" alt="image">
                             <div class="card-body">
-                                <h5 class="card-title"><a href="/catalog/{{item.catalogId}}/{{item.MainPage}}">{{item.property}}</a></h5>
+                                <h5 class="card-title">
+                                    <a href="/catalog/{{item.catalogId}}/{{item.MainPage}}">{{item.property}}</a>
+                                </h5>
                             </div>
                         </div>{%endfor%}
 
