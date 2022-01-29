@@ -43,8 +43,10 @@
                         </ul>
                     </li>
                 </ul>
-                <form class="d-flex">
-                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                
+                <form action="/catalog/search" method="get" class="d-flex">
+                    <input  id="search" name="searchValue" class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <!-- <input class="" type="search" placeholder="Search" value="1"> -->
                     <button class="btn btn-outline-success" type="submit">Поиск</button>
                 </form>
 

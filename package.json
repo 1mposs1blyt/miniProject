@@ -15,7 +15,8 @@
     "hbs": "^4.2.0",
     "jquery": "^3.6.0",
     "nunjucks": "^3.2.3",
-    "pm2": "^5.1.2"
+    "pm2": "^5.1.2",
+    "string-similarity": "^4.0.4"
   },
   "devDependencies": {
     "gulp": "^4.0.2",

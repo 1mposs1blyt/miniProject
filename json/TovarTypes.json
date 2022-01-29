@@ -47,7 +47,8 @@
             "MainPage": "ram",
             "catalogId": "164",
             "cardImage": "/static/images/RAMholder.png"
-        },        {
+        },
+        {
             "property": "процессоры",
             "MainPage": "processors",
             "catalogId": "21",
@@ -228,5 +229,7 @@
             "password": "qwerts123"
         }
     ],
-    "cardImage": "/static/images/placeholder.png"
+    "cardImage": "/static/images/placeholder.png",
+    "page": "processor",
+    "catalogId": "1242"
 }
