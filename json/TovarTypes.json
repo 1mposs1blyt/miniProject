@@ -1,10 +1,14 @@
 {
     "TovarTypeList": [
         {
-            "property": "процессоры",
-            "MainPage": "processors",
-            "catalogId": "21",
-            "cardImage": "/static/images/CPUHolder.png"
+            "TovarName": "asus b560",
+            "TovarPrice": "10500",
+            "CardText": "lorem 1...",
+            "BtnText": "Купить",
+            "page": "motherboard",
+            "currency": "рублей",
+            "productId": "1235fas",
+            "cardImage": "/static/images/moboholder.png"
         },
         {
             "property": "матееринские платы",
@@ -56,6 +60,466 @@
         }
     ],
     "TovarList": [
+        {
+            "TovarName": "asus b560",
+            "TovarPrice": "10500",
+            "CardText": "lorem 1...",
+            "BtnText": "Купить",
+            "page": "motherboard",
+            "currency": "рублей",
+            "productId": "1235fas",
+            "cardImage": "/static/images/moboholder.png"
+        },
+        {
+            "TovarName": "asus b560",
+            "TovarPrice": "10500",
+            "CardText": "lorem 1...",
+            "BtnText": "Купить",
+            "page": "motherboard",
+            "currency": "рублей",
+            "productId": "1235fas",
+            "cardImage": "/static/images/moboholder.png"
+        },
+        {
+            "TovarName": "asus b560",
+            "TovarPrice": "10500",
+            "CardText": "lorem 1...",
+            "BtnText": "Купить",
+            "page": "motherboard",
+            "currency": "рублей",
+            "productId": "1235fas",
+            "cardImage": "/static/images/moboholder.png"
+        },
+        {
+            "TovarName": "asus b560",
+            "TovarPrice": "10500",
+            "CardText": "lorem 1...",
+            "BtnText": "Купить",
+            "page": "motherboard",
+            "currency": "рублей",
+            "productId": "1235fas",
+            "cardImage": "/static/images/moboholder.png"
+        },
+        {
+            "TovarName": "asus b560",
+            "TovarPrice": "10500",
+            "CardText": "lorem 1...",
+            "BtnText": "Купить",
+            "page": "motherboard",
+            "currency": "рублей",
+            "productId": "1235fas",
+            "cardImage": "/static/images/moboholder.png"
+        },
+        {
+            "TovarName": "asus b560",
+            "TovarPrice": "10500",
+            "CardText": "lorem 1...",
+            "BtnText": "Купить",
+            "page": "motherboard",
+            "currency": "рублей",
+            "productId": "1235fas",
+            "cardImage": "/static/images/moboholder.png"
+        },
+        {
+            "TovarName": "msi h410 a pro",
+            "TovarPrice": "10500",
+            "CardText": "lorem 1...",
+            "BtnText": "Купить",
+            "page": "motherboard",
+            "currency": "рублей",
+            "productId": "1235fas",
+            "cardImage": "/static/images/moboholder.png"
+        },
+        {
+            "TovarName": "gigabyte aorus z690",
+            "TovarPrice": "10500",
+            "CardText": "lorem 1...",
+            "BtnText": "Купить",
+            "page": "motherboard",
+            "currency": "рублей",
+            "productId": "1235fas",
+            "cardImage": "/static/images/moboholder.png"
+        },
+        {
+            "TovarName": "Asus maximus VI",
+            "TovarPrice": "10500",
+            "CardText": "lorem 1...",
+            "BtnText": "Купить",
+            "page": "motherboard",
+            "currency": "рублей",
+            "productId": "1235fas",
+            "cardImage": "/static/images/moboholder.png"
+        },
+        {
+            "TovarName": "asus b560",
+            "TovarPrice": "10500",
+            "CardText": "lorem 1...",
+            "BtnText": "Купить",
+            "page": "motherboard",
+            "currency": "рублей",
+            "productId": "1235fas",
+            "cardImage": "/static/images/moboholder.png"
+        },
+        {
+            "TovarName": "noname",
+            "TovarPrice": "10500",
+            "CardText": "lorem 1...",
+            "BtnText": "Купить",
+            "page": "motherboard",
+            "currency": "рублей",
+            "productId": "1235fas",
+            "cardImage": "/static/images/moboholder.png"
+        },
+        {
+            "TovarName": "gigabyte b560 DS3H",
+            "TovarPrice": "10500",
+            "CardText": "lorem 1...",
+            "BtnText": "Купить",
+            "page": "motherboard",
+            "currency": "рублей",
+            "productId": "1235fas",
+            "cardImage": "/static/images/moboholder.png"
+        },
+        {
+            "TovarName": "asus z690",
+            "TovarPrice": "10500",
+            "CardText": "lorem 1...",
+            "BtnText": "Купить",
+            "page": "motherboard",
+            "currency": "рублей",
+            "productId": "1235fas",
+            "cardImage": "/static/images/moboholder.png"
+        },
+        {
+            "TovarName": "asus z67",
+            "TovarPrice": "10500",
+            "CardText": "lorem 1...",
+            "BtnText": "Купить",
+            "page": "motherboard",
+            "currency": "рублей",
+            "productId": "1235fas",
+            "cardImage": "/static/images/moboholder.png"
+        },
+        {
+            "TovarName": "asus a320",
+            "TovarPrice": "10500",
+            "CardText": "lorem 1...",
+            "BtnText": "Купить",
+            "page": "motherboard",
+            "currency": "рублей",
+            "productId": "1235fas",
+            "cardImage": "/static/images/moboholder.png"
+        },
+        {
+            "TovarName": "asrock h310",
+            "TovarPrice": "10500",
+            "CardText": "lorem 1...",
+            "BtnText": "Купить",
+            "page": "motherboard",
+            "currency": "рублей",
+            "productId": "1235fas",
+            "cardImage": "/static/images/moboholder.png"
+        },
+        {
+            "TovarName": "gigabyte z690 DS4-HD3",
+            "TovarPrice": "10500",
+            "CardText": "lorem 1...",
+            "BtnText": "Купить",
+            "page": "motherboard",
+            "currency": "рублей",
+            "productId": "1235fas",
+            "cardImage": "/static/images/moboholder.png"
+        },
+        {
+            "TovarName": "msi z490 a pro",
+            "TovarPrice": "10500",
+            "CardText": "lorem 1...",
+            "BtnText": "Купить",
+            "page": "motherboard",
+            "currency": "рублей",
+            "productId": "1235fas",
+            "cardImage": "/static/images/moboholder.png"
+        },
+        {
+            "TovarName": "asus h110",
+            "TovarPrice": "10500",
+            "CardText": "lorem 1...",
+            "BtnText": "Купить",
+            "page": "motherboard",
+            "currency": "рублей",
+            "productId": "1235fas",
+            "cardImage": "/static/images/moboholder.png"
+        },
+        {
+            "TovarName": "asus z77",
+            "TovarPrice": "10500",
+            "CardText": "lorem 1...",
+            "BtnText": "Купить",
+            "page": "motherboard",
+            "currency": "рублей",
+            "productId": "1235fas",
+            "cardImage": "/static/images/moboholder.png"
+        },
+        {
+            "TovarName": "asus z97",
+            "TovarPrice": "10500",
+            "CardText": "lorem 1...",
+            "BtnText": "Купить",
+            "page": "motherboard",
+            "currency": "рублей",
+            "productId": "1235fas",
+            "cardImage": "/static/images/moboholder.png"
+        },
+        {
+            "TovarName": "asus b450",
+            "TovarPrice": "10500",
+            "CardText": "lorem 1...",
+            "BtnText": "Купить",
+            "page": "motherboard",
+            "currency": "рублей",
+            "productId": "1235fas",
+            "cardImage": "/static/images/moboholder.png"
+        },
+        {
+            "TovarName": "asus z490",
+            "TovarPrice": "10500",
+            "CardText": "lorem 1...",
+            "BtnText": "Купить",
+            "page": "motherboard",
+            "currency": "рублей",
+            "productId": "1235fas",
+            "cardImage": "/static/images/moboholder.png"
+        },
+        {
+            "TovarName": "DDR4 16gb 2666mhz 2x8 kit",
+            "TovarPrice": "8999",
+            "CardText": "lorem 1...",
+            "BtnText": "Купить",
+            "page": "ram",
+            "currency": "рублей",
+            "productId": "1235fas",
+            "cardImage": "/static/images/RAMholder.png"
+        },
+        {
+            "TovarName": "DDR4 16gb 2666mhz 2x8 kit",
+            "TovarPrice": "8999",
+            "CardText": "lorem 1...",
+            "BtnText": "Купить",
+            "page": "ram",
+            "currency": "рублей",
+            "productId": "1235fas",
+            "cardImage": "/static/images/RAMholder.png"
+        },
+        {
+            "TovarName": "DDR4 16gb 2666mhz 2x8 kit",
+            "TovarPrice": "8999",
+            "CardText": "lorem 1...",
+            "BtnText": "Купить",
+            "page": "ram",
+            "currency": "рублей",
+            "productId": "1235fas",
+            "cardImage": "/static/images/RAMholder.png"
+        },
+        {
+            "TovarName": "DDR4 16gb 2666mhz 2x8 kit",
+            "TovarPrice": "8999",
+            "CardText": "lorem 1...",
+            "BtnText": "Купить",
+            "page": "ram",
+            "currency": "рублей",
+            "productId": "1235fas",
+            "cardImage": "/static/images/RAMholder.png"
+        },
+        {
+            "TovarName": "DDR4 16gb 2666mhz 2x8 kit",
+            "TovarPrice": "8999",
+            "CardText": "lorem 1...",
+            "BtnText": "Купить",
+            "page": "ram",
+            "currency": "рублей",
+            "productId": "1235fas",
+            "cardImage": "/static/images/RAMholder.png"
+        },
+        {
+            "TovarName": "DDR4 16gb 2666mhz 2x8 kit",
+            "TovarPrice": "8999",
+            "CardText": "lorem 1...",
+            "BtnText": "Купить",
+            "page": "ram",
+            "currency": "рублей",
+            "productId": "1235fas",
+            "cardImage": "/static/images/RAMholder.png"
+        },
+        {
+            "TovarName": "DDR4 16gb 2666mhz 2x8 kit",
+            "TovarPrice": "8999",
+            "CardText": "lorem 1...",
+            "BtnText": "Купить",
+            "page": "ram",
+            "currency": "рублей",
+            "productId": "1235fas",
+            "cardImage": "/static/images/RAMholder.png"
+        },
+        {
+            "TovarName": "DDR4 16gb 2666mhz 2x8 kit",
+            "TovarPrice": "8999",
+            "CardText": "lorem 1...",
+            "BtnText": "Купить",
+            "page": "ram",
+            "currency": "рублей",
+            "productId": "1235fas",
+            "cardImage": "/static/images/RAMholder.png"
+        },
+        {
+            "TovarName": "DDR4 16gb 2666mhz 2x8 kit",
+            "TovarPrice": "8999",
+            "CardText": "lorem 1...",
+            "BtnText": "Купить",
+            "page": "ram",
+            "currency": "рублей",
+            "productId": "1235fas",
+            "cardImage": "/static/images/RAMholder.png"
+        },
+        {
+            "TovarName": "DDR4 16gb 2666mhz 2x8 kit",
+            "TovarPrice": "8999",
+            "CardText": "lorem 1...",
+            "BtnText": "Купить",
+            "page": "ram",
+            "currency": "рублей",
+            "productId": "1235fas",
+            "cardImage": "/static/images/RAMholder.png"
+        },
+        {
+            "TovarName": "DDR4 16gb 2666mhz 2x8 kit",
+            "TovarPrice": "8999",
+            "CardText": "lorem 1...",
+            "BtnText": "Купить",
+            "page": "ram",
+            "currency": "рублей",
+            "productId": "1235fas",
+            "cardImage": "/static/images/RAMholder.png"
+        },
+        {
+            "TovarName": "DDR4 16gb 2666mhz 2x8 kit",
+            "TovarPrice": "8999",
+            "CardText": "lorem 1...",
+            "BtnText": "Купить",
+            "page": "ram",
+            "currency": "рублей",
+            "productId": "1235fas",
+            "cardImage": "/static/images/RAMholder.png"
+        },
+        {
+            "TovarName": "DDR4 16gb 2666mhz 2x8 kit",
+            "TovarPrice": "8999",
+            "CardText": "lorem 1...",
+            "BtnText": "Купить",
+            "page": "ram",
+            "currency": "рублей",
+            "productId": "1235fas",
+            "cardImage": "/static/images/RAMholder.png"
+        },
+        {
+            "TovarName": "DDR4 16gb 2666mhz 2x8 kit",
+            "TovarPrice": "8999",
+            "CardText": "lorem 1...",
+            "BtnText": "Купить",
+            "page": "ram",
+            "currency": "рублей",
+            "productId": "1235fas",
+            "cardImage": "/static/images/RAMholder.png"
+        },
+        {
+            "TovarName": "DDR4 16gb 2666mhz 2x8 kit",
+            "TovarPrice": "8999",
+            "CardText": "lorem 1...",
+            "BtnText": "Купить",
+            "page": "ram",
+            "currency": "рублей",
+            "productId": "1235fas",
+            "cardImage": "/static/images/RAMholder.png"
+        },
+        {
+            "TovarName": "DDR4 16gb 2666mhz 2x8 kit",
+            "TovarPrice": "8999",
+            "CardText": "lorem 1...",
+            "BtnText": "Купить",
+            "page": "ram",
+            "currency": "рублей",
+            "productId": "1235fas",
+            "cardImage": "/static/images/RAMholder.png"
+        },
+        {
+            "TovarName": "DDR4 16gb 2666mhz 2x8 kit",
+            "TovarPrice": "8999",
+            "CardText": "lorem 1...",
+            "BtnText": "Купить",
+            "page": "ram",
+            "currency": "рублей",
+            "productId": "1235fas",
+            "cardImage": "/static/images/RAMholder.png"
+        },
+        {
+            "TovarName": "DDR4 16gb 2666mhz 2x8 kit",
+            "TovarPrice": "8999",
+            "CardText": "lorem 1...",
+            "BtnText": "Купить",
+            "page": "ram",
+            "currency": "рублей",
+            "productId": "1235fas",
+            "cardImage": "/static/images/RAMholder.png"
+        },
+        {
+            "TovarName": "DDR4 16gb 2666mhz 2x8 kit",
+            "TovarPrice": "8999",
+            "CardText": "lorem 1...",
+            "BtnText": "Купить",
+            "page": "ram",
+            "currency": "рублей",
+            "productId": "1235fas",
+            "cardImage": "/static/images/RAMholder.png"
+        },
+        {
+            "TovarName": "DDR4 16gb 2666mhz 2x8 kit",
+            "TovarPrice": "8999",
+            "CardText": "lorem 1...",
+            "BtnText": "Купить",
+            "page": "ram",
+            "currency": "рублей",
+            "productId": "1235fas",
+            "cardImage": "/static/images/RAMholder.png"
+        },
+        {
+            "TovarName": "DDR4 16gb 2666mhz 2x8 kit",
+            "TovarPrice": "8999",
+            "CardText": "lorem 1...",
+            "BtnText": "Купить",
+            "page": "ram",
+            "currency": "рублей",
+            "productId": "1235fas",
+            "cardImage": "/static/images/RAMholder.png"
+        },
+        {
+            "TovarName": "DDR4 16gb 2666mhz 2x8 kit",
+            "TovarPrice": "8999",
+            "CardText": "lorem 1...",
+            "BtnText": "Купить",
+            "page": "ram",
+            "currency": "рублей",
+            "productId": "1235fas",
+            "cardImage": "/static/images/RAMholder.png"
+        },
+        {
+            "TovarName": "DDR4 16gb 2666mhz 2x8 kit",
+            "TovarPrice": "8999",
+            "CardText": "lorem 1...",
+            "BtnText": "Купить",
+            "page": "ram",
+            "currency": "рублей",
+            "productId": "1235fas",
+            "cardImage": "/static/images/RAMholder.png"
+        },
         {
             "TovarName": "i3-10100f",
             "TovarPrice": "6500",

@@ -11,9 +11,9 @@
             <div id="CardsRow" class="container">
                 {# {% include "templates/filter.njk" %} #}
                 <div class="row cols-xs-12 cols-sm-12 cols-md-12 cols-lg-12 cols-xl-12 cols-xxl-12 card-group">
-                    {% for item in TovarList %}
+                    {% asyncEach item in TovarList %}
                         {% include "templates/tovar.html" %}
-                    {% endfor %}
+                    {% endeach %}
                 </div>
                 {# {% include "templates/PagMenu.njk"%} Потом сделаю =) #}
             </div>

@@ -3,6 +3,7 @@ const app = express();
 const port = 3000;
 const hostname = '127.0.0.1';
 const stringSimilarity = require("string-similarity");
+const fs = require('fs');
 
 
 var jquery = require('jquery');
@@ -60,24 +61,52 @@ app.get('/', function (request, response) {
 app.get('/catalog/search', (request, response) => {
     const data = require(__dirname + '/json/TovarTypes.json');
     let search = request.query.search;
-    var TovarList = [];
-    for (let i = 0, l = data.TovarList.length; i < l; i++) {
-        var obj = data.TovarList[i];
-        var similarity = stringSimilarity.compareTwoStrings(String(search), obj.TovarName)
-        if (similarity >= 0.5) {
-            // console.log(similarity)
-            TovarList.push(obj)
-        }
-    }
-    console.log(TovarList)
-    if (similarity >= 0.5) {
+    var SearchedList = [];
 
-        response.render(__dirname + '/nunjucks/Catalog-Searched.njk', TovarList)
+
+    async function searchf() {
+        let promise = new Promise((resolve, reject) => {
+            // resolve("ready")
+            for (let i = 0, l = data.TovarList.length; i < l; i++) {
+                var obj = data.TovarList[i];
+                var similarity = stringSimilarity.compareTwoStrings(String(search.toLowerCase()), obj.TovarName.toLowerCase())
+                if (similarity > 0.5) {
+                    // console.log(similarity)
+                    let search = SearchedList.push(obj)
+                }
+            }
+            var SearchedListF1 = fs.writeFileSync(__dirname + '/json/searcheditems.json', JSON.stringify({ SearchedList }))
+            var SearchedListF2 = require(__dirname + '/json/searcheditems.json');
+            response.render(__dirname + '/nunjucks/Catalog-Searched.njk', SearchedListF2)//вероятнее всего эта чтрочка должна бытть гдето в другом месте
+            resolve(SearchedListF2)
+        })
+
+        let FinalRender = await promise;
+
+        console.log(FinalRender);
     }
-    else {
-        console.log("nothing found")
-        response.render(__dirname + '/nunjucks/Catalog-Searched.njk', data)
-    }
+    searchf()
+
+
+    // let json2 = SearchedList;
+    // console.log(JSON.stringify(SearchedList))
+
+
+
+
+    // async function f() {
+
+    //     let promise = new Promise((resolve, reject) => {
+    //         setTimeout(() => resolve("готово!"), 1000)
+    //     });
+
+    //     let result = await promise; // будет ждать, пока промис не выполнится (*)
+
+    //     console.log(result); // "готово!"
+    // }
+
+    // f();
+
 })
 
 
@@ -137,11 +166,11 @@ app.listen(port, function () {
 // "/tovary/:type/:custom" => "/tovary/TovarTypes/TovarTypeCPU"
 // all = {
 //     "TovarTypes":{
-//         "TovarTypeCPU":{...}
-//         "TovarTypeRAM":{...}
-//         "TovarTypeMotherBoards":{}
-//     }
-// }
-// type = request.params["type"]
+//         "TovarTypeCPU":{...}лл
+//         "TovarTypeRAM":{...}лл
+//         "TovarTypeMotherBoards":{}лл
+//     }лл
+// }лл
+// type = request.params["type"]лл
 // custom = request.params["custom"]
 // data = all[type][custom]

@@ -1,42 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-    {% include "templates/head.html"%}
-</head>
+    <head>
+        {% include "templates/head.html"%}
+    </head>
 
-<body>
-    {% include "templates/header.njk" %}
-    <main>
-        <div id="CardsRow" class="container">
-
-            {# {% include "templates/filter.njk" %} #}
-            <div class="row cols-xs-12 cols-sm-12 cols-md-12 cols-lg-12 cols-xl-12 cols-xxl-12 card-group">
-                <h1></h1>
-                {% for item in TovarList %}
-                <div onmouseover="this.style.border = '2px solid rgb(204, 204, 204)'"
+    <body>
+        {% include "templates/header.njk" %}
+        <main>
+            <div id="CardsRow" class="container">
+                {# {% include "templates/filter.njk" %} #}
+                <div class="row cols-xs-12 cols-sm-12 cols-md-12 cols-lg-12 cols-xl-12 cols-xxl-12 card-group">
+                    {# <h1>По вашему запросу найдено:</h1> #}
+                    {% asyncEach item in SearchedList %}
+                    <div onmouseover="this.style.border = '2px solid rgb(204, 204, 204)'"
                     onmouseout=" this.style.border= ' 2px solid transparent'" id="MainTovarCard"
                     class="col-xs-3 col-sm-6 col-md-4 col-lg-4 col-xl-3 col-xxl-3" class="card">
-                    <img id="CardMainImg" src="{{item.cardImage}}" class="card-img-top" alt="image">
-                    <div class="card-body">
-                        <h5 class="card-title">
-                            <a id="cardTitleName" class="cardTitleName" role="button"
+                        <img id="CardMainImg" src="{{item.cardImage}}" class="card-img-top" alt="image">
+                        <div class="card-body">
+                            <h5 class="card-title">
+                                <a id="cardTitleName" class="cardTitleName" role="button"
                                 href="/product/{{item.productId}}/{{item.TovarName}}">{{item.TovarName}}</a>
-                        </h5>
-                        <h6 id="cardTitlePrice" class="card-title">{{item.TovarPrice}}
-                            <a>
-                                {{item.currency}}</a>
-                        </h6>
-                        <p id="cardText" class="card-text">{{item.CardText}}</p>
-                        <input type="button" onclick="addToCart(),MiniCartF(),MiniCartFclose()" id="CardBTN"
+                            </h5>
+                            <h6 id="cardTitlePrice" class="card-title">{{item.TovarPrice}}
+                                <a>
+                                    {{item.currency}}</a>
+                            </h6>
+                            <p id="cardText" class="card-text">{{item.CardText}}</p>
+                            <input type="button" onclick="addToCart(),MiniCartF(),MiniCartFclose()" id="CardBTN"
                             class="btn btn-primary" role="button" value="{{item.BtnText}}">
 
+                        </div>
                     </div>
+                {%else %}
+                    <h1>По вашему запросу {{SearchedList.search}} ничего не найдено</h1>
+                    {% endeach %}
                 </div>
-                {% endfor %}
+                {# {% include "templates/PagMenu.njk"%} Потом сделаю =) #}
             </div>
-            {# {% include "templates/PagMenu.njk"%} Потом сделаю =) #}
-        </div>
         </div>
     </main>
     {% include "templates/footer.html"%}
