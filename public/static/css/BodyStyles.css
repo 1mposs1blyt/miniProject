@@ -79,7 +79,7 @@ li {
 
 #MiniCart {
     position: absolute;
-    background-color: rgb(204, 204, 204);
+    background-color: whitesmoke;
     visibility: hidden;
     z-index: 1000;
     height: 0px;
@@ -105,7 +105,7 @@ li {
 
 #MiniCartCard {
     max-width: 500px;
-    background-color: whitesmoke;
+    background-color: white;
 }
 
 #MiniCart::-webkit-scrollbar {

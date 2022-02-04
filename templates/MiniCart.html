@@ -1,5 +1,5 @@
 <div onmouseover="MiniCartF()" onmouseout="MiniCartFclose()" id="MiniCart"
-    class="col-xs-6 col-sm-6 col-md-8 col-lg-8 col-xl-8 col-xxl-8">
+    class="col-xs-8 col-sm-8 col-md-8 col-lg-8 col-xl-8 col-xxl-8">
     <!--  -->
     <h5 style="text-align: left; padding-top:10px">В корзине: x товаров <a onclick="CartClean()" id="cleanAllCart"
             href="#">очистить
@@ -22,6 +22,8 @@
             </div>
         </div>
     </div>
+    {%else %}
+    <h2> Тут ничего нет...</h2>
     {% endfor %}
     <hr>
     <h5 style="text-align: left;">Итого: 999 рублей <a aria-current="page" href="/{{UserId}}/cart">В корзину</a></h5>

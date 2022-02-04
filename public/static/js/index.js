@@ -122,16 +122,20 @@ function MiniCartFclose() {
   // miniCart.style.width = "450px"
   miniCart.style.height = "0px"
   miniCart.style.visibility = "hidden"
+
 }
-function addToCart() { 
+function addToCart() {
+
   // let CardBTN = document.querySelectorAll("#CardBTN")
   let miniCart = document.getElementById("MiniCart");
+
   miniCart.style.transition = "1.2s"
   // miniCart.style.width = "450px"
   miniCart.style.height = "390px"
   miniCart.style.visibility = "visible"
   setTimeout(MiniCartFclose, 1800);
-  clearTimeout(a)
+  clearTimeout(c)
+}
   // addToCart.innerHTML = ""
   // console.log(addToCart)
   // let CardName = document.getElementsByClassName("cardTitleName").innerHTML;
@@ -152,7 +156,7 @@ function addToCart() {
   // }
   // console.log(idsinnerHTML)
   // console.log(cookie)
-}
+
 
 // function Cart() {
 
@@ -218,16 +222,16 @@ function addToCart() {
 // let json2 = '{"name":"alexandr","surname":chey-to,"age":13}'
 
 
-  // let list = ['one','two','three'];
-  // let json3 = JSON.stringify(list);
-  // console.log(typeof(json3));
+// let list = ['one','two','three'];
+// let json3 = JSON.stringify(list);
+// console.log(typeof(json3));
 
-  // let zapros = ['login', {'login':'Chelovecha','password':'12345123'}];
-  // post = JSON.stringify(zapros);
+// let zapros = ['login', {'login':'Chelovecha','password':'12345123'}];
+// post = JSON.stringify(zapros);
 
-  // getComputedStyle.JSON.parse(post);
-  // func = get[0];
-  // login(get[1])
+// getComputedStyle.JSON.parse(post);
+// func = get[0];
+// login(get[1])
 
 
 //COOKIE

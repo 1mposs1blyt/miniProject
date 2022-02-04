@@ -1,9 +1,11 @@
 <div onmouseover="this.style.border = '2px solid rgb(204, 204, 204)'"
-    onmouseout=" this.style.border= ' 2px solid transparent'" id="MainTovarCard" class="col-xs-3 col-sm-6 col-md-4 col-lg-4 col-xl-3 col-xxl-3" class="card">
+    onmouseout=" this.style.border= ' 2px solid transparent'" id="MainTovarCard"
+    class="col-xs-3 col-sm-6 col-md-4 col-lg-4 col-xl-3 col-xxl-3" class="card">
     <img id="CardMainImg" src="{{item.cardImage}}" class="card-img-top" alt="image">
     <div class="card-body">
         <h5 class="card-title"><a id="cardTitleName" class="cardTitleName" role="button"
-                href="/product/{{item.productId}}/{{item.TovarName}}">{{item.TovarName}}</a></h5>
+                href="#/product/{{item.productId}}/{{item.TovarName}}">{{item.TovarName}}</a></h5>
+        <!-- href="/product/{{item.productId}}/{{item.TovarName}}" -->
         <h6 id="cardTitlePrice" class="card-title">{{item.TovarPrice}}<a> {{item.currency}}</a></h6>
         <p id="cardText" class="card-text">{{item.CardText}}</p>
         <!-- <input type="button" class="btn btn-primary" value="{{btnText}}" onclick="GoPage()" id="GoPageBTN">
