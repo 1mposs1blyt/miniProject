@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    {% for item in resolve %}
+    <div onmouseover="this.style.border = '2px solid rgb(204, 204, 204)'"
+        onmouseout=" this.style.border= ' 2px solid transparent'" id="MainTovarCard"
+        class="col-xs-3 col-sm-6 col-md-4 col-lg-4 col-xl-3 col-xxl-3" class="card">
+        <img id="CardMainImg" src="{{item.Image}}" class="card-img-top" alt="image">
+        <div class="card-body">
+            <h5 class="card-title">
+                <a id="cardTitleName" class="cardTitleName" role="button"
+                    href="/product/{{item.productId}}/{{item.TovarName}}">{{Name}}</a>
+            </h5>
+            <h6 id="cardTitlePrice" class="card-title">{{Price}}
+                <a>roubles</a><!-- {{item.currency}} -->
+            </h6>
+            <p id="cardText" class="card-text">{{item.Text}}</p>
+            <input type="button" onclick="addToCart(),MiniCartF(),MiniCartFclose()" id="CardBTN" class="btn btn-primary"
+                role="button" value="{{item.Text}}">
+
+        </div>
+    </div>
+    {% else %}
+    По вашему запросу <h1>"{{search}}"</h1> ничего не найдено
+    {% endfor %}
+    {% for items, item in goods%}
+    {{Name}}
+    {%endfor%}
+</body>
+
+</html>

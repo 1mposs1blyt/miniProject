@@ -42,6 +42,15 @@
 //     });
 //   });
 
+let good = {
+  image: image,
+  name: name,
+  price:price,
+  currency: currency,
+  text: text,
+  id:id,
+  itemcount: itemcount,
+}
 
 
 
@@ -100,7 +109,7 @@
 
 //   // }
 // })
-
+let detect = new MobileDetect(window.navigator.userAgent)
 
 function CartClean() {
   alert("Wil be Cleaned!")
@@ -126,13 +135,23 @@ function MiniCartFclose() {
 }
 function addToCart() {
 
-  // let CardBTN = document.querySelectorAll("#CardBTN")
   let miniCart = document.getElementById("MiniCart");
+  if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|BB|PlayBook|IEMobile|Windows Phone|Kindle|Silk|Opera Mini/i.test(navigator.userAgent)) {
+    miniCart.style.transition = "0.5s"
+    miniCart.style.height = "390px"
+    miniCart.style.visibility = "hidden"
+    //на телефоне скрыта
+  } else {
+    miniCart.style.transition = "0.5s"
+    miniCart.style.height = "390px"
+    miniCart.style.visibility = "visible"
+    //на пк есть
+  }
 
-  miniCart.style.transition = "1.2s"
-  // miniCart.style.width = "450px"
-  miniCart.style.height = "390px"
-  miniCart.style.visibility = "visible"
+  // miniCart.style.transition = "1.2s"
+  // // miniCart.style.width = "450px"
+  // miniCart.style.height = "390px"
+  // miniCart.style.visibility = "visible"
   setTimeout(MiniCartFclose, 1800);
   clearTimeout(c)
 }
@@ -213,80 +232,3 @@ function addToCart() {
 //   // Значение кнопки "Купить должно меняться после нажатия на "В корзине" или галочку(Типа тоже в корзине)
 // }
 
-
-
-
-// создаём файл
-
-// let json = '[0,1,2,3,4]';
-// let json2 = '{"name":"alexandr","surname":chey-to,"age":13}'
-
-
-// let list = ['one','two','three'];
-// let json3 = JSON.stringify(list);
-// console.log(typeof(json3));
-
-// let zapros = ['login', {'login':'Chelovecha','password':'12345123'}];
-// post = JSON.stringify(zapros);
-
-// getComputedStyle.JSON.parse(post);
-// func = get[0];
-// login(get[1])
-
-
-//COOKIE
-
-// cookie - это небольшая ячейка информации,которая хранится в браузере пользователя
-// document.cookie = '{"user":"My Name =)"}';
-// console.log(document.cookie)
-// let info = JSON.parse(document.cookie)
-// let usname = info['user'];
-// alert('Hello,'+usname);
-
-// local storage
-//cookie позволяют хранить всего 4096 символов, а кол-во на "кук"на один домен
-// ограничен от 30 до 50 в зависимости от браузера
-// локальное хранилище позволяет хранить от 5 жо 10 Мбайт и даже больше
-
-// Сохранение значения
-// localStorage.setItem('name','Imya');
-
-// Получить значение
-// let usname = localStorage.getItem('name');//указывается ключ
-// alert('Hello,'+usname)
-// удалить значения
-// localStorage.removeItem('user');
-
-// Очистить всё
-// localStorage.clear()
-
-// Базы данных (БД)
-
-// БД -- НАбор некоторых сведений хранящихся некоторым упорядоченным способом
-
-// Система управления базами данных (СУБД) - система,которая позволяет манипулировать
-// информацией в БД с помощью языков и программных средств, Язык - SQL.СУБД - SQLite,MySQL,PostgreeSQL и т.д.
-
-// SQL - (Structured Query Language) - язык структурированных запросов.Основная задача - предоставление простого способа считывания
-// и записи информации в БД
-
-// Плоская БД - EXEL - не имеет в своей структуре зависымых отношений (программные не в счет)
-//
-// Реляционные БД - это БД, которая состоит из множества таблиц. Основное свойство реляционных БД в том, что они
-// связаны т зависимы между собой(relation-отношения)
-// столбцы располагаются в определенном порядке, которые определяются при создании БД
-// У каждого столбца есть уникальное имя  (в пределах таблицы),все значение в 1м
-// столбце не имеют одинаковый тип (только строки,числа, даты и тд)
-// На пересечении столбцов и строк(в ячейка) может находится только АТОМАРНОЕ(простое значение)
-// Например,нельзя хранить хранить в ячейках объекты (типа массивов или словарей), или сложные конструкции
-//
-// Нормализация это пошаговый обратимый процесс замены исходной схемы  другой схемы с более логичной и оптимизированной  структурой
-// Требуется для того, чтобы избавится от избыточных данных
-
-// НФ(Нормальная форма) - это нормализованные данные в таблице по определённым правилам (1-5 НФ НБФК - нормальная форма Бойса Кодда)
-// 1НФ - если все её поля имеют простые значения(атомарные)
-// Первым делом, состовляя БД, проверьте,что в таблице нет массивов иИспользуют как правило яAUTOINCREMENT (авто прибавление по единицке)
-// PRimary key является уникальным в пределах одной таблицы
-// лучше использовать либо есстественные  числовые ключи(цело численные),либо исскуственные, по причине более быстрого считывания СУБД
-// - остальные поля должны функционально завистеть от главного ключа
-// - ключи таблицы,

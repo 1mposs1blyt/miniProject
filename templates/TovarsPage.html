@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        {% include "templates/head.html"%}
+    </head>
+
+    <body>
+        {% include "templates/header.html"%}
+        <main>
+            <div id="CardsRow" class="container">
+                <div class="row cols-xs-12 cols-sm-12 cols-md-12 cols-lg-12 cols-xl-12 cols-xxl-12 card-group">
+                    {% asyncEach item in resolve %}
+                        {% include "templates/tovar.html" %}
+                    {% endeach %}
+                </div>
+            </div>
+        </div>
+    </main>
+    {% include "templates/footer.html"%}
+</body>
+
+</html>

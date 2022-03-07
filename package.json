@@ -16,6 +16,9 @@
     "jquery": "^3.6.0",
     "nunjucks": "^3.2.3",
     "pm2": "^5.1.2",
+    "querystring": "^0.2.1",
+    "request": "^2.88.2",
+    "sqlite3": "^5.0.2",
     "string-similarity": "^4.0.4"
   },
   "devDependencies": {
