@@ -1,3 +1,79 @@
+
+function get_data() {
+  // let name = document.getElementsByTagName("h5");
+  
+  const reqUrl = "/catalog/GoodCard"
+  const xhr = new XMLHttpRequest();
+  xhr.open("GET",reqUrl)
+  xhr.onload = () =>{
+      if (xhr.status !== 200) {
+          return;
+      }
+      document.querySelector("#putcard").innerHTML = xhr.response;
+  }
+  xhr.send()
+}
+function searchajax() {
+  const reqUrl = "/catalog/search"
+  const xhr = new XMLHttpRequest();
+  xhr.open("GET",reqUrl);
+  xhr.onload() = function() {
+    if(xhr.status !== 200) {
+      return;
+    }
+    document.querySelector("#CardsRow").innerHTML = xhr.response;
+    console.log("READY!!!")= xhr.response;
+  }
+  xhr.send()
+}
+
+let detect = new MobileDetect(window.navigator.userAgent)
+
+function CartClean() {
+  alert("Wil be Cleaned!")
+}
+function delFromMiniBin() {
+  alert("Will be deleted!")
+}
+function MiniCartF() {
+  let miniCart = document.getElementById("MiniCart");
+  miniCart.style.transition = "0.5s"
+  // miniCart.style.width = "450px"
+  miniCart.style.height = "390px"
+  miniCart.style.visibility = "visible"
+}
+
+function MiniCartFclose() {
+  let miniCart = document.getElementById("MiniCart");
+  miniCart.style.transition = "0.5s"
+  // miniCart.style.width = "450px"
+  miniCart.style.height = "0px"
+  miniCart.style.visibility = "hidden"
+
+}
+function addToCart() { 
+
+  let miniCart = document.getElementById("MiniCart");
+  if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|BB|PlayBook|IEMobile|Windows Phone|Kindle|Silk|Opera Mini/i.test(navigator.userAgent)) {
+    miniCart.style.transition = "0.5s"
+    miniCart.style.height = "390px"
+    miniCart.style.visibility = "hidden"
+    //на телефоне скрыта
+  } else {
+    miniCart.style.transition = "0.5s"
+    miniCart.style.height = "390px"
+    miniCart.style.visibility = "visible"
+    //на пк есть
+  }
+
+  // miniCart.style.transition = "1.2s"
+  // // miniCart.style.width = "450px"
+  // miniCart.style.height = "390px"
+  // miniCart.style.visibility = "visible"
+  setTimeout(MiniCartFclose, 1800);
+  clearTimeout(c)
+}
+
 // let obj = {
 //   CartItems: {}
 // };
@@ -41,19 +117,6 @@
 //       }
 //     });
 //   });
-
-let good = {
-  image: image,
-  name: name,
-  price:price,
-  currency: currency,
-  text: text,
-  id:id,
-  itemcount: itemcount,
-}
-
-
-
 
 
 
@@ -109,72 +172,27 @@ let good = {
 
 //   // }
 // })
-let detect = new MobileDetect(window.navigator.userAgent)
 
-function CartClean() {
-  alert("Wil be Cleaned!")
-}
-function delFromMiniBin() {
-  alert("Will be deleted!")
-}
-function MiniCartF() {
-  let miniCart = document.getElementById("MiniCart");
-  miniCart.style.transition = "0.5s"
-  // miniCart.style.width = "450px"
-  miniCart.style.height = "390px"
-  miniCart.style.visibility = "visible"
-}
+// addToCart.innerHTML = ""
+// console.log(addToCart)
+// let CardName = document.getElementsByClassName("cardTitleName").innerHTML;
+// let CardPrice = document.getElementsByClassName("cardTitlePrice").innerHTML;
+// alert(CardPriceT)
+// let cookie = { "CardName": randomId, "CardPrice": CardPrice }
+// // document.cookie
+// // alert(cookie)
+// console.log(cookie)
 
-function MiniCartFclose() {
-  let miniCart = document.getElementById("MiniCart");
-  miniCart.style.transition = "0.5s"
-  // miniCart.style.width = "450px"
-  miniCart.style.height = "0px"
-  miniCart.style.visibility = "hidden"
-
-}
-function addToCart() {
-
-  let miniCart = document.getElementById("MiniCart");
-  if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|BB|PlayBook|IEMobile|Windows Phone|Kindle|Silk|Opera Mini/i.test(navigator.userAgent)) {
-    miniCart.style.transition = "0.5s"
-    miniCart.style.height = "390px"
-    miniCart.style.visibility = "hidden"
-    //на телефоне скрыта
-  } else {
-    miniCart.style.transition = "0.5s"
-    miniCart.style.height = "390px"
-    miniCart.style.visibility = "visible"
-    //на пк есть
-  }
-
-  // miniCart.style.transition = "1.2s"
-  // // miniCart.style.width = "450px"
-  // miniCart.style.height = "390px"
-  // miniCart.style.visibility = "visible"
-  setTimeout(MiniCartFclose, 1800);
-  clearTimeout(c)
-}
-  // addToCart.innerHTML = ""
-  // console.log(addToCart)
-  // let CardName = document.getElementsByClassName("cardTitleName").innerHTML;
-  // let CardPrice = document.getElementsByClassName("cardTitlePrice").innerHTML;
-  // alert(CardPriceT)
-  // let cookie = { "CardName": randomId, "CardPrice": CardPrice }
-  // // document.cookie
-  // // alert(cookie)
-  // console.log(cookie)
-
-  // let ids = '';
-  // for (let i = 0; i < CardName.length; i++) {
-  //   ids += CardName[i].id;
-  // }
-  // console.log(ids.innerHTML)
-  // for (let i = 0; i < CardPrice.length; i++) {
-  //   ids += CardPrice[i].id;
-  // }
-  // console.log(idsinnerHTML)
-  // console.log(cookie)
+// let ids = '';
+// for (let i = 0; i < CardName.length; i++) {
+//   ids += CardName[i].id;
+// }
+// console.log(ids.innerHTML)
+// for (let i = 0; i < CardPrice.length; i++) {
+//   ids += CardPrice[i].id;
+// }
+// console.log(idsinnerHTML)
+// console.log(cookie)
 
 
 // function Cart() {
@@ -189,20 +207,29 @@ function addToCart() {
 // };
 
 
-// //редактируемый код
+//редактируемый код
 // function UserCart() {
 
 // }
+// UserCart.prototype.add = function (item) {
+//   if (!this.goods) {
+//     this.goods = [];
+//   }
+//   this.goods.push(item); //добавляет товар в корзину
+// };
 
 
-// function Item(CardId, CardName, CardPrice) {
+
+// UserCart.prototype = Object.create(UserCart.prototype);
+// // UserCart.prototype = localStorage.setItem(UserCart.prototype)
+
+
+// function Item(CardId, CardName, CardPrice, quantity) {
 //   this.CardId = CardId;
 //   this.CardName = CardName;
 //   this.CardPrice = CardPrice;
+//   this.quantity = quantity;
 // }
-
-// UserCart.prototype = Object.create(Cart.prototype);
-
 
 // const cart = new UserCart();
 // // const item = new Item("99", 'Сhair', "20$");
@@ -212,23 +239,47 @@ function addToCart() {
 // }
 // // const val = document. querySelector('input'). value;
 
-// let CardName = document.getElementsByClassName('card-title').innerHTML;
-// let CardPrice = document.querySelector('a').innerHTML;
 
+// // let cname = document.querySelectorAll('#cname').innerText
+
+// // console.log(cname.closest('a'))
+// let cname = document.getElementById('cname').innerText;
+// let price = document.getElementById('price').innerText;
+// console.log(cname, price)
 // // let CardName = document.getElementById("cardTitleName").innerHTML
 // // let CardPrice = document.getElementById("cardTitlePrice").innerHTML
-// let item = { "CardName": CardName, "CardPrice": CardPrice }
+// let item = { "name": cname, "price": price, quantity: 1 }
 
 
-// cart.add(item);//нужно чтобы функция считала значения товара(имя цена и тд)
+// // cart.add(item);//нужно чтобы функция считала значения товара(имя цена и тд)
+// cart.add(item);
+// myStorage = window.localStorage;
+// localStorage.setItem('name', cname);
+// localStorage.setItem('price', price);
+// quantity = 1
+// localStorage.setItem('quantity', quantity);
 
+// let n = localStorage.getItem('name');
+// let p = localStorage.getItem('price');
+// let q = localStorage.getItem('quantity')
+// let arr ={
+//   'name':n,
+//   'price': p,
+//   'quantity':q
+// }
+
+
+// console.log(JSON.stringify(arr))
+// // localStorage.setItem(cname:cname,)
 // function addToCart() {
 //   // document.cookie = "email=aaa@ggg.ccc"
 //   // document.cookie = "password=qewrty"
 //   // alert(document.cookie);
 //   cart.add(item);
-//   console.log(cart.goods);
-//   alert(cart.goods)
+//   let a = cart.goods
+//   console.log(JSON.stringify(arr))
+//   // console.log(JSON.stringify({a}));
+//   // alert(cart.goods)
 //   // Значение кнопки "Купить должно меняться после нажатия на "В корзине" или галочку(Типа тоже в корзине)
 // }
 

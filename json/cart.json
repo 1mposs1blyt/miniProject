@@ -1,182 +1,19 @@
 {
-"TovarTypeList": [
-         {
-            "property": "процессоры",
-            "MainPage": "processors",
-            "catalogId": "21",
-            "cardImage": "/static/images/placeholder.png"
-        },
-         {
-            "property": "матееринские платы",
-            "MainPage": "motherboards",
-            "catalogId": "12",
-            "cardImage": "/static/images/placeholder.png"
+    "a": [
+        {
+            "name": "AMD ryzen 5 5600x",
+            "price": "25000",
+            "quantity": 1
         },
         {
-            "property": "оперативная память",
-            "MainPage": "ram",
-            "catalogId": "164",
-            "cardImage": "/static/images/placeholder.png"
+            "name": "AMD ryzen 5 5600x",
+            "price": "25000",
+            "quantity": 1
+        },
+        {
+            "name": "AMD ryzen 5 5600x",
+            "price": "25000",
+            "quantity": 1
         }
-    ],
-    "CartItems": [
-        {
-            "TovarName": "i5-10600kf",
-            "TovarPrice": "15000",
-            "CardText": "lorem 1...",
-            "btnText": "купить",
-            "page": "processor",
-            "productId": "1235fas",
-            "cardImage": "/static/images/moboholder.png"
-        },
-        {
-            "TovarName": "i7-10700",
-            "TovarPrice": "25000",
-            "CardText": "lorem 1...",
-            "btnText": "купить",
-            "page": "processor",
-            "currency": "рублей",
-            "productId": "1235fas",
-            "cardImage": "/static/images/CPUHolder.png"
-        },
-        {
-            "TovarName": "i7-10700k",
-            "TovarPrice": "26800",
-            "CardText": "lorem 1...",
-            "btnText": "купить",
-            "page": "processor",
-            "currency": "рублей",
-            "productId": "1235fas",
-            "cardImage": "/static/images/RAMholder.png"
-        },
-        {
-            "TovarName": "i9-10900k",
-            "TovarPrice": "450000",
-            "CardText": "lorem 1...",
-            "btnText": "купить",
-            "page": "processor",
-            "currency": "рублей",
-            "productId": "1235fas",
-            "cardImage": "/static/images/RAMholder.png"
-        },{
-            "TovarName": "i5-10600kf",
-            "TovarPrice": "15000",
-            "CardText": "lorem 1...",
-            "btnText": "купить",
-            "page": "processor",
-            "productId": "1235fas",
-            "cardImage": "/static/images/moboholder.png"
-        },
-        {
-            "TovarName": "i7-10700",
-            "TovarPrice": "25000",
-            "CardText": "lorem 1...",
-            "btnText": "купить",
-            "page": "processor",
-            "currency": "рублей",
-            "productId": "1235fas",
-            "cardImage": "/static/images/CPUHolder.png"
-        },
-        {
-            "TovarName": "i7-10700k",
-            "TovarPrice": "26800",
-            "CardText": "lorem 1...",
-            "btnText": "купить",
-            "page": "processor",
-            "currency": "рублей",
-            "productId": "1235fas",
-            "cardImage": "/static/images/RAMholder.png"
-        },
-        {
-            "TovarName": "i9-10900k",
-            "TovarPrice": "450000",
-            "CardText": "lorem 1...",
-            "btnText": "купить",
-            "page": "processor",
-            "currency": "рублей",
-            "productId": "1235fas",
-            "cardImage": "/static/images/RAMholder.png"
-        },{
-            "TovarName": "i5-10600kf",
-            "TovarPrice": "15000",
-            "CardText": "lorem 1...",
-            "btnText": "купить",
-            "page": "processor",
-            "productId": "1235fas",
-            "cardImage": "/static/images/moboholder.png"
-        },
-        {
-            "TovarName": "i7-10700",
-            "TovarPrice": "25000",
-            "CardText": "lorem 1...",
-            "btnText": "купить",
-            "page": "processor",
-            "currency": "рублей",
-            "productId": "1235fas",
-            "cardImage": "/static/images/CPUHolder.png"
-        },
-        {
-            "TovarName": "i7-10700k",
-            "TovarPrice": "26800",
-            "CardText": "lorem 1...",
-            "btnText": "купить",
-            "page": "processor",
-            "currency": "рублей",
-            "productId": "1235fas",
-            "cardImage": "/static/images/RAMholder.png"
-        },
-        {
-            "TovarName": "i9-10900k",
-            "TovarPrice": "450000",
-            "CardText": "lorem 1...",
-            "btnText": "купить",
-            "page": "processor",
-            "currency": "рублей",
-            "productId": "1235fas",
-            "cardImage": "/static/images/RAMholder.png"
-        },{
-            "TovarName": "i5-10600kf",
-            "TovarPrice": "15000",
-            "CardText": "lorem 1...",
-            "btnText": "купить",
-            "page": "processor",
-            "productId": "1235fas",
-            "cardImage": "/static/images/moboholder.png"
-        },
-        {
-            "TovarName": "i7-10700",
-            "TovarPrice": "25000",
-            "CardText": "lorem 1...",
-            "btnText": "купить",
-            "page": "processor",
-            "currency": "рублей",
-            "productId": "1235fas",
-            "cardImage": "/static/images/CPUHolder.png"
-        },
-        {
-            "TovarName": "i7-10700k",
-            "TovarPrice": "26800",
-            "CardText": "lorem 1...",
-            "btnText": "купить",
-            "page": "processor",
-            "currency": "рублей",
-            "productId": "1235fas",
-            "cardImage": "/static/images/RAMholder.png"
-        },
-        {
-            "TovarName": "i9-10900k",
-            "TovarPrice": "450000",
-            "CardText": "lorem 1...",
-            "btnText": "купить",
-            "page": "processor",
-            "currency": "рублей",
-            "productId": "1235fas",
-            "cardImage": "/static/images/RAMholder.png"
-        }
-    ],
-    "UserId": "dt123g5d57qdsf",
-    "PhoneNum": "+7(913)-123-45-67",
-    "Email": "nobodye'sEmail@mail.com",
-    "tovar": "templates/tovar.html",
-    "cardImage": "/static/images/CPUHolder.png"
+    ]
 }

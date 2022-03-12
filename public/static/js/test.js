@@ -1,26 +1,29 @@
-document.getElementById("submit").addEventListener("click", function (e) {
-    e.preventDefault();
-    // получаем данные формы
-    let registerForm = document.forms["registerForm"];
-    let userName = registerForm.elements["userName"].value;
-    let userAge = registerForm.elements["userAge"].value;
-    // сериализуем данные в json
-    let user = JSON.stringify({
-        userName: userName,
-        userAge: userAge,
-    });
-    let request = new XMLHttpRequest();
-    // посылаем запрос на адрес "/user"
-    request.open("POST", "/user", true);
-    request.setRequestHeader("Content-Type", "application/json");
-    request.addEventListener("load", function () {
-        // получаем и парсим ответ сервера
-        request.open("POST", "/user", true);
-        request.setRequestHeader("Content-Type", "application/json");
-    });
-    request.send(user);
+// вся эта вещь должна быть через ajax
+//по примеру ниже
+// ajax работает, надо сделать саму корзину
+// function addToCart() {
+//     // let name = document.querySelector("#name").innerHTML;
 
-});
+// }
+
+
+// function getData() {
+//     // URL на который будем отправлять GET запрос
+//     const requestURL = '/result';
+//     const xhr = new XMLHttpRequest();
+//     xhr.open('GET', requestURL);
+//     xhr.onload = () => {
+//       if (xhr.status !== 200) {
+//         return;
+//       }
+//       document.querySelector('#result').innerHTML = xhr.response;
+//     }
+//     xhr.send();
+//   }
+//   // при нажатию на кнопку
+//   document.querySelector('#get').addEventListener('click', () => {
+//     getData();
+//   });
 
 // function addToCart() {
 //     let arr = FileReader

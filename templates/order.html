@@ -19,59 +19,125 @@
                                     500{{item.currency}}</a></h5>
                             <form name="CartOrder" method="POST" action="/order/ready">
                                 <div class="mb-3">
-                                    <label class="form-label">промокод?</label>
+                                    <label class="form-label">Промокод?</label>
                                     <input id="CartPromo" type="text" class="form-control"
                                         placeholder="Не пытайтесь искать не найдете" name="promo">
                                 </div>
                                 <hr>
                                 <div class="mb-3">
-                                    <label class="form-label">электронная почта</label>
+                                    <label class="form-label">Электронная почта</label>
                                     <input id="EmailOrder" type="email" class="form-control"
                                         aria-describedby="emailHelp" name="email" required value="aaa@mail.com">
                                     <div class="form-text"></div>
                                     <label class="form-label">Телефон</label>
                                     <input id="PhoneOrder" type="tel" class="form-control" aria-describedby="phonehelp"
-                                        name="phone" required value="+7 913 477-60-01">
+                                        name="phone" value="+7 913 477-60-01" placeholder="необязателно">
                                     <div class="form-text"></div>
                                 </div>
                                 <hr>
+                                <div class="mb-3">
+                                    <!-- <label>Город:<input id="CityOrder" type="text" class="form-control" name="city" required placeholder="Новосибирск"></label> -->
+                                    <select name="city" id="CityOrder" class="form-control" required>
+                                        <option>Выберите ваш город</option>
+                                        <option>Новосибирск</option>
+                                        <option>Москва</option>
+                                        <option>Белгород</option>
+                                        <option>Бердск</option>
+                                        {%for items in cityes%}
+                                        <option>{{item.city}}</option>
+                                        {%endfor%}
+                                    </select>
+                                </div>
+                                <hr>
+                                <!-- <hr> -->
                                 <div class="mb-3 form-check">
-                                    <label>Город:</label>
+                                    <label>Способ получения:</label>
                                     <ul>
-                                        <li><input type="radio" class="form-check-input" name="city" checked required>
-                                            <label class="form-check-label">Новосибирск</label>
+                                        <li>
+                                            <label class="form-check-label"><input type="radio" class="form-check-input"
+                                                    name="DeliveryType" required checked value="Самовывоз">Самовывоз<svg
+                                                    width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-basket2"
+                                                    fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                                    <path fill-rule="evenodd"
+                                                        d="M1.111 7.186A.5.5 0 0 1 1.5 7h13a.5.5 0 0 1 .489.605l-1.5 7A.5.5 0 0 1 13 15H3a.5.5 0 0 1-.489-.395l-1.5-7a.5.5 0 0 1 .1-.42zM2.118 8l1.286 6h9.192l1.286-6H2.118z" />
+                                                    <path fill-rule="evenodd"
+                                                        d="M11.314 1.036a.5.5 0 0 1 .65.278l2 5a.5.5 0 1 1-.928.372l-2-5a.5.5 0 0 1 .278-.65zm-6.628 0a.5.5 0 0 0-.65.278l-2 5a.5.5 0 1 0 .928.372l2-5a.5.5 0 0 0-.278-.65z" />
+                                                    <path
+                                                        d="M4 10a1 1 0 0 1 2 0v2a1 1 0 1 1-2 0v-2zm3 0a1 1 0 0 1 2 0v2a1 1 0 1 1-2 0v-2zm3 0a1 1 0 0 1 2 0v2a1 1 0 1 1-2 0v-2zM0 6.5A.5.5 0 0 1 .5 6h15a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5H.5a.5.5 0 0 1-.5-.5v-1z" />
+                                                </svg>
+                                            </label>
                                         </li>
-                                        <li> <input type="radio" class="form-check-input" name="city" required>
-                                            <label class="form-check-label">Москва</label>
-                                        </li>
-                                        <li> <input type="radio" class="form-check-input" name="city" required>
-                                            <label class="form-check-label">Китай</label>
+                                        <li>
+                                            <label class="form-check-label"><input type="radio" class="form-check-input"
+                                                    name="DeliveryType" required value="Доставка">Доставка <svg
+                                                    width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-truck"
+                                                    fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                                    <path fill-rule="evenodd"
+                                                        d="M0 3.5A1.5 1.5 0 0 1 1.5 2h9A1.5 1.5 0 0 1 12 3.5v7h-1v-7a.5.5 0 0 0-.5-.5h-9a.5.5 0 0 0-.5.5v7a.5.5 0 0 0 .5.5v1A1.5 1.5 0 0 1 0 10.5v-7zM4.5 11h6v1h-6v-1z" />
+                                                    <path fill-rule="evenodd"
+                                                        d="M11 5h2.02a1.5 1.5 0 0 1 1.17.563l1.481 1.85a1.5 1.5 0 0 1 .329.938V10.5a1.5 1.5 0 0 1-1.5 1.5h-1v-1h1a.5.5 0 0 0 .5-.5V8.35a.5.5 0 0 0-.11-.312l-1.48-1.85A.5.5 0 0 0 13.02 6H12v4.5h-1V5zm-8 8a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm0 1a2 2 0 1 0 0-4 2 2 0 0 0 0 4z" />
+                                                    <path fill-rule="evenodd"
+                                                        d="M12 13a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm0 1a2 2 0 1 0 0-4 2 2 0 0 0 0 4z" />
+                                                </svg></label>
                                         </li>
                                     </ul>
+                                </div>
+                                <div class="mb-3">
+                                    <label>Дата доставки:<input id="DeliveryDate" type="date" class="form-control"
+                                            name="date" required>
+                                    </label>
                                 </div>
                                 <hr>
                                 <div class="mb-3 form-check">
                                     <label>Способ оплаты:</label>
                                     <ul>
-                                        <li><input type="radio" class="form-check-input" name="payment" required
-                                                checked>
-                                            <label class="form-check-label">Карта</label>
+                                        <li>
+                                            <label class="form-check-label"><input type="radio" class="form-check-input"
+                                                    name="payment" required checked value="Карта  ">Карта <svg
+                                                    width="1em" height="1em" viewBox="0 0 16 16"
+                                                    class="bi bi-credit-card" fill="currentColor"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path fill-rule="evenodd"
+                                                        d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4zm2-1a1 1 0 0 0-1 1v1h14V4a1 1 0 0 0-1-1H2zm13 4H1v5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V7z" />
+                                                    <path
+                                                        d="M2 10a1 1 0 0 1 1-1h1a1 1 0 0 1 1 1v1a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1v-1z" />
+                                                </svg></label>
                                         </li>
-                                        <li> <input type="radio" class="form-check-input" name="payment" required>
-                                            <label class="form-check-label">Наличные</label>
+                                        <li>
+                                            <label class="form-check-label"><input type="radio" class="form-check-input"
+                                                    name="payment" required value="Наличные">Наличные <svg width="1em"
+                                                    height="1em" viewBox="0 0 16 16" class="bi bi-cash-stack"
+                                                    fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M14 3H1a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1h-1z" />
+                                                    <path fill-rule="evenodd"
+                                                        d="M15 5H1v8h14V5zM1 4a1 1 0 0 0-1 1v8a1 1 0 0 0 1 1h14a1 1 0 0 0 1-1V5a1 1 0 0 0-1-1H1z" />
+                                                    <path
+                                                        d="M13 5a2 2 0 0 0 2 2V5h-2zM3 5a2 2 0 0 1-2 2V5h2zm10 8a2 2 0 0 1 2-2v2h-2zM3 13a2 2 0 0 0-2-2v2h2zm7-4a2 2 0 1 1-4 0 2 2 0 0 1 4 0z" />
+                                                </svg></label>
                                         </li>
-                                        <li> <input type="radio" class="form-check-input" name="payment" required>
+                                        <!-- <li> <input type="radio" class="form-check-input" name="payment" required
+                                                value="Перевод">
                                             <label class="form-check-label">Перевод</label>
-                                        </li>
+                                        </li> -->
                                     </ul>
                                 </div>
                                 <hr>
                                 <div class="mb-3 form-check">
                                     <input type="checkbox" class="form-check-input" name="NotBot" required checked>
-                                    <label class="form-check-label">Я не робот</label>
+                                    <label class="form-check-label">Я не робот<svg width="1em" height="1em"
+                                            viewBox="0 0 16 16" class="bi bi-person-check" fill="currentColor"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd"
+                                                d="M11 14s1 0 1-1-1-4-6-4-6 3-6 4 1 1 1 1h10zm-9.995-.944v-.002.002zM1.022 13h9.956a.274.274 0 0 0 .014-.002l.008-.002c-.001-.246-.154-.986-.832-1.664C9.516 10.68 8.289 10 6 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664a1.05 1.05 0 0 0 .022.004zm9.974.056v-.002.002zM6 7a2 2 0 1 0 0-4 2 2 0 0 0 0 4zm3-2a3 3 0 1 1-6 0 3 3 0 0 1 6 0zm6.854.146a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 0 1 .708-.708L12.5 7.793l2.646-2.647a.5.5 0 0 1 .708 0z" />
+                                        </svg></label>
                                 </div>
                                 <hr>
-                                <button id="CartFormSub" type="submit" class="btn btn-primary">Оформить заказ</button>
+                                <button id="OrderFormSub" type="submit" class="btn btn-primary">Оформить заказ <svg
+                                        width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-box-seam"
+                                        fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd"
+                                            d="M8.186 1.113a.5.5 0 0 0-.372 0L1.846 3.5l2.404.961L10.404 2l-2.218-.887zm3.564 1.426L5.596 5 8 5.961 14.154 3.5l-2.404-.961zm3.25 1.7l-6.5 2.6v7.922l6.5-2.6V4.24zM7.5 14.762V6.838L1 4.239v7.923l6.5 2.6zM7.443.184a1.5 1.5 0 0 1 1.114 0l7.129 2.852A.5.5 0 0 1 16 3.5v8.662a1 1 0 0 1-.629.928l-7.185 2.874a.5.5 0 0 1-.372 0L.63 13.09a1 1 0 0 1-.63-.928V3.5a.5.5 0 0 1 .314-.464L7.443.184z" />
+                                    </svg></button>
                             </form>
                         </div>
                     </div>
@@ -89,7 +155,7 @@
                             <div class="col-xs-8 col-sm-8 col-md-8 col-lg-8 col-xl-8 col-xxl-8">
                                 <div class="card-body">
                                     <h5 class="card-title">{{item.name}}</h5>
-                                    <h6 class="card-title">{{item.price}} {{item.currency}}</h6>
+                                    <h6 class="card-title">{{item.price}} рублей<!-- {{item.currency}} --></h6>
                                     <a role="button" onclick="addToFav()">В избранное</a>
                                     <a role="button" onclick="delFromFav()">Удалить</a>
                                     <div class="items count-wrapper" style="color: black">
@@ -104,7 +170,6 @@
                             </div>
                         </div>
                     </div>
-
                     {% endfor %}
                 </div>
 
@@ -113,5 +178,11 @@
     </main>
     {% include "templates/footer.html"%}
 </body>
-
 </html>
+
+<!-- 
+    name
+    price
+    image
+    quantity
+ -->

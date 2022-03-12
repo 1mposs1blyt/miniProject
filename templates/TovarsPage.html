@@ -1,20 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
+<!-- TovarsPage! -->
+<head>
+    {% include "templates/head.html"%}
+</head>
 
-    <head>
-        {% include "templates/head.html"%}
-    </head>
-
-    <body>
-        {% include "templates/header.html"%}
-        <main>
-            <div id="CardsRow" class="container">
-                <div class="row cols-xs-12 cols-sm-12 cols-md-12 cols-lg-12 cols-xl-12 cols-xxl-12 card-group">
-                    {% asyncEach item in resolve %}
-                        {% include "templates/tovar.html" %}
-                    {% endeach %}
-                </div>
+<body>
+    {% include "templates/header.html"%}
+    <main>
+        <div id="CardsRow" class="container">
+            <!-- <h1>{{item.aname}},{{aprice}}</h1> -->
+            <div class="row cols-xs-12 cols-sm-12 cols-md-12 cols-lg-12 cols-xl-12 cols-xxl-12 card-group">
+                {% asyncEach item in resolve %}
+                {% include "templates/tovar.html" %}
+                {% endeach %}
             </div>
+        </div>
         </div>
     </main>
     {% include "templates/footer.html"%}

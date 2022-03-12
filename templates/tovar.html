@@ -1,27 +1,14 @@
 <div onmouseover="this.style.border = '2px solid rgb(204, 204, 204)'"
     onmouseout=" this.style.border= ' 2px solid transparent'" id="MainTovarCard"
     class="col-xs-3 col-sm-6 col-md-4 col-lg-4 col-xl-3 col-xxl-3" class="card">
-    <img id="CardMainImg" src="/static/images/{{item.image}}" class="card-img-top" alt="image">
+    <a href="#{{item.name}}"><img id="CardMainImg" src="/static/images/{{item.image}}" class="card-img-top"
+            alt="image"></a>
     <div class="card-body">
-        <h5 class="card-title">
-            {{item.name}}
-        </h5>
-        <h6 id="cardTitlePrice" class="card-title">{{item.price}}
-            {{item.currency}}
-        </h6>
-        <p id="id" class="card-text">{{item.text}}</p>
-        <input type="button" onclick="addToCart(),MiniCartF(),MiniCartFclose()" id="CardBTN" class="btn btn-primary"
+        <h5 class="a card-title">{{item.name}}</h5>
+        <h6 class="card-title"><a class="price" id="price">{{item.price}}</a> {{item.currency}}</h6>
+        <p class="text card-text">{{item.text}}</p>
+        <input type="button" onclick="get_data(),addToCart(),MiniCartF(),MiniCartFclose()" id="CardBTN" class="btn btn-primary"
             role="button" value="{{item.btntext}}">
 
     </div>
 </div>
-
-<!-- 
-    image
-    name
-    price
-    currency
-    text
-    id
-    
- -->
