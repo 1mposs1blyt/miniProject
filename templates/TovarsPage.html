@@ -4,7 +4,6 @@
 <head>
     {% include "templates/head.html"%}
 </head>
-
 <body>
     {% include "templates/header.html"%}
     <main>
@@ -13,6 +12,8 @@
             <div class="row cols-xs-12 cols-sm-12 cols-md-12 cols-lg-12 cols-xl-12 cols-xxl-12 card-group">
                 {% asyncEach item in resolve %}
                 {% include "templates/tovar.html" %}
+                {% else %}
+                <h1>По вашему запросу ничего не найдено, попробуйте еще раз</h1>
                 {% endeach %}
             </div>
         </div>

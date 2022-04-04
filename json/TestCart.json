@@ -1,216 +1,136 @@
 {
-    "allgoodslist": {
-        "TovarTypeList": {
-            "processors": [
-                {
-                    "property": "процессоры",
-                    "MainPage": "processors",
-                    "catalogId": "21",
-                    "TovarName": "i3-10100f",
-                    "TovarPrice": "6500",
-                    "CardText": "lorem 1...",
-                    "cardImage": "/static/images/placeholder.png",
-                    "page": "processor",
-                    "productId": "1235fas",
-                    "btnText": "Купить"
-                },
-                {
-                    "property": "процессоры",
-                    "MainPage": "processors",
-                    "catalogId": "21",
-                    "TovarName": "i3-10100f",
-                    "TovarPrice": "6500",
-                    "CardText": "lorem 1...",
-                    "cardImage": "/static/images/placeholder.png",
-                    "page": "processor",
-                    "productId": "1235fas",
-                    "btnText": "Купить"
-                },
-                {
-                    "property": "процессоры",
-                    "MainPage": "processors",
-                    "catalogId": "21",
-                    "TovarName": "i3-10100f",
-                    "TovarPrice": "6500",
-                    "CardText": "lorem 1...",
-                    "cardImage": "/static/images/placeholder.png",
-                    "page": "processor",
-                    "productId": "1235fas",
-                    "btnText": "Купить"
-                },
-                {
-                    "property": "процессоры",
-                    "MainPage": "processors",
-                    "catalogId": "21",
-                    "TovarName": "i3-10100f",
-                    "TovarPrice": "6500",
-                    "CardText": "lorem 1...",
-                    "cardImage": "/static/images/placeholder.png",
-                    "page": "processor",
-                    "productId": "1235fas",
-                    "btnText": "Купить"
-                },
-                {
-                    "property": "процессоры",
-                    "MainPage": "processors",
-                    "catalogId": "21",
-                    "TovarName": "i3-10100f",
-                    "TovarPrice": "6500",
-                    "CardText": "lorem 1...",
-                    "cardImage": "/static/images/placeholder.png",
-                    "page": "processor",
-                    "productId": "1235fas",
-                    "btnText": "Купить"
-                }
-            ],
-            "MoBo": [
-                {
-                    "property": "процессоры",
-                    "MainPage": "processors",
-                    "catalogId": "21",
-                    "TovarName": "i3-10100f",
-                    "TovarPrice": "6500",
-                    "CardText": "lorem 1...",
-                    "cardImage": "/static/images/placeholder.png",
-                    "page": "processor",
-                    "productId": "1235fas",
-                    "btnText": "Купить"
-                },
-                {
-                    "property": "процессоры",
-                    "MainPage": "processors",
-                    "catalogId": "21",
-                    "TovarName": "i3-10100f",
-                    "TovarPrice": "6500",
-                    "CardText": "lorem 1...",
-                    "cardImage": "/static/images/placeholder.png",
-                    "page": "processor",
-                    "productId": "1235fas",
-                    "btnText": "Купить"
-                },
-                {
-                    "property": "процессоры",
-                    "MainPage": "processors",
-                    "catalogId": "21",
-                    "TovarName": "i3-10100f",
-                    "TovarPrice": "6500",
-                    "CardText": "lorem 1...",
-                    "cardImage": "/static/images/placeholder.png",
-                    "page": "processor",
-                    "productId": "1235fas",
-                    "btnText": "Купить"
-                },
-                {
-                    "property": "процессоры",
-                    "MainPage": "processors",
-                    "catalogId": "21",
-                    "TovarName": "i3-10100f",
-                    "TovarPrice": "6500",
-                    "CardText": "lorem 1...",
-                    "cardImage": "/static/images/placeholder.png",
-                    "page": "processor",
-                    "productId": "1235fas",
-                    "btnText": "Купить"
-                },
-                {
-                    "property": "процессоры",
-                    "MainPage": "processors",
-                    "catalogId": "21",
-                    "TovarName": "i3-10100f",
-                    "TovarPrice": "6500",
-                    "CardText": "lorem 1...",
-                    "cardImage": "/static/images/placeholder.png",
-                    "page": "processor",
-                    "productId": "1235fas",
-                    "btnText": "Купить"
-                },
-                {
-                    "property": "процессоры",
-                    "MainPage": "processors",
-                    "catalogId": "21",
-                    "TovarName": "i3-10100f",
-                    "TovarPrice": "6500",
-                    "CardText": "lorem 1...",
-                    "cardImage": "/static/images/placeholder.png",
-                    "page": "processor",
-                    "productId": "1235fas",
-                    "btnText": "Купить"
-                }
-            ],
-            "RAM": [
-                {
-                    "property": "процессоры",
-                    "MainPage": "processors",
-                    "catalogId": "21",
-                    "TovarName": "i3-10100f",
-                    "TovarPrice": "6500",
-                    "CardText": "lorem 1...",
-                    "cardImage": "/static/images/placeholder.png",
-                    "page": "processor",
-                    "productId": "1235fas",
-                    "btnText": "Купить"
-                },
-                {
-                    "property": "процессоры",
-                    "MainPage": "processors",
-                    "catalogId": "21",
-                    "TovarName": "i3-10100f",
-                    "TovarPrice": "6500",
-                    "CardText": "lorem 1...",
-                    "cardImage": "/static/images/placeholder.png",
-                    "page": "processor",
-                    "productId": "1235fas",
-                    "btnText": "Купить"
-                },
-                {
-                    "property": "процессоры",
-                    "MainPage": "processors",
-                    "catalogId": "21",
-                    "TovarName": "i3-10100f",
-                    "TovarPrice": "6500",
-                    "CardText": "lorem 1...",
-                    "cardImage": "/static/images/placeholder.png",
-                    "page": "processor",
-                    "productId": "1235fas",
-                    "btnText": "Купить"
-                },
-                {
-                    "property": "процессоры",
-                    "MainPage": "processors",
-                    "catalogId": "21",
-                    "TovarName": "i3-10100f",
-                    "TovarPrice": "6500",
-                    "CardText": "lorem 1...",
-                    "cardImage": "/static/images/placeholder.png",
-                    "page": "processor",
-                    "productId": "1235fas",
-                    "btnText": "Купить"
-                },
-                {
-                    "property": "процессоры",
-                    "MainPage": "processors",
-                    "catalogId": "21",
-                    "TovarName": "i3-10100f",
-                    "TovarPrice": "6500",
-                    "CardText": "lorem 1...",
-                    "cardImage": "/static/images/placeholder.png",
-                    "page": "processor",
-                    "productId": "1235fas",
-                    "btnText": "Купить"
-                },
-                {
-                    "property": "процессоры",
-                    "MainPage": "processors",
-                    "catalogId": "21",
-                    "TovarName": "i3-10100f",
-                    "TovarPrice": "6500",
-                    "CardText": "lorem 1...",
-                    "cardImage": "/static/images/placeholder.png",
-                    "page": "processor",
-                    "productId": "1235fas",
-                    "btnText": "Купить"
-                }
-            ]
-        }
-    }
-}
+    resolve: [
+      {
+        company: "Intel",
+        name: "Intel core i3-10100f",
+        price: 6800,
+        text: "lorem ipsum",
+        page: "processor",
+        btntext: "buy",
+        currency: "rub",
+        id: "2",
+        image: "CPUHolder.png"
+      },
+      {
+        company: "intel",
+        name: "Intel core i5-10400f",
+        price: 13500,
+        text: "lorem ipsum",
+        page: "processor",
+        btntext: "buy",
+        currency: "rub",
+        id: "1",
+        image: "CPUHolder.png"
+      },
+      {
+        company: "amd",
+        name: "amd ryzen 5 5600x",
+        price: 25000,
+        text: "lorem ipsum",
+        page: "processor",
+        btntext: "buy",
+        currency: "rub",
+        id: "3",
+        image: "CPUHolder.png"
+      },
+      {
+        company: "intel",
+        name: "Intel пеньтиум",
+        price: 9999,
+        text: "ipsum lorem",
+        page: "cpu",
+        btntext: "buy",
+        currency: "rub",
+        id: "9999",
+        image: "CPUHolder.png"
+      },
+      {
+        company: "aaa",
+        name: "Intel",
+        price: "aaa",
+        text: "aaa",
+        page: "aaa",
+        btntext: "aaa",
+        currency: "aaa",
+        id: "aaa",
+        image: "MOBOHolder.png"
+      },
+      {
+        company: "asus",
+        name: "Материнская плата ",
+        price: 5800,
+        text: "lorem ipsum",
+        page: "motherboard",
+        btntext: "buy",
+        currency: "rub",
+        id: "26",
+        image: "MOBOHolder.png"
+      },
+      {
+        company: "asus",
+        name: "Материнская плата  Xtreme",
+        price: 10800,
+        text: "lorem ipsum",
+        page: "motherboard",
+        btntext: "buy",
+        currency: "rub",
+        id: "222",
+        image: "MOBOHolder.png"
+      },
+      {
+        company: "ddr4",
+        name: "ddr4",
+        price: 9999,
+        text: "lorem ipsum",
+        page: "ram",
+        btntext: "buy",
+        currency: "dollars",
+        id: "291",
+        image: "RAMHolder.png"
+      },
+      {
+        company: "ddr3",
+        name: "ddr4",
+        price: 100,
+        text: "lorem ipsum",
+        page: "ram",
+        btntext: "buy",
+        currency: "dollars",
+        id: "10",
+        image: "RAMHolder.png"
+      },
+      {
+        company: "ddr5",
+        name: "ddr4",
+        price: 150,
+        text: "lorem ipsum",
+        page: "ram",
+        btntext: "buy",
+        currency: "dollars",
+        id: "2911",
+        image: "RAMHolder.png"
+      },
+      {
+        company: "Intel",
+        name: "Intel core i3-12100f",
+        price: 6800,
+        text: "lorem ipsum",
+        page: "CPU",
+        btntext: "buy",
+        currency: "rub",
+        id: "4",
+        image: "CPUHolder.png"
+      },
+      {
+        company: "balistics",
+        name: "ddr3",
+        price: 150,
+        text: "lorem ipsum",
+        page: "ram",
+        btntext: "buy",
+        currency: "dollars",
+        id: "2911",
+        image: "RAMHolder.png"
+      }
+    ]
+  }

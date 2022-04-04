@@ -1,14 +1,22 @@
 <div onmouseover="this.style.border = '2px solid rgb(204, 204, 204)'"
     onmouseout=" this.style.border= ' 2px solid transparent'" id="MainTovarCard"
     class="col-xs-3 col-sm-6 col-md-4 col-lg-4 col-xl-3 col-xxl-3" class="card">
-    <a href="#{{item.name}}"><img id="CardMainImg" src="/static/images/{{item.image}}" class="card-img-top"
-            alt="image"></a>
-    <div class="card-body">
-        <h5 class="a card-title">{{item.name}}</h5>
-        <h6 class="card-title"><a class="price" id="price">{{item.price}}</a> {{item.currency}}</h6>
-        <p class="text card-text">{{item.text}}</p>
-        <input type="button" onclick="get_data(),addToCart(),MiniCartF(),MiniCartFclose()" id="CardBTN" class="btn btn-primary"
-            role="button" value="{{item.btntext}}">
+    <form method="post" action="/catalog/miniCart">
+        <div class="POST_GOOD_DATE" hidden="true">
+            <input type="text" value="{{item.name}}" name="name" style="visibility:hidden">
+            <input type="text" value="{{item.price}}" name="price" style="visibility:hidden">
+            <input type="text" value="{{item.image}}" name="image" style="visibility:hidden">
+            <input type="text" value="{{item.text}}" name="text" style="visibility:hidden">
+        </div>
+        <a href="#{{item.name}}"><img id="CardMainImg" src="/static/images/{{item.image}}" class="card-img-top"
+                alt="image"></a>
+        <div class="card-body">
+            <h5 class="a card-title">{{item.name}}</h5>
+            <h6 class="card-title"><a class="price" id="price">{{item.price}}</a> {{item.currency}}</h6>
+            <p class="text card-text">{{item.text}}</p>
+            <input type="submit" onclick="get_data(),addToCart(),MiniCartF(),MiniCartFclose()" id="CardBTN"
+                class="btn btn-primary" role="submit" value="Купить">
 
-    </div>
+        </div>
+    </form>
 </div>

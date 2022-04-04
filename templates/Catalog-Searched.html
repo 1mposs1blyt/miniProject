@@ -1,17 +1,27 @@
-<div id="CardsRow" class="container">
-    {# {% include "templates/filter.njk" %} #}
-    <div class="row cols-xs-12 cols-sm-12 cols-md-12 cols-lg-12 cols-xl-12 cols-xxl-12 card-group">
-        {# <h1>По вашему запросу найдено:</h1> #}
-        {% asyncEach item in resolve %}
-        
-        {% include "templates/tovar.html" %}
-        {%else %}
-        <h1>По вашему запросу
-            <!--  {{Goods.search}} --> ничего не найдено
-        </h1>
+<!DOCTYPE html>
+<html lang="en">
+<!-- Catalog-Searched! -->
+<head>
+    {% include "templates/head.html"%}
+</head>
 
-        {% endeach %}
-    </div>
-    {# {% include "templates/PagMenu.njk"%} Потом сделаю =) (нет) #}
-</div>
-</div>
+<body>
+    {% include "templates/header.html"%}
+    <main>
+        <div id="CardsRow" class="container">
+            {# {% include "templates/filter.njk" %} #}
+            <div class="row cols-xs-12 cols-sm-12 cols-md-12 cols-lg-12 cols-xl-12 cols-xxl-12 card-group">
+                <h1>Результаты по вашему запросу <a href="#{{search}}">{{search}}</a>:</h1>
+                {% asyncEach item in SearchedList %}
+                {% include "templates/tovar.html" %}
+                {% else %}
+                <h1>По вашему запросу <a href="#{{search}}"> {{search}}</a> ничего не найдено </h1>
+                {% endeach %}
+            </div>
+            {# {% include "templates/PagMenu.njk"%} Потом сделаю =) (нет) #}
+        </div>
+    </main>
+    {% include "templates/footer.html"%}
+</body>
+
+</html>

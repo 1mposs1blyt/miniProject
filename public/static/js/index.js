@@ -2,30 +2,37 @@
 function get_data() {
   // let name = document.getElementsByTagName("h5");
   
-  const reqUrl = "/catalog/GoodCard"
-  const xhr = new XMLHttpRequest();
-  xhr.open("GET",reqUrl)
-  xhr.onload = () =>{
-      if (xhr.status !== 200) {
-          return;
-      }
-      document.querySelector("#putcard").innerHTML = xhr.response;
-  }
-  xhr.send()
+  // const reqUrl = "/catalog/GoodCard"
+  // const xhr = new XMLHttpRequest();
+  // xhr.open("GET",reqUrl)
+  // xhr.onload = () =>{
+  //     if (xhr.status !== 200) {
+  //         return;
+  //     }
+  //     document.querySelector("#putcard").innerHTML = xhr.response;
+  // }
+  // xhr.send()
+  console.log("put date to cart")
 }
-function searchajax() {
-  const reqUrl = "/catalog/search"
-  const xhr = new XMLHttpRequest();
-  xhr.open("GET",reqUrl);
-  xhr.onload() = function() {
-    if(xhr.status !== 200) {
-      return;
-    }
-    document.querySelector("#CardsRow").innerHTML = xhr.response;
-    console.log("READY!!!")= xhr.response;
-  }
-  xhr.send()
-}
+// function searchajax() {
+//   const reqUrl = "/catalog/search"
+//   const xhr = new XMLHttpRequest();
+//   xhr.open("GET",reqUrl);
+//   xhr.onload() = function() {
+//     if(xhr.status !== 200) {
+//       return;
+//     }
+//     document.querySelector("#CardsRow").innerHTML = xhr.response;
+//     console.log("READY!!!")= xhr.response;
+//   }
+//   xhr.send()
+// }
+
+
+
+
+
+
 
 let detect = new MobileDetect(window.navigator.userAgent)
 

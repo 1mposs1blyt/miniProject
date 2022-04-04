@@ -83,7 +83,7 @@ li {
 #MiniCart {
     position: absolute;
     background-color: whitesmoke;
-    visibility: hidden;
+    /* visibility: hidden; */
     z-index: 10000000000;
     height: 0px;
     max-height: 600px;
