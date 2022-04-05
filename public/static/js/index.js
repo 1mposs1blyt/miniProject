@@ -27,6 +27,7 @@ function get_data() {
 //   }
 //   xhr.send()
 // }
+// const axios = require('axios').default;
 
 
 
@@ -37,12 +38,25 @@ function get_data() {
 let detect = new MobileDetect(window.navigator.userAgent)
 
 function CartClean() {
-  alert("Wil be Cleaned!")
+  let cart;
+  
+  alert("Wil be Cleaned!",cart)
 }
 function delFromMiniBin() {
   alert("Will be deleted!")
 }
 function MiniCartF() {
+  
+  // axios.post('/catalog/miniCart', {
+  //   firstName: 'Fred',
+  //   lastName: 'Flintstone'
+  // })
+  // .then(function (response) {
+  //   console.log(response);
+  // })
+  // .catch(function (error) {
+  //   console.log(error);
+  // });
   let miniCart = document.getElementById("MiniCart");
   miniCart.style.transition = "0.5s"
   // miniCart.style.width = "450px"

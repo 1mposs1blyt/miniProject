@@ -23,15 +23,14 @@ async function get_data(query, data_query) {
         all: `SELECT * FROM Goods`,
         CPU: `SELECT * FROM Goods WHERE page = 'processor'
         UNION
-        SELECT * FROM Goods WHERE page = 'CPU'
-        `,
+        SELECT * FROM Goods WHERE page = 'CPU' ORDER BY price`,
         MOBO: `SELECT * FROM Goods WHERE page = 'motherboard'
         UNION
-        SELECT * FROM Goods WHERE page = 'mobo'`,
-        RAM: `SELECT * FROM Goods WHERE page = 'ram'`,
-        categoryes: `SELECT * FROM categoryes`,
-        cart: `SELECT * FROM usercart `,
-        search: `SELECT * FROM goods`//надо сделать name(как имя производителя и потом уже второй_name как конкретная модель товара) 
+        SELECT * FROM Goods WHERE page = 'mobo' ORDER BY price`,
+        RAM: `SELECT * FROM Goods WHERE page = 'ram' ORDER BY price`,
+        categoryes: `SELECT * FROM categoryes ORDER BY categoryname`,
+        cart: `SELECT * FROM usercart ORDER BY price`,
+        search: `SELECT * FROM goods ORDER BY price`//работает через стрингСиммиларити
     }
     let sql = sql_queries[query];
     let promise = new Promise((resolve, reject) => {
@@ -62,7 +61,7 @@ nunjucks.configure(TmplPath, {
     express: app
 });
 var env = nunjucks.configure(".", { autoescape: false });
-
+var cart = [];
 // Роуты для сайта
 
 // app.get('',function(req, res){ something here }) <--- Гет запрос 
@@ -74,7 +73,7 @@ app.get('/', function (request, response) {
     let item = require(__dirname + '/json/TovarTypes.json');
     get_data("categoryes", []).then((resolve) => {
         // console.log({ resolve })
-        response.render(__dirname + '/templates/index.html', { item, resolve });
+        response.render(__dirname + '/templates/index.html', { item, resolve,cart});
     })
 });
 
@@ -85,7 +84,7 @@ app.get('/catalog/', function (request, response) {
 
     get_data("categoryes", []).then((resolve) => {
         // console.log({ resolve })
-        response.render(__dirname + '/templates/catalog.html', { resolve });
+        response.render(__dirname + '/templates/catalog.html', { resolve,cart });
     })
 });
 
@@ -113,7 +112,7 @@ app.get('/catalog/search', (request, response) => {
             }
         }
         // console.log({resolve})
-        response.render(__dirname + '/templates/Catalog-Searched.html',  {SearchedList, resolve, search});
+        response.render(__dirname + '/templates/Catalog-Searched.html', { SearchedList, resolve, search,cart });
 
     })
 
@@ -128,20 +127,20 @@ app.get('/:userId/cart', function (request, response) {
     userId = request.params["userId"]
     get_data("all", []).then((resolve) => {
         // console.log({ resolve })
-        response.render(__dirname + "/templates/cart.html", { resolve });
+        response.render(__dirname + "/templates/cart.html", { resolve ,cart});
     })
 })
 app.get("/order", function (request, response) {
     get_data("all", []).then((resolve) => {
         // console.log({ resolve })
-        response.render(__dirname + "/templates/order.html", { resolve });// роут на страницу оформления заказа //потом
+        response.render(__dirname + "/templates/order.html", { resolve,cart });// роут на страницу оформления заказа //потом
     })
 })
 app.get("/order/ready", function (request, response) {
     let OrderOpt = request.body;
     get_data("all", []).then((resolve) => {
         console.log({ OrderOpt })
-        response.render(__dirname + "/templates/order-ready.html", { OrderOpt, resolve });// роут на страницу оформления заказа //потом
+        response.render(__dirname + "/templates/order-ready.html", { OrderOpt, resolve ,cart});// роут на страницу оформления заказа //потом
     })
     // console.log(request.body)
     // response.render(__dirname + "/templates/order-ready.html", request.body);
@@ -151,7 +150,7 @@ app.post("/order/ready", function (request, response) {
     let OrderOpt = request.body;
     get_data("all", []).then((resolve) => {
         console.log({ OrderOpt })
-        response.render(__dirname + "/templates/order-ready.html", { OrderOpt, resolve });// );// роут на страницу оформления заказа //потом
+        response.render(__dirname + "/templates/order-ready.html", { OrderOpt, resolve,cart });// );// роут на страницу оформления заказа //потом
     })
     // console.log(request.body)
     // response.render(__dirname + "/templates/order-ready.html", request.body);
@@ -162,7 +161,7 @@ app.post('/catalog/:catalogId/:category+#', function (request, response) {
     let data = request.body
     get_data("all", []).then((resolve) => {
         console.log({ data })
-        response.render(__dirname + '/templates/TovarsPage.html', { resolve, data });
+        response.render(__dirname + '/templates/TovarsPage.html', { resolve, data,cart });
     })
 })
 app.get('/catalog/:catalogId/:category+#', function (request, response) {
@@ -171,7 +170,7 @@ app.get('/catalog/:catalogId/:category+#', function (request, response) {
     let data = request.body
     get_data("all", []).then((resolve) => {
         console.log({ data })
-        response.render(__dirname + '/templates/TovarsPage.html', { resolve, data });
+        response.render(__dirname + '/templates/TovarsPage.html', { resolve, data,cart });
     })
 })
 ///////////The end///////////////////
@@ -199,13 +198,23 @@ app.get('/catalog/:catalogId/:category+#', function (request, response) {
 //     let json = require(__dirname + '/json/TovarTypes.json');
 //     response.render(__dirname + "/templates/TovarPage.html", json);
 // });
+
+
+// app.post('/catalog/:catalogId/:category', function (request, response) {
+//     catalogId = request.params["catalogId"]
+//     category = request.params["category"]
+//     get_data("all", []).then((resolve) => {
+//         // console.log({ resolve })
+//         response.render(__dirname + '/templates/TovarsPage.html', { resolve });
+//     })
+// })
 app.get('/catalog/:catalogId/:category', function (request, response) {
     catalogId = request.params["catalogId"]
     category = request.params["category"]
     if (category == "motherboards") {
         get_data("MOBO", []).then((resolve) => {
             // console.log({ resolve })
-            response.render(__dirname + '/templates/TovarsPage.html', { resolve });
+            response.render(__dirname + '/templates/TovarsPage.html', { resolve ,cart});
         })
     } else if (category == "ram") {
         get_data("RAM", []).then((resolve) => {
@@ -213,12 +222,12 @@ app.get('/catalog/:catalogId/:category', function (request, response) {
             // let data = localStorage.getItem("name")
             // console.log({ data })
 
-            response.render(__dirname + '/templates/TovarsPage.html', { resolve });
+            response.render(__dirname + '/templates/TovarsPage.html', { resolve ,cart});
         })
     } else if (category == "processors" || category == "CPU") {
         get_data("CPU", []).then((resolve) => {
             // console.log({ resolve })
-            response.render(__dirname + '/templates/TovarsPage.html', { resolve });
+            response.render(__dirname + '/templates/TovarsPage.html', { resolve ,cart});
         })
     }
     // }else if (category == "processors"){
@@ -240,7 +249,7 @@ app.get('/catalog/:catalogId/:category', function (request, response) {
     // потом дописать еще чтонибудь
     else {
         get_data("all", []).then((resolve) => {
-            response.render(__dirname + '/templates/TovarsPage.html', { resolve });
+            response.render(__dirname + '/templates/TovarsPage.html', { resolve ,cart});
         })
         // response.render(__dirname + '/templates/TovarsPage.html');
     }
@@ -249,31 +258,28 @@ app.get('/catalog/:catalogId/:category', function (request, response) {
 });
 app.get("/catalog/GoodCard", function (req, res) {
     get_data("cart", []).then((resolve) => {
-        res.render(__dirname + '/templates/MiniCartCard.html', { resolve });
+        res.render(__dirname + '/templates/MiniCartCard.html', { resolve ,cart});
     })
     // res.render(__dirname+"templates/MiniCartCard.html")
 })
-var cart = []
+
 app.post("/catalog/miniCart", function (req, res) {
     let data = req.body;
-    // console.log({ data }, "POST")
     cart.push(data)
-    console.log({cart})
     get_data("cart", []).then((resolve) => {
-        // console.log({ data }, "POST")
-        cart.push(data)
-        console.log({cart})//При каждом нажатии на кнопку 'купить' пушить объект в корзину
-        res.render(__dirname + '/templates/TovarsPage.html', { resolve, data });
+        // console.log({cart})//При каждом нажатии на кнопку 'купить' пушить объект в корзину
+        res.render(__dirname + '/templates/TovarsPage.html', { resolve, data, cart});
     })
-    // res.render(__dirname + '/templates/TovarsPage.html', { cart });
 
 })
 app.get("/catalog/miniCart", function (req, res) {
-    let data = req.body;
     get_data("cart", []).then((resolve) => {
-        console.log({ data }, "GET")
-        res.render(__dirname + '/templates/TovarsPage.html', { resolve, data });
+        let data = req.body;
+        let storage = req.cookies
+        res.render(__dirname + '/templates/TovarsPage.html', { data, storage, cart});
     })
+
+
     // res.render(__dirname + '/templates/TovarsPage.html', { cart });
 
 })
