@@ -1,8 +1,8 @@
 <div onmouseover="this.style.border = '2px solid rgb(204, 204, 204)'"
     onmouseout=" this.style.border= ' 2px solid transparent'" id="MainTovarCard"
     class="col-xs-3 col-sm-6 col-md-4 col-lg-4 col-xl-3 col-xxl-3" class="card">
-    <form method="post" action="/catalog/miniCart">
-        <div class="POST_GOOD_DATE" hidden="true">
+    <form method="post">
+        <div class="POST_GOOD_DATE" hidden="true" action="addToCart">
             <input type="text" value="{{item.name}}" name="name" style="visibility:hidden">
             <input type="text" value="{{item.price}}" name="price" style="visibility:hidden">
             <input type="text" value="{{item.image}}" name="image" style="visibility:hidden">

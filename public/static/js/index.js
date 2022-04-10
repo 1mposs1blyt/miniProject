@@ -2,32 +2,32 @@
 function get_data() {
   // let name = document.getElementsByTagName("h5");
   
-  // const reqUrl = "/catalog/GoodCard"
-  // const xhr = new XMLHttpRequest();
-  // xhr.open("GET",reqUrl)
-  // xhr.onload = () =>{
-  //     if (xhr.status !== 200) {
-  //         return;
-  //     }
-  //     document.querySelector("#putcard").innerHTML = xhr.response;
-  // }
-  // xhr.send()
+  const reqUrl = "/catalog/GoodCard"
+  const xhr = new XMLHttpRequest();
+  xhr.open("GET",reqUrl)
+  xhr.onload = () =>{
+      if (xhr.status !== 200) {
+          return;
+      }
+      document.querySelector("#putcard").innerHTML = xhr.response;
+  }
+  xhr.send()
   console.log("put date to cart")
 }
-// function searchajax() {
-//   const reqUrl = "/catalog/search"
-//   const xhr = new XMLHttpRequest();
-//   xhr.open("GET",reqUrl);
-//   xhr.onload() = function() {
-//     if(xhr.status !== 200) {
-//       return;
-//     }
-//     document.querySelector("#CardsRow").innerHTML = xhr.response;
-//     console.log("READY!!!")= xhr.response;
-//   }
-//   xhr.send()
-// }
-// const axios = require('axios').default;
+function searchajax() {
+  const reqUrl = "/catalog/search"
+  const xhr = new XMLHttpRequest();
+  xhr.open("GET",reqUrl);
+  xhr.onload() = function() {
+    if(xhr.status !== 200) {
+      return;
+    }
+    document.querySelector("#CardsRow").innerHTML = xhr.response;
+    console.log("READY!!!")= xhr.response;
+  }
+  xhr.send()
+}
+const axios = require('axios').default;
 
 
 
@@ -38,25 +38,13 @@ function get_data() {
 let detect = new MobileDetect(window.navigator.userAgent)
 
 function CartClean() {
-  let cart;
-  
+  let cart = [];
   alert("Wil be Cleaned!",cart)
 }
 function delFromMiniBin() {
   alert("Will be deleted!")
 }
 function MiniCartF() {
-  
-  // axios.post('/catalog/miniCart', {
-  //   firstName: 'Fred',
-  //   lastName: 'Flintstone'
-  // })
-  // .then(function (response) {
-  //   console.log(response);
-  // })
-  // .catch(function (error) {
-  //   console.log(error);
-  // });
   let miniCart = document.getElementById("MiniCart");
   miniCart.style.transition = "0.5s"
   // miniCart.style.width = "450px"

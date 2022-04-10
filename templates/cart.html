@@ -31,8 +31,10 @@
                     </div>
                 </div>
                 <div class="col-xs-12 col-sm-12 col-md-12 col-lg-8 col-xl-8 col-xxl-8" id="cartbox">
-                    {% asyncEach item in cart %}
+                    {% asyncEach item in resolve %}
                     {% include "templates/CartCard.html"%}
+                    {%else%}
+                    <h1>Похоже в корзине ничего нет, <a href="/catalog/?Category">в каталог?</a></h1>
                     {% endeach %}
                 </div>
 

@@ -8,13 +8,23 @@
         <div class="col-xs-8 col-sm-8 col-md-8 col-lg-8 col-xl-8 col-xxl-8">
             <div class="card-body">
                 <h5 class="card-title">{{item.name}}</h5>
-                 <h6 class="card-title">{{item.price}} рублей<!-- {{item.currency}} --></h6>
+                <h6 class="card-title">{{item.price}} рублей
+                    <!-- {{item.currency}} -->
+                </h6>
                 <a role="button" onclick="addToFav()">В избранное</a>
                 <a role="button" onclick="delFromFav()">Удалить</a>
                 <div class="items count-wrapper" style="color: black">
-                    <a class="items__control" data-action="minus">-</a>
+                    <form action="/cartplusone" method="post">
+                        <!-- <button type="submit" action="/cartplusone"> -->
+                        <a type="submit" class="items__control" data-action="plus"><input type="submit"value="+">+</a>
+                        <!-- </button> -->
+                    </form>
                     <a class="items__current" data-counter>{{item.quantity}}</a>
-                    <a class="items__control" data-action="plus">+</a>
+                    <form action="/cartminusone" method="post">
+                        <a class="items__control" data-action="minus" type="submit"><input type="submit" value="-">-</a>
+                    </form>
+
+
                     <!-- <div class="itemControl" data-action="minus">-</div>
                     <div class="CurrentCount" data-counter>1</div>
                     <div class="itemControl" data-action="plus">+</div> -->

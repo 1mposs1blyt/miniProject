@@ -10,7 +10,7 @@
         <div id="CardsRow" class="container">
             <!-- <h1>{{item.aname}},{{aprice}}</h1> -->
             <div class="row cols-xs-12 cols-sm-12 cols-md-12 cols-lg-12 cols-xl-12 cols-xxl-12 card-group">
-                {% asyncEach item in resolve %}
+                {% asyncEach item in Tlist %}
                 {% include "templates/tovar.html" %}
                 {% else %}
                 <h1>По вашему запросу ничего не найдено, попробуйте еще раз</h1>
